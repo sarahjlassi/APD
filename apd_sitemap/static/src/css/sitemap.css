@@ -1,0 +1,85 @@
+.sitemap-section
+{
+    padding: 70px 0;
+}
+.sitemap-section .content-box
+{
+    padding: 16px;
+    background: #fafbfc;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px rgba(224,224,224,0.44);
+}
+.sitemap-section .main-title h3 span
+{
+    display: table !important;
+    margin: auto;
+}
+.sitemap-section ul
+{
+    list-style: none;
+    margin: 0;
+}
+.sitemap-section li
+{
+    list-style: none;
+}
+.sitemap-section .content-box > li:first-of-type,
+.sitemap-section .content-box > .sitemap-4
+{
+    margin-bottom: 16px;
+}
+.sitemap-section .content-box > .sitemap-4 > a,
+.sitemap-section .content-box > li:first-of-type > a,
+.sitemap-section .content-box > .sitemap-10 > a
+{
+    position: relative;
+    padding: 19px 32px;
+    background-color: #009877;
+    border-radius: 8px;
+    display: block;
+    color: #fff;
+}
+.sitemap-section .content-box > .sitemap-4 > a:before,
+.sitemap-section .content-box > li:first-of-type > a:before,
+.sitemap-section .content-box > .sitemap-10 > a:before
+{
+    position: absolute;
+    content: "";
+    left: 17px;
+    width: 3px;
+    height: 28px;
+    background-color: #ffb259;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sitemap-section .content-box > .sitemap-10 > a,
+.sitemap-section .content-box > .sitemap-4 > a
+{
+    background-color: rgba(0,152,119,0.08);
+    color: #009877;
+    margin-bottom: 15px;
+}
+.sitemap-section .content-box > .sitemap-10 li a
+{
+    position: relative;
+    color: #636569;
+    margin-bottom: 16px;
+    padding-inline-start: 54px;
+    display: block;
+}
+.sitemap-section .content-box li a:hover
+{
+    color: #ffb259 !important;
+}
+.sitemap-section .content-box > .sitemap-10 li a:before
+{
+    position: absolute;
+    content: "";
+    left: 35px;
+    width: 8px;
+    height: 8px;
+    background-color: #009877;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}

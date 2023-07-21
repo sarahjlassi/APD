@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_d_type,d.type,model_d_type,,1,1,1,1
+access_degree_degree,degree.degree,model_degree_degree,,1,1,1,1

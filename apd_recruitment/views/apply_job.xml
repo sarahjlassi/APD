@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="website_hr_recruitment.apply">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Apply Job</t>
+                <section class="intro-title about_us_v_2" data-disp="about_us" data-snippet="about_us_v_2" data-name="About Us Snippet 3">
+                    <div class="container">
+                        <div class="main-title">
+                            <h3>
+                                <span>Job Application Form
+                                    <strong t-field="job.name"/>
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="recruitment-tabs table-tabs s_tabs" data-vcss="001" data-snippet="s_tabs" data-name="Tabs">
+                    <div class="container">
+                        <div class="s_tabs_main">
+                            <span class="hidden" data-for="hr_recruitment_form" t-att-data-values="{'department_id': job and job.department_id.id or '', 'job_id': job and job.id or ''}"/>
+                            <div id="jobs_section">
+                                <div class="box-body wizard-content">
+                                    <form action="/jobs/application/submit" enctype="multipart/form-data" method="post" class="tab-wizard wizard-circle" id="serviceForm">
+                                       <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <!-- Start Step One -->
+                                        <h6>المعلومات الشخصية</h6>
+                                        <section>
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                                                    <label for="recruitment1">Your Name <span class="s_website_form_mark">*</span></label>
+                                                    <input id="recruitment1" type="text" class="form-control s_website_form_input" name="partner_name" t-att-value="partner.name" readonly="1" required="required" data-fill-with="name"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="date" data-name="Field">
+                                                    <label for="recruitment2">Birth date <span class="s_website_form_mark">*</span></label>
+                                                    <input id="birthday_c" type="date" class="form-control s_website_form_input" name="birthday_c" required="required" data-fill-with="birthday_c"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="gender_custom">Your Gender <span class="s_website_form_mark">*</span></label>
+                                                    <select id='gender_custom' name="gender_custom" class="form-control s_website_form_input" required="required" data-fill-with="gender_custom">
+                                                        <option value="">Choose</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                                                    <label for="nationality_c">Your Nationality <span class="s_website_form_mark">*</span></label>
+                                                    <input id="nationality_c" type="text" class="form-control s_website_form_input" name="nationality_c" required="required" data-fill-with="nationality_c"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="state_id">City <span class="s_website_form_mark">*</span></label>
+                                                    <select id='state_id' name="state_id" class="form-control s_website_form_input" required="required" data-fill-with="state_id">
+                                                        <option value="">Choose</option>
+                                                        <t t-foreach="states" t-as="state">
+                                                            <option t-att-value="state.id"
+                                                                    t-att-selected="state.id == int(state_id) if state_id else False">
+                                                                <t t-esc="state.name"/>
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="p_with_d">Are you a person with disability? <span class="s_website_form_mark">*</span></label>
+                                                    <select id='p_with_d' name="p_with_d" onChange="p_with_disability();" class="form-control s_website_form_input" required="required" data-fill-with="p_with_d">
+                                                        <option value="">Choose</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field" id="dis_type">
+                                                    <label for="dis_id">Disability Type <span class="s_website_form_mark">*</span></label>
+                                                    <select id='dis_id' name="dis_id" class="form-control s_website_form_input" required="required" data-fill-with="dis_id">
+                                                        <option value="">Choose</option>
+                                                        <t t-foreach="disability_types" t-as="type">
+                                                            <option t-att-value="type.id">
+                                                                <t t-esc="type.name"/>
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="accommodation">
+                                                    <label for="accom">What are the accommodations required to be provided to you? <span class="s_website_form_mark">*</span></label>
+                                                    <input id="accom" type="text" class="form-control s_website_form_input" name="accom" required="required" data-fill-with="accom"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field" data-type="text" data-name="Field">
+                                                    <label for="recruitment4">Short Introduction <span class="s_website_form_mark">*</span></label>
+                                                    <textarea id="recruitment4" class="form-control s_website_form_input" name="description" required=""></textarea>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_custom" data-type="binary" data-name="Field">
+                                                    <label for="recruitment5">Resume <span class="s_website_form_mark">*</span></label>
+                                                    <input id="recruitment5" type="file" multiple="true" class="form-control s_website_form_input" name="resume" required="required" accept="application/pdf"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_dnone d-none">
+                                                    <label for="recruitment6">Job</label>
+                                                    <input id="recruitment6" type="hidden" t-att-value="job.id" class="form-control s_website_form_input" name="job_id"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_dnone d-none">
+                                                    <label for="recruitment7">Department</label>
+                                                    <input id="recruitment7" type="hidden" class="form-control s_website_form_input" name="department_id"/>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- End Step One -->
+
+                                        <!-- Start Step Two -->
+                                        <h6>المؤهلات الاكاديمية</h6>
+                                        <section>
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field" id="degree_id_c_div">
+                                                    <label for="gender_custom">Applicant Degree <span class="s_website_form_mark">*</span></label>
+                                                    <select id='degree_id_c' name="degree_id_c" onChange="degreeValidation();" class="form-control s_website_form_input" required="">
+                                                        <option value="">Choose</option>
+                                                        <t t-foreach="degrees" t-as="d">
+                                                            <option t-att-value="d.id">
+                                                                <t t-esc="d.name"/>
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="spcecial_div">
+                                                    <label for="special_c">Specialization <span class="s_website_form_mark">*</span></label>
+                                                    <input id="special_c" type="text" class="form-control s_website_form_input" name="special_c" data-fill-with="special_c"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="gpa_div">
+                                                    <label for="gpa">GPA <span class="s_website_form_mark">*</span></label>
+                                                    <input id="gpa" type="number" class="form-control s_website_form_input" name="gpa" data-fill-with="gpa"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="graduation_div">
+                                                    <label for="grade_degree">Graduation Year <span class="s_website_form_mark">*</span></label>
+                                                    <input id="grade_degree" type="number" class="form-control s_website_form_input" name="grade_degree" data-fill-with="grade_degree" required=""/>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- End Step Two -->
+
+                                        <!-- Start Step Three -->
+                                        <h6>الخبرات العملية</h6>
+                                        <section>
+                                            <div class="row">
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="experience">Work Experience <span class="s_website_form_mark">*</span></label>
+                                                    <select id='experience' name="experience" onChange="experience_func();" class="form-control s_website_form_input" required="required" data-fill-with="experience">
+                                                        <option value="">Choose</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="employer_div">
+                                                    <label for="employer">Employer <span class="s_website_form_mark">*</span></label>
+                                                    <input id="employer" type="text" class="form-control s_website_form_input" name="employer" required="required" data-fill-with="employer"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="job_title_custom_div">
+                                                    <label for="job_title_custom">Job Title <span class="s_website_form_mark">*</span></label>
+                                                    <input id="job_title_custom" type="text" class="form-control s_website_form_input" name="job_title_custom" required="required" data-fill-with="job_title_custom"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field" id="ex_years_div">
+                                                    <label for="ex_years">Years Of Experience <span class="s_website_form_mark">*</span></label>
+                                                    <input id="ex_years" type="number" class="form-control s_website_form_input" name="ex_years" required="required" data-fill-with="ex_years"/>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- End Step Three -->
+
+                                        <!-- Start Step Four -->
+                                        <h6>معلومات التواصل</h6>
+                                        <section>
+                                             <div class="row">
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="email" data-name="Field">
+                                                    <label for="recruitment2">البريد الإلكتروني <span class="s_website_form_mark">*</span></label>
+                                                    <input id="recruitment2" type="email" class="form-control s_website_form_input" name="email_from" required="required" data-fill-with="email"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="recruitment3">Your Phone Number <span class="s_website_form_mark">*</span></label>
+                                                    <input id="recruitment3" type="number" class="form-control s_website_form_input" name="partner_phone" required="required" data-fill-with="phone"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field" data-type="char" data-name="Field">
+                                                    <label for="linkedin_pro">Linkedin</label>
+                                                    <input id="linkedin_pro" type="text" class="form-control s_website_form_input" name="linkedin_pro" data-fill-with="linkedin_pro"/>
+                                                </div>
+                                                <div class="form-group col-sm-6 s_website_form_field s_website_form_required" data-type="char" data-name="Field">
+                                                    <label for="accept_terms">اوافق علي مشاركة بياناتي مع جهات التوظيف الأخري -لأغراض التوظيف- وفق الضوابط والشروط المنظمة <span class="s_website_form_mark">*</span></label>
+                                                     <select id='accept_terms' name="accept_terms" class="form-control s_website_form_input" required="required" data-fill-with="accept_terms">
+                                                        <option value="">Choose</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- End Step Four -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oe_structure mt-2"/>
+                    <script>
+                        window.onload = function my_onload() {
+                            document.getElementById('p_with_d').value = 'no';
+                            document.getElementById('dis_type').style.display = 'none';
+                            document.getElementById('accommodation').style.display = 'none';
+
+                            document.getElementById('experience').value = 'no';
+                            document.getElementById('job_title_custom_div').style.display = 'none';
+                            document.getElementById('employer_div').style.display = 'none';
+                            document.getElementById('ex_years_div').style.display = 'none';
+
+                            document.getElementById("dis_id").required = false;
+                            document.getElementById("accom").required = false;
+                            document.getElementById("job_title_custom").required = false;
+                            document.getElementById("employer").required = false;
+                            document.getElementById("ex_years").required = false;
+
+                            document.getElementById('spcecial_div').style.display = 'none';
+                            document.getElementById("special_c").required = false;
+
+                            document.getElementById('gpa_div').style.display = 'none';
+                            document.getElementById("gpa").required = false;
+
+                            document.getElementById('graduation_div').style.display = 'none';
+                            document.getElementById("grade_degree").required = false;
+
+                        }
+
+                        function p_with_disability() {
+                            if (document.getElementById('p_with_d').value == 'yes') {
+
+
+                                $('#dis_type').show();
+                                $('#accommodation').show();
+                                document.getElementById("dis_id").required = true;
+                                document.getElementById("accom").required = true;
+
+
+                            } else {
+                                $('#dis_type').hide();
+                                $('#accommodation').hide();
+                                document.getElementById("dis_id").required = false;
+                                document.getElementById("accom").required = false;
+
+                            }
+                        }
+                        function degreeValidation() {
+                            const specialDiv =  $('#special_div')
+                            const gpaDiv = $('#gpa_div')
+                            const gradeDiv =  $('#graduation_div')
+
+                            const degreeElement = document.getElementById('degree_id_c')
+                            const specialElement = document.getElementById("special_c")
+                            const gpaElement = document.getElementById("gpa")
+                            const gradeElement = document.getElementById("grade_degree")
+
+                            if (degreeElement.value == '') {
+                                specialDiv.hide();
+                                gpaDiv.hide();
+                                gradeDiv.hide();
+                                specialElement.required = false;
+                                gpaElement.required = false;
+                                gradeElement.required = false;
+
+                            } else if (degreeElement.value == '1') {
+                                specialDiv.show();
+                                gpaDiv.show();
+                                gradeDiv.show();
+                                specialElement.required = true;
+                                gpaElement.required = true;
+                                gradeElement.required = true;
+                            }
+                            else {
+                                specialDiv.hide();
+                                gpaDiv.hide();
+                                specialElement.required = false;
+                                gpaElement.required = false;
+                                gradeDiv.show();
+                                gradeElement.required = true;
+                            }
+                        }
+
+                        function experience_func() {
+                            if (document.getElementById('experience').value == 'yes') {
+                                $('#employer_div').show();
+                                $('#ex_years_div').show();
+                                $('#job_title_custom_div').show();
+                                document.getElementById("job_title_custom").required = true;
+                                document.getElementById("employer").required = true;
+                                document.getElementById("ex_years").required = true;
+
+                            } else {
+                                $('#employer_div').hide();
+                                $('#ex_years_div').hide();
+                                $('#job_title_custom_div').hide();
+                                document.getElementById("job_title_custom").required = false;
+                                document.getElementById("employer").required = false;
+                                document.getElementById("ex_years").required = false;
+                            }
+                        }
+                    </script>
+                </section>
+
+            </t>
+        </template>
+
+        <function model="ir.model.fields" name="formbuilder_whitelist">
+            <value>hr.applicant</value>
+            <value eval="[
+                'description',
+                'email_from',
+                'partner_name',
+                'partner_phone',
+                'job_id',
+                'department_id',
+                'gender_custom',
+                'nationality_c',
+                'state_id',
+                'p_with_d',
+                'dis_id',
+                'accom',
+                'experience',
+                'employer',
+                'job_title_custom',
+                'ex_years',
+                'linkedin_pro',
+                'birthday_c',
+                'degree_id_c',
+                'special_c',
+                'grade_degree',
+                'gpa',
+            ]"/>
+        </function>
+
+        <template id="job_application_feedback" >
+            <t t-call="website.layout">
+                <t t-set="additional_title">Thank you</t>
+                <section class="intro-title about_us_v_2" data-disp="about_us" data-snippet="about_us_v_2" data-name="About Us Snippet 3">
+                    <div class="container">
+                        <div class="main-title">
+                            <h2>
+                                <span>التوظيف</span>
+                            </h2>
+                        </div>
+                        <div class="main-title">
+                            <h6>
+                                <span>نشكر لك رغبتك في الانضمام لكادر الهيئة من خلال تقديم طلب التوظيف في بوابة التوظيف الالكترونية</span>
+                            </h6>
+                            <h6>
+                                <span>سيتم التواصل معكم في حال توفر وظيفة مطابقة لمؤهلاتك وخبراتك</span>
+                            </h6>
+                            <h6>
+                                <span>مع تمنياتنا لك بالتوفيق</span>
+                            </h6>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </template>
+
+        <template id="job_application_view" name="My Jobs">
+            <t t-call="portal.portal_layout">
+                <t t-if="not jobs">
+                    <div class="alert alert-warning mt8" role="alert">
+                        There are no Jobs.
+                    </div>
+                </t>
+                <t t-if="jobs">
+                    <t t-call="portal.portal_table">
+                        <thead style="font-size: 0.8rem">
+                            <tr>
+                                <th>Job</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size: 0.8rem">
+                            <t t-foreach="jobs" t-as="job">
+                                <tr>
+                                    <td><span t-field="job.job_id.name" /></td>
+                                    <td><span t-field="job.job_id.state"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </template>
+        <template id="portal_my_home" name="Show Projects / Tasks" customize_show="True" inherit_id="portal.portal_my_home" priority="40">
+            <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+                <t t-call="portal.portal_docs_entry">
+                    <t t-set="title">Job Applications</t>
+                    <t t-set="url" t-value="'/my/job-applications'"/>
+                    <!-- <t t-set="placeholder_count" t-value="'task_count'"/> -->
+                </t>
+            </xpath>
+        </template>
+    </data>
+
+</odoo>

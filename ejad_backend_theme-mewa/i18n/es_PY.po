@@ -1,0 +1,1048 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ejad_backend_theme-mewa
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-27 14:48+0000\n"
+"PO-Revision-Date: 2020-03-27 14:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#005ba9"
+msgstr "#005ba9"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#00a09d"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#00aa00"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#00b3e5"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#2f3136"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#875A7B"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#ca0c05"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#cccccc"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "#e47e01"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/chrome/sidebar.js:0
+#, python-format
+msgid "%s (%s)"
+msgstr ""
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_menu_icon__2d_icon
+#, python-format
+msgid "2d"
+msgstr "2d"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__base_menu_icon__2d_icon
+msgid "2d Icon"
+msgstr "Icono 2D"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_menu_icon__3d_icon
+#, python-format
+msgid "3d"
+msgstr "3d"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__base_menu_icon__3d_icon
+msgid "3d Icon"
+msgstr "Icono 3D"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__abel
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__abel
+#, python-format
+msgid "Abel"
+msgstr "Abel"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Action"
+msgstr "Acción"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Add a note"
+msgstr "Agrega una nota"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Add..."
+msgstr "Añadir..."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__alice
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__alice
+#, python-format
+msgid "Alice"
+msgstr "Alicia"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.module.category,name:ejad_backend_theme-mewa.module_theme_category
+msgid "ejad Theme Settings"
+msgstr "Configuración del tema ejad"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#: code:addons/ejad_backend_theme-mewa/static/src/js/views/list/list_controller.js:0
+#, python-format
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Are you sure you want to log out?"
+msgstr "¿Estás segura de que quieres cerrar sesión?"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_attachment
+msgid "Attachment"
+msgstr "Adjunto archivo"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Attachment :"
+msgstr "Adjunto archivo:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_menu_icon__base_icon
+#, python-format
+msgid "Base"
+msgstr "Base"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__base_form_tabs
+msgid "Base Form Tabs"
+msgstr "Pestañas de formulario base"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__base_menu_icon__base_icon
+msgid "Base Icon"
+msgstr "Ícono base"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__base_menu
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__base_menu
+msgid "Base Menu"
+msgstr "Menú base"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__base_menu_icon
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__base_menu_icon
+msgid "Base Menu Icon"
+msgstr "Ícono del menú base"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__border_color
+#, python-format
+msgid "Border"
+msgstr "Frontera"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__button_box
+#, python-format
+msgid "Button Box"
+msgstr "Caja de botones"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Buttons"
+msgstr "Botones"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__buttons_color
+msgid "Buttons Color"
+msgstr "Color de botones"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#: code:addons/ejad_backend_theme-mewa/static/src/js/views/list/list_controller.js:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Channel"
+msgstr "Canal"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__tab_configration__close_tabs
+msgid "Close"
+msgstr "Cerca"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__tab_configration__close_tabs
+msgid "Close Tabs"
+msgstr "Cerrar pestañas"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Collapse"
+msgstr "Colapso"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__display_density__comfortable
+#, python-format
+msgid "Comfortable"
+msgstr "Cómoda"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__display_density__compact
+#, python-format
+msgid "Compact"
+msgstr "Compacta"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__create_uid
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Created by :"
+msgstr "Creado por:"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__create_date
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__leftbar_color
+msgid "Custom Color"
+msgstr "Color personalizado"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/views/list/list_controller.js:0
+#, python-format
+msgid "Customize List"
+msgstr "Lista personalizada"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "Customize Theme"
+msgstr "Tema personalizado"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__display_density__default
+#, python-format
+msgid "Default"
+msgstr "Defecto"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Delete this attachment"
+msgstr "Eliminar este archivo adjunto"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__display_density
+#: model:res.groups,name:ejad_backend_theme-mewa.group_display_density
+#, python-format
+msgid "Display Density"
+msgstr "Densidad de pantalla"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__display_name
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "Do you want to delete this record?"
+msgstr "¿Quieres eliminar este registro?"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Drag And Drop Your Favorite Menus Here"
+msgstr "Arrastra y suelta tus menús favoritos aquí"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Expand"
+msgstr "Expandir"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_favorite_menu
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__favorite_menu_id
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__favorite_menu_ids
+msgid "Favorite Menu"
+msgstr "Menú favorito"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__favorite_menu_action_id
+msgid "Favorite Menu Action"
+msgstr "Acción de menú favorita"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__favorite_menu_xml_id
+msgid "Favorite Menu Xml"
+msgstr "Menú favorito Xml"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/mobile.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/mobile.xml:0
+#, python-format
+msgid "Filters..."
+msgstr "Filtros ..."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Font"
+msgstr "Fuente"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__font_type_values
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__font_type_values
+msgid "Font Type Values"
+msgstr "Valores de tipo de letra"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/quick_menu.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/quick_menu.xml:0
+#, python-format
+msgid "Global Search"
+msgstr "Búsqueda global"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Heading"
+msgstr "Bóveda"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__heading_color
+msgid "Heading Color"
+msgstr "Color de rumbo"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_form_tabs__horizontal_tabs
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_menu__base_menu
+#, python-format
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__base_menu__base_menu
+msgid "Horizontal Menu"
+msgstr "Menú horizontal"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__tab_type__horizontal_tabs
+msgid "Horizontal Tabs"
+msgstr "Pestañas horizontales"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Horizontals"
+msgstr "Horizontales"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__id
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__id
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:ejad_backend_theme-mewa.module_view_kanban_inherit
+#: model_terms:ir.ui.view,arch_db:ejad_backend_theme-mewa.view_base_module_uninstall_inherit
+#, python-format
+msgid "Icon"
+msgstr "Icono"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_module_module__icon
+msgid "Icon URL"
+msgstr "URL del icono"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__label_color
+#, python-format
+msgid "Label"
+msgstr "Etiqueta"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Label Value"
+msgstr "Valor de etiqueta"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__label_value_color
+msgid "Label Value Color"
+msgstr "Color del valor de etiqueta"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu____last_update
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__write_uid
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__write_date
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__lato
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__lato
+#, python-format
+msgid "Lato"
+msgstr "lado"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Leftbar"
+msgstr "Barra izquierda"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__mode__light_mode_on
+#, python-format
+msgid "Light"
+msgstr "Ligera"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__mode__light_mode_on
+msgid "Light Mode"
+msgstr "Modo de luz"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Link"
+msgstr "Vínculo"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__link_color
+msgid "Link Color"
+msgstr "Color de enlace"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Log"
+msgstr "Iniciar sesión"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_ui_menu
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__menu_color
+#, python-format
+msgid "Menu"
+msgstr "Menú"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__mode
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__mode
+#, python-format
+msgid "Mode"
+msgstr "Modo"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Modified by :"
+msgstr "Modificado por :"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_module_module
+msgid "Module"
+msgstr "Módulo"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__montserrat
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__montserrat
+#, python-format
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__mode__night_mode_on
+#, python-format
+msgid "Night"
+msgstr "Noche"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__mode__night_mode_on
+msgid "Night Mode"
+msgstr "Modo nocturno"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "No"
+msgstr "No"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "No result found!"
+msgstr "¡No se han encontrado resultados!"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__mode__normal_mode_on
+#, python-format
+msgid "Normal"
+msgstr "Normal"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__mode__normal_mode_on
+msgid "Normal Mode"
+msgstr "Modo normal"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__tab_configration__open_tabs
+msgid "Open"
+msgstr "Abierta"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__open_sans
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__open_sans
+#, python-format
+msgid "Open Sans"
+msgstr "Abierto sin"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__tab_configration__open_tabs
+msgid "Open Tabs"
+msgstr "Pestañas abiertas"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Out"
+msgstr "Afuera"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Panel Title"
+msgstr "Título del panel"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__panel_title_color
+msgid "Panel Title Color"
+msgstr "Color del título del panel"
+
+#. module: ejad_backend_theme-mewa
+#: code:addons/ejad_backend_theme-mewa/models/ir_web_theme.py:0
+#, python-format
+msgid ""
+"Please Contact to Administrator. \n"
+" %s"
+msgstr "Por favor, póngase en contacto con el administrador. \norte"
+
+#. module: ejad_backend_theme-mewa
+#: code:addons/ejad_backend_theme-mewa/models/ir_web_theme.py:0
+#, python-format
+msgid ""
+"Please follow the readme file. Contact to Administrator.\n"
+" %s"
+msgstr "Por favor, siga el archivo Léame. Contacto con el administrador. \ N"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid ""
+"Press No if you want to continue work. Press Yes to logout current user."
+msgstr "Presione No si desea continuar trabajando. Presione Sí para cerrar sesión en el usuario actual."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Remember..."
+msgstr "Recuerda..."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__font_type_values__roboto
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__font_type_values__roboto
+#, python-format
+msgid "Roboto"
+msgstr "Robot"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "SAVE"
+msgstr "SALVAR"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Search"
+msgstr "Buscar"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Search..."
+msgstr "Buscar…"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/mobile.xml:0
+#, python-format
+msgid "See result"
+msgstr "Ver resultado"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Select Font:"
+msgstr "Seleccionar fuente:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Select Icon Type:"
+msgstr "Seleccione el tipo de icono:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Select Menu Type:"
+msgstr "Seleccionar tipo de menú:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Select Mode:"
+msgstr "Seleccionar modo:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Select Tab Type:"
+msgstr "Seleccionar tipo de pestaña:"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Set date and time"
+msgstr "Establecer fecha y hora"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Sub Menu"
+msgstr "Submenú"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "Sucsess"
+msgstr "Éxito"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Tab"
+msgstr "Lengüeta"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tab_configration
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__tab_configration
+msgid "Tab Configration"
+msgstr "Luego configuración"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Tab Configration:"
+msgstr "Configuración entonces:"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_res_users__tab_type
+msgid "Tab Type"
+msgstr "Tipo de pestaña"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_danger
+#, python-format
+msgid "Tag Danger"
+msgstr "Peligro del día"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_info
+#, python-format
+msgid "Tag Info"
+msgstr "Información de etiqueta"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_muted
+#, python-format
+msgid "Tag Muted"
+msgstr "Etiqueta silenciada"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_primary
+#, python-format
+msgid "Tag Primary"
+msgstr "Etiqueta primaria"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_success
+#, python-format
+msgid "Tag Success"
+msgstr "Etiqueta de éxito"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tag_warning
+#, python-format
+msgid "Tag Warning"
+msgstr "Advertencia de etiqueta"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Tap on the list to change company"
+msgstr "Pulse en la lista para cambiar la empresa"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "The following fields are invalid:"
+msgstr "Los siguientes campos no son válidos:"
+
+#. module: ejad_backend_theme-mewa
+#: model_terms:ir.ui.view,arch_db:ejad_backend_theme-mewa.view_users_form
+msgid "Theme"
+msgstr "Tema"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_web_theme
+#: model:res.groups,name:ejad_backend_theme-mewa.group_theme_setting_user
+msgid "Theme Configuration"
+msgstr "Configuración del tema"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_ui_menu__theme_icon_data
+msgid "Theme Icon Image"
+msgstr "Imagen del icono de tema"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_ui_menu__theme_icon
+msgid "Theme Icon Path"
+msgstr "Ruta del icono del tema"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_module_module__theme_icon
+msgid "Theme Icon URL"
+msgstr "URL del icono de tema"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Theme Settings"
+msgstr "Configuración de temas"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "Theme customized successfully."
+msgstr "Tema personalizado con éxito."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/freamwork/dashboard.js:0
+#, python-format
+msgid "Theme removed successfully."
+msgstr "Tema eliminado con éxito."
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Tooltip"
+msgstr "Información sobre herramientas"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_web_theme__tooltip_color
+msgid "Tooltip Color"
+msgstr "Color de información sobre herramientas"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/chrome/abstract_web_client.js:0
+#, python-format
+msgid "Trying to reconnect... "
+msgstr "Intentando reconectarse ..."
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__user_id
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_res_users
+msgid "Users"
+msgstr "Los usuarios"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_form_tabs__vertical_tabs
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__ir_web_theme__base_menu__theme_menu
+#, python-format
+msgid "Vertical"
+msgstr "Vertical"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__base_menu__theme_menu
+msgid "Vertical Menu"
+msgstr "Menú vertical"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields.selection,name:ejad_backend_theme-mewa.selection__res_users__tab_type__vertical_tabs
+msgid "Vertical Tabs"
+msgstr "Pestañas verticales"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model,name:ejad_backend_theme-mewa.model_ir_ui_view
+msgid "View"
+msgstr "Ver"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Workflow Colors"
+msgstr "Colores de flujo de trabajo"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "Yes"
+msgstr "Sí"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/js/chrome/abstract_web_client.js:0
+#, python-format
+msgid "You are back online"
+msgstr "Estás de vuelta en línea"
+
+#. module: ejad_backend_theme-mewa
+#. openerp-web
+#: code:addons/ejad_backend_theme-mewa/static/src/xml/base.xml:0
+#, python-format
+msgid "o_discuss_buttons"
+msgstr "o_discuss_buttons"
+
+#. module: ejad_backend_theme-mewa
+#: model:ir.model.fields,field_description:ejad_backend_theme-mewa.field_ir_favorite_menu__sequence
+msgid "sequence"
+msgstr "secuencia"

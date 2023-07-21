@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+   		<template id="assets_backend" name="weather menu assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+            	<link rel="stylesheet" type="text/javascript" href="/web_weather_forecast/static/src/css/weather_forecast.css"/>
+            	<script type="text/javascript" src="/web_weather_forecast/static/src/js/systray_weather_forecast.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

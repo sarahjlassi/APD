@@ -1,0 +1,337 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* apd_date_converter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-15 16:18+0000\n"
+"PO-Revision-Date: 2022-12-15 16:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__ten
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_month__oct
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__10
+msgid "10"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__eleven
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_month__nov
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__11
+msgid "11"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twelve
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_month__dec
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__12
+msgid "12"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__thidteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__13
+msgid "13"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__fourteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__14
+msgid "14"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__fifteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__15
+msgid "15"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__sixteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__16
+msgid "16"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__seventeen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__17
+msgid "17"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__eighteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__18
+msgid "18"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__ninteen
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__19
+msgid "19"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twenty
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__20
+msgid "20"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_1
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__21
+msgid "21"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_2
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__22
+msgid "22"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_3
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__23
+msgid "23"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_4
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__24
+msgid "24"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_5
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__25
+msgid "25"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_6
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__26
+msgid "26"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_7
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__27
+msgid "27"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_8
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__28
+msgid "28"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__twnty_9
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__29
+msgid "29"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__thirty
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_day__30
+msgid "30"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__g_day__thirty_1
+msgid "31"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__converter
+msgid "Converter"
+msgstr "محول التاريخ"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.actions.act_window,name:apd_date_converter.date_converter_view_action
+#: model:ir.ui.menu,name:apd_date_converter.Date_Convert_Menuitem
+msgid "Date Converter"
+msgstr "محول التاريخ"
+
+#. module: apd_date_converter
+#: code:addons/apd_date_converter/models/date_converter.py:0
+#: code:addons/apd_date_converter/models/date_converter.py:0
+#, python-format
+msgid "Date Out Of Range"
+msgstr "التاريخ خارج النطاق المتاح"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__g_day
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__h_day
+msgid "Day"
+msgstr "اليوم"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__12
+msgid "Dhul-Hijjah"
+msgstr "ذو الحجة"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__11
+msgid "Dhul-Qadah"
+msgstr "ذو القعدة"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: apd_date_converter
+#: model_terms:ir.ui.view,arch_db:apd_date_converter.date_converter_form_view
+msgid "Gregorian Date Is :"
+msgstr "التاريخ الميلادي هو "
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__converter__g_to_h
+msgid "Gregorian To Hijri"
+msgstr "التاريخ الميلادي للتاريخ الهجري"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__g_result
+msgid "Gregorian date"
+msgstr "التاريخ الميلادي "
+
+#. module: apd_date_converter
+#: model_terms:ir.ui.view,arch_db:apd_date_converter.date_converter_form_view
+msgid "Gregorian date To Hijri Date"
+msgstr "التاريخ الميلادي للتاريخ الهجري"
+#. module: apd_date_converter
+#: model_terms:ir.ui.view,arch_db:apd_date_converter.date_converter_form_view
+msgid "Hijri Date Is :"
+msgstr "التاريخ الهجري هو"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__converter__h_to_g
+msgid "Hijri To Gregorian "
+msgstr "التاريخ الهجري للتاريخ الميلادي"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__h_result
+msgid "Hijri date"
+msgstr "التاريخ الهجري"
+
+#. module: apd_date_converter
+#: model_terms:ir.ui.view,arch_db:apd_date_converter.date_converter_form_view
+msgid "Hijri date To Gregorian Date"
+msgstr " التاريخ الهجري للتاريخ الميلادي"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__id
+msgid "ID"
+msgstr ""
+
+#. module: apd_date_converter
+#: code:addons/apd_date_converter/models/date_converter.py:0
+#, python-format
+msgid "Invalid Date"
+msgstr "تاريخ غير صحيح"
+
+#. module: apd_date_converter
+#: code:addons/apd_date_converter/models/date_converter.py:0
+#, python-format
+msgid "Invalid Hijri Date"
+msgstr "تاريخ هجري غير صحيح"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__5
+msgid "Jumada-I"
+msgstr "جمادى الاولى"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__6
+msgid "Jumada-II"
+msgstr "جمادى الثاني"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__g_month
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__h_month
+msgid "Month"
+msgstr "الشهر"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__1
+msgid "Muharram"
+msgstr "محرم"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__3
+msgid "Rabi-I"
+msgstr "ربيع الاول"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__4
+msgid "Rabi-II"
+msgstr "ربيع الثاني"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__7
+msgid "Rajab"
+msgstr "رجب"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__9
+msgid "Ramadan"
+msgstr "رمضان"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__2
+msgid "Safar"
+msgstr "صفر"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__8
+msgid "Shaban"
+msgstr "شعبان"
+
+#. module: apd_date_converter
+#: model:ir.model.fields.selection,name:apd_date_converter.selection__date_convert__h_month__10
+msgid "Shawwal"
+msgstr "شوال"
+
+#. module: apd_date_converter
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__g_year
+#: model:ir.model.fields,field_description:apd_date_converter.field_date_convert__h_year
+msgid "Year"
+msgstr "السنة"
+
+#. module: apd_date_converter
+#: model:ir.model,name:apd_date_converter.model_date_convert
+msgid "date.convert"
+msgstr "محول التاريخ"

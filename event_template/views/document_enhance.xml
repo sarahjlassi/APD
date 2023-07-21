@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="documents.public_page_layout" name="Documents public pages main layout">
+        <link rel="stylesheet" href="/event_template/static/src/scss/document.css"/>
+        <t t-call="web.layout">
+            <t t-set="head">
+                <script type="text/javascript">
+                    odoo.__session_info__ = <t t-out="json.dumps({
+                        'is_admin': request.env.user._is_admin(),
+                        'is_system': request.env.user._is_system(),
+                        'user_id': request.env.user.id,
+                    })"/>;
+                </script>
+
+                <t t-call-assets="web.assets_common" t-css="false"/>
+
+                <t t-call-assets="web.assets_common" t-js="false"/>
+                <!-- this page probably don't need much of assets_backend css -->
+                <t t-call-assets="web.assets_backend" t-js="false"/>
+                <t t-call="web.conditional_assets_tests"/>
+                <t t-call-assets="documents.public_page_assets"/>
+
+                <style>
+                    html, body {
+                        overflow: auto;
+                    }
+                </style>
+
+                <t t-out="head"/>
+            </t>
+
+            <t t-set="body_classname" t-value="'o_docs_share_page o_home_menu_background'"/>
+            <t t-set="shareType" t-value="shareType or ''"/>
+            <t t-set="share_redirect_URL" t-value="base_url + '/document/share/' + share_id + '/' + token"/>
+            <div id="wrap" t-att-class="'h-100 flex-column flex-nowrap d-flex position-relative container ' + shareType">
+                <header class="mt8">
+                    <div class="logo">
+                        <img src="/event_template/static/src/img/letter-header.png" class="img-fluid" />
+                    </div>
+<!--                    <span class="o_company_logo" t-field="res_company.logo" t-options="{'widget': 'image'}" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>-->
+
+<!--                    <ul class="list-inline mt8 float-right">-->
+<!--                        <li class="dropdown hidden-sm hidden-xs" t-ignore="true" t-if="not user_id._is_public()">-->
+<!--                            <a href="#" class="dropdown-toggle o_docs_btn" data-toggle="dropdown">-->
+<!--                                <img class="o_object_fit_cover rounded-circle" width="13" height="13" t-attf-src="/web/image?model=res.users&amp;field=avatar_128&amp;id=#{json.dumps(request.env.user.id)}" alt=""/>-->
+<!--                                <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/><span class="caret"/>-->
+<!--                            </a>-->
+<!--                            <ul class="dropdown-menu js_usermenu" role="menu">-->
+<!--                                <li id="o_logout"><a t-attf-href="/web/session/logout?redirect={{share_redirect_URL}}" role="menuitem">Logout</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li t-ignore="true" t-if="user_id._is_public()">-->
+<!--                            <a t-attf-href="/web/login?redirect={{share_redirect_URL}}" class="col-sm-6 o_docs_btn">Login</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+                </header>
+                <main class="d-flex flex-column flex-nowrap">
+                    <t t-out="0"/>
+                </main>
+                <footer class="mt32 footer">
+                    <p>هيئة رعاية الاشخاص ذوي الاعاقة</p>
+                    <a href="https://apd.gov.sa/">
+                        <i class="fas fa-globe"></i>
+                        <span>https://apd.gov.sa/</span>
+                    </a>
+                    <a href="info@apd.gov.sa">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@apd.gov.sa</span>
+                    </a>
+                </footer>
+            </div>
+        </t>
+    </template>
+
+</odoo>

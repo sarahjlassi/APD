@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <!-- Inherit Form View to Modify it -->
+       <record id="hr_applicant_form_inherit" model="ir.ui.view">
+           <field name="name">HR Applicant</field>
+           <field name="model">hr.applicant</field>
+           <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+           <field name="arch" type="xml">
+               <xpath expr="//field[@name='type_id']" position="after">
+                   <field name="gender_custom"/>
+                   <field name="nationality_c"/>
+                   <field name="experience"/>
+                   <field name="employer" attrs="{'invisible':[('experience','!=','yes')]}" />
+                   <field name="job_title_custom" attrs="{'invisible':[('experience','!=','yes')]}" />
+                   <field name="ex_years" attrs="{'invisible':[('experience','!=','yes')]}" />
+                   <field name="degree_id_c"/>
+                   <field name="special_c"/>
+                   <field name="gpa"/>
+                   <field name="resume" widget="many2many_binary"/>
+                   <field name="grade_degree"/>
+               </xpath>
+               <xpath expr="//field[@name='source_id']" position="after">
+                   <field name="birthday_c"/>
+                   <field name="state_id"/>
+                   <field name="p_with_d"/>
+                   <field name="dis_id" attrs="{'invisible':[('p_with_d','!=','yes')]}"/>
+                   <field name="accom" attrs="{'invisible':[('p_with_d','!=','yes')]}"/>
+                   <field name="linkedin_pro" />
+                   <field name="accept_terms" />
+               </xpath>
+
+           </field>
+       </record>
+
+       <record id="crm_case_tree_view_job_inherit_partner_fields" model="ir.ui.view">
+        <field name="name">hr.applicant.view.tree.inherit</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_tree_view_job"/>
+        <field name="arch" type="xml">
+            <field name="partner_name" position="replace">
+                <field name="partner_name" />
+            </field>
+            <field name="name" position="replace"></field>
+        </field>
+       </record>
+
+    </data>
+</odoo>

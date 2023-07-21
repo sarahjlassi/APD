@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+          <!-- A page -->
+    <template id="sh_survey_extra_fields_question_custom" inherit_id="survey.question_container" name="Question">
+         <xpath expr="//div[1]" position="attributes">
+             <attribute name="t-att-data-max">question.max_length</attribute>
+             <attribute name="t-att-data-min">question.min_length</attribute>
+             <attribute name="t-att-data-start">question.start_with</attribute>
+        </xpath>
+    </template>
+
+
+    </data>
+</odoo>

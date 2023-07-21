@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="event.event_report_template_full_page_ticket">
+        <link rel="stylesheet" href="/event_template/static/src/scss/event.css"/>
+        <div class="row event_ticket">
+            <div class="o_event_ticket_container w-100">
+                <div class="o_event_full_page_ticket_wrapper">
+                    <div class="o_event_full_page_ticket_details">
+                        <div class="col-12">
+                            <div class="col-12 page">
+                                <div class="logo">
+                                    <img src="/event_template/static/src/img/letter-header.png" class="img-fluid" />
+                                </div>
+                                <div class="inner_ticket">
+                                    <div class="inner-box">
+                                        <div class="item">
+                                            <span class="name">اسم الفعالية</span>
+                                            <span class="value">
+                                                <span t-field="event.name"/>
+                                            </span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="name">تاريخ البداية</span>
+                                            <span class="value">
+                                                <span itemprop="startDate" t-esc="event.date_begin.date()"/>
+                                                <span itemprop="startDateTime" t-esc="event.date_begin"
+                                                t-options='{"widget": "datetime", "time_only": True, "hide_seconds": True}'/>
+                                            </span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="name">تاريخ النهاية</span>
+                                            <span class="value">
+                                                <span t-if="not event.is_one_day" itemprop="endDate" t-esc="event.date_end.date()"/>
+                                                <span itemprop="endDateTime" t-esc="event.date_end" t-options='{"widget": "datetime", "time_only": True, "hide_seconds": True}'/>
+                                            </span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="name">اسم الشخص</span>
+                                            <span class="value">
+                                                <span t-if="attendee" t-field="attendee.name"></span>
+                                                <span t-elif="not attendee"><span>John Doe</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div t-if="event.address_id" class="o_event_full_page_ticket_font_faded">
+                                    <t t-call="event.event_report_template_formatted_event_address"/>
+                                </div>
+
+                                <t t-set="first_ticket" t-value="event.event_ticket_ids[0] if event.event_ticket_ids else None"/>
+                                <div t-if="attendee" class="o_event_full_page_ticket_font_faded" t-field="attendee.event_ticket_id"/>
+                                <div t-elif="first_ticket" t-esc="first_ticket.name"
+                                    class="o_event_full_page_ticket_font_faded"/>
+                            </div>
+                            <div class="col-12 o_event_full_page_ticket_side_info page">
+                                <span t-if="event.organizer_id.image_128">
+                                    <img t-att-src="image_data_uri(event.organizer_id.image_128)" class="o_event_full_page_ticket_event_logo mb-2"/>
+                                </span>
+                                <div t-if="attendee and attendee.partner_id" class="mb-2 o_event_full_page_ticket_side_info_booked_by">
+                                    <div class="o_event_full_page_ticket_font_faded o_event_full_page_ticket_small_caps font-weight-bold">Booked By</div>
+                                    <div class="o_event_full_page_ticket_small" t-field="attendee.partner_id"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o_event_full_page_ticket_barcode col-2">
+                            <div class="o_event_full_page_ticket_barcode_container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page oe_structure"/>
+                <div t-field="event.ticket_instructions" class="o_event_full_page_extra_instructions px-2 pt-3"></div>
+            </div>
+        </div>
+    </template>
+</odoo>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="vuesax_bulk_alarm" data-name="vuesax/bulk/alarm" transform="translate(-236 -316)">
+    <g id="alarm" transform="translate(236 316)">
+      <path id="Vector" d="M0,0H32V32H0Z" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M28.563,1.031a1.022,1.022,0,0,1-1,1.031H1A1.022,1.022,0,0,1,0,1.031,1.022,1.022,0,0,1,1,0h26.57A1.022,1.022,0,0,1,28.563,1.031Z" transform="translate(1.719 28.219)" fill="#009877" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M23.75,12.375v8.594H0V12.375A12.134,12.134,0,0,1,11.875,0,12.134,12.134,0,0,1,23.75,12.375Z" transform="translate(4.125 7.25)" fill="#009877"/>
+      <path id="Vector-4" data-name="Vector" d="M1.031,3.438A1.039,1.039,0,0,1,0,2.406V1.031A1.039,1.039,0,0,1,1.031,0,1.039,1.039,0,0,1,2.063,1.031V2.406A1.039,1.039,0,0,1,1.031,3.438Z" transform="translate(14.969 1.719)" fill="#009877" opacity="0.4"/>
+      <path id="Vector-5" data-name="Vector" d="M2.4,3.434a1.02,1.02,0,0,1-.729-.3L.3,1.757A1.031,1.031,0,0,1,1.757.3L3.132,1.674a1.037,1.037,0,0,1,0,1.457A1.02,1.02,0,0,1,2.4,3.434Z" transform="translate(4.472 4.472)" fill="#009877" opacity="0.4"/>
+      <path id="Vector-6" data-name="Vector" d="M1.028,3.434a1.02,1.02,0,0,1-.729-.3,1.037,1.037,0,0,1,0-1.457L1.674.3A1.031,1.031,0,0,1,3.132,1.757L1.757,3.132A1.02,1.02,0,0,1,1.028,3.434Z" transform="translate(24.097 4.472)" fill="#009877" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

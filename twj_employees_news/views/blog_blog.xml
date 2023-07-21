@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <!-- Inherit Form View to Modify it -->
+       <record id="blog_blog_form_inherit_for_emp_news" model="ir.ui.view">
+           <field name="name">Blogs</field>
+           <field name="model">blog.blog</field>
+           <field name="inherit_id" ref="website_blog.view_blog_blog_form"/>
+           <field name="arch" type="xml">
+
+               <xpath expr="//field[@name='website_id']" position="after">
+                   <field name="type_of_news"/>
+               </xpath>
+
+           </field>
+       </record>
+
+    </data>
+</odoo>

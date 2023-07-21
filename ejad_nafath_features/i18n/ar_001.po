@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ejad_nafath_features
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-16 13:03+0000\n"
+"PO-Revision-Date: 2023-02-16 13:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "Login Successfully"
+msgstr "تم تسجيل الدخول بنجاح"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "Mobile"
+msgstr "رقم الجوال"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "Update My Info"
+msgstr "تحديث بياناتي"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "update"
+msgstr "تحديث"
+
+#. module: ejad_nafath_features
+#: model_terms:ir.ui.view,arch_db:ejad_nafath_features.nafath_update_user_info
+msgid "الرجاء الالتزام بالشكل الاتي : 05xxxxxxxx"
+msgstr ""

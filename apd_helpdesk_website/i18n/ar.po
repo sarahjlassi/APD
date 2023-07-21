@@ -1,0 +1,386 @@
+j# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* apd_helpdesk_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-11 14:25+0000\n"
+"PO-Revision-Date: 2022-12-11 14:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid ""
+"<span>تتيح هيئة رعاية الأشخاص ذوي الاعاقة قناة للاستفسارات المتعلقة\n"
+"                                                        بالاشخاص ذوي الاعاقة\n"
+"                                                    </span>"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid ""
+"<span>تتيح هيئة رعاية الأشخاص ذوي الاعاقة لكافة افراد\n"
+"                                                        المجتمع المشاركة في الاقتراحات المتعلقة بالاشخاص ذوي الاعاقة\n"
+"                                                    </span>"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.actions.act_window,help:apd_helpdesk_website.helpdesk_stage_route_action
+msgid "Add stage routes"
+msgstr "ادخل مسار المراحل"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_stage__allowed_members_managers
+msgid "Allowed Managers/Members"
+msgstr "المدراء/الموظفون المسموح بهم"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_stage__custom_users_ids
+msgid "Allowed Users"
+msgstr "المستخدمون المسموح بهم"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid ""
+"Are you a beneficiary of the following <span class=\"s_website_form_mark\"> "
+"*</span>"
+msgstr "هل تتلقى أحد الخدمات المرتبطة بالاعاقة من احد الجهات التالية *"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid ""
+"Are you a person with disability  <span class=\"s_website_form_mark\"> "
+"*</span>"
+msgstr "هل أنت *"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Attachment(s)"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__beneficiary
+msgid "Beneficiary Type"
+msgstr "مستفيد من جهة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Choose"
+msgstr "اختر"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__state_id
+msgid "City"
+msgstr "مدينة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "City <span class=\"s_website_form_mark\"> *</span>"
+msgstr "المدينة *"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__create_uid
+msgid "Created by"
+msgstr "انشأ بواساطة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__create_date
+msgid "Created on"
+msgstr "تاريخ الانشاء"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__current_stage_id
+msgid "Current Stage"
+msgstr "المرحلة الحالية"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Description <span class=\"s_website_form_mark\"> *</span>"
+msgstr "الوصف *"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.ui.menu,name:apd_helpdesk_website.helpdesk_stage_route_custom
+msgid "Helpdesk Routes"
+msgstr "مسار المراحل"
+
+#. module: apd_helpdesk_website
+#: model:ir.model,name:apd_helpdesk_website.model_helpdesk_stage
+msgid "Helpdesk Stage"
+msgstr "مرحلة مكتب المساعدة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model,name:apd_helpdesk_website.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "فريق مكتب المساعدة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model,name:apd_helpdesk_website.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "تذكرة مكتب المساعدة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid ""
+"I acknowledge the validity of the data recorded above and pledge to bear the"
+" full legal responsibility for violating this, and the Authority for the "
+"Care of Persons with Disabilities disclaims its responsibility resulting "
+"from violating this."
+msgstr ""
+"اقر بصحة البيانات المدونة اعلاه.واتعهد بتحمل كامل المسولية النظامية المترتبة"
+" عن مخالفة ذلك,كما تخلي هيئة رعاية الاخاص ذوي الاعاقة مسووليتها حال عدم صحة "
+"البيانات المرفقة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__id
+msgid "ID"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__disability_person__parents
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "In loco parentis"
+msgstr "ولي الامر"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:website.menu,carousel_header_name:apd_helpdesk_website.menu_website_contactus_helpdesk
+msgid "Latest"
+msgstr "الاحدث"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__attach_ids
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي "
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__beneficiary__education
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Ministry Of Education"
+msgstr "وزارة التربية والتعليم"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__beneficiary__health
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Ministry Of Health"
+msgstr "وزارة الصحة "
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid ""
+"Ministry Of Human Resources And Social\n"
+"                                                        Development"
+msgstr "وزارة الموارد البشرية والخدمة الاجتماعية"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__beneficiary__social
+msgid "Ministry Of Human Resources And Social Development"
+msgstr "وزارة الموارد البشرية والخدمة الاجتماعية"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Name <span class=\"s_website_form_mark\"> *</span>"
+msgstr "الاسم *"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__n_id
+msgid "National ID"
+msgstr " رقم الهوية"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid ""
+"National ID\n"
+"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr "رقم الهوية *"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__next_stages_ids
+msgid "Next Stages"
+msgstr "المراحل التالية"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__beneficiary__b_other
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__disability_person__d_other
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Other"
+msgstr "اخرى"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Phone <span class=\"s_website_form_mark\"> *</span>"
+msgstr "رقم الهاتف *"
+
+#. module: apd_helpdesk_website
+#: code:addons/apd_helpdesk_website/models/helpdesk_ticket.py:0
+#, python-format
+msgid "Please Check Allowed stages from stages routes Menu"
+msgstr "الرجاء التأكد من مسار المراحل في اعدادات مسار المراحل"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__previous_stages_ids
+msgid "Previous Stages"
+msgstr "المراحل السابقة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__disability_person__s_provider
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Service Provider"
+msgstr "مقدم الخدمة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_stage_route__stage_id
+msgid "Stage"
+msgstr "مرحلة"
+
+#. module: apd_helpdesk_website
+#: model:ir.actions.act_window,name:apd_helpdesk_website.helpdesk_stage_route_action
+msgid "Stage Routes"
+msgstr "مسار المرحلة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Subject <span class=\"s_website_form_mark\"> *</span>"
+msgstr " *الموضوع"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid "Submit"
+msgstr "تقديم"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_team__team_managers_ids
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.helpdesk_team_form_inherit_apd_helpdesk_website
+msgid "Team Managers"
+msgstr "مدراء الفرق"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_team__team_members_ids
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.helpdesk_team_form_inherit_apd_helpdesk_website
+msgid "Team Members"
+msgstr "اعضاء الفرق "
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_stage__allowed_members_managers__mang
+msgid "Teams Managers"
+msgstr "مدراء الفرق"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_stage__allowed_members_managers__mem
+msgid "Teams Members"
+msgstr "اعضاء الفرق"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_team__ticket_type_custom
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__ticket_type_custom
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.helpdesk_team_form_inherit_apd_helpdesk_website
+msgid "Ticket Type"
+msgstr "نوع التذكرة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "Ticket Type :"
+msgstr "نوع التذكرة"
+
+#. module: apd_helpdesk_website
+#: model:website.menu,name:apd_helpdesk_website.menu_website_contactus_helpdesk
+msgid "Tickets"
+msgstr "التذاكر"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields,field_description:apd_helpdesk_website.field_helpdesk_ticket__disability_person
+msgid "Type Of Creator"
+msgstr "نوع مقدم الطلب"
+
+#. module: apd_helpdesk_website
+#: code:addons/apd_helpdesk_website/models/helpdesk_ticket.py:0
+#, python-format
+msgid "You are not allowed to move ticket to this Stage"
+msgstr "ليس لديك الصلاحية لنقل المرحلة الحالية"
+
+#. module: apd_helpdesk_website
+#: code:addons/apd_helpdesk_website/models/helpdesk_ticket.py:0
+#, python-format
+msgid "You are not allowed to move ticket to this stage"
+msgstr "ليس لديك الصلاحية لتغيير هذه المرحلة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.ticket_success_page
+msgid "Your Ticket Has Been Successfully Submited with NO."
+msgstr "تذكرتك انشأت بنجاح برقم   "
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__disability_person__dis_apility
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "a person with a disability"
+msgstr "شخص ذو اعاقة"
+
+#. module: apd_helpdesk_website
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus
+msgid "e.g. John Doe"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model,name:apd_helpdesk_website.model_stage_route
+msgid "stage.route"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: code:addons/apd_helpdesk_website/models/helpdesk_ticket.py:0
+#, python-format
+msgid "you are not allowed to move ticket to this Stage"
+msgstr "ليس لديك الصلاحية لتغيير هذه المرحلة"
+
+#. module: apd_helpdesk_website
+#: code:addons/apd_helpdesk_website/models/helpdesk_ticket.py:0
+#, python-format
+msgid "you are not allowed to move ticket to this stage"
+msgstr "ليس لديك الصلاحية لتغيير هذه المرحلة"
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_team__ticket_type_custom__inquiry
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__ticket_type_custom__inquiry
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid "استفسار"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_team__ticket_type_custom__sugg
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__ticket_type_custom__sugg
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid "اقتراح"
+msgstr ""
+
+#. module: apd_helpdesk_website
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_team__ticket_type_custom__requ_open_data
+#: model:ir.model.fields.selection,name:apd_helpdesk_website.selection__helpdesk_ticket__ticket_type_custom__requ_open_data
+#: model_terms:ir.ui.view,arch_db:apd_helpdesk_website.contactus_first_page
+msgid "طلب بيانات مفتوحة"
+msgstr ""

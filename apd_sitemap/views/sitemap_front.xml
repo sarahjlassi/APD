@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="sitemap_page_tempalte_for_public_and_not_login_user" name="Site Map">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'sitemap'"/>
+                <div id="wrap" class="oe_structure oe_empt sitemap-section">
+                    <div class="container">
+                        <div class="main-title mb-5">
+                            <h3>
+                                <span>خارطة الموقع</span>
+                            </h3>
+                        </div>
+                        <div class="content-box">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-set="counter" t-value="0"/>
+                                <t t-call="apd_sitemap.sitemap_submenu_for_public_and_not_login_user"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="sitemap_page_tempalte" name="Site Map">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'sitemap'"/>
+                <div id="wrap" class="oe_structure oe_empt sitemap-section">
+                    <div class="container">
+                        <div class="main-title mb-5">
+                            <h3>
+                                <span>خارطة الموقع</span>
+                            </h3>
+                        </div>
+                        <div class="content-box">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-set="counter" t-value="0"/>
+                                <t t-call="apd_sitemap.sitemap_submenu"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <record id="menu_website_sitemap" model="website.menu">
+            <field name="name">Sitemap</field>
+            <field name="url">/sitemap</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+    </data>
+</odoo>

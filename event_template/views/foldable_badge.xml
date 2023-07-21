@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="event.event_report_template_foldable_badge">
+        <link rel="stylesheet" href="/event_template/static/src/scss/event.css"/>
+        <div class="o_event_foldable_badge_container">
+            <div class="row">
+                <!-- Front -->
+                <div class="page p-1 col-6">
+                    <div class="oe_structure"/>
+                </div>
+                <!-- Back -->
+                <div class=" col-6 o_event_foldable_badge_top o_event_foldable_badge_ticket pt-4">
+                    <div class="oe_structure"/>
+                    <div class="o_event_foldable_badge_ticket_wrapper p-2">
+                        <div class="logo">
+                            <img src="/event_template/static/src/img/letter-header.png" class="img-fluid" />
+                        </div>
+                        <div class="inner_ticket" style="margin: 15px;">
+                            <div class="inner-box">
+                                <div class="item">
+                                    <span class="name">اسم الفعالية</span>
+                                    <span class="value">
+                                        <span t-field="event.name"/>
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">تاريخ البداية</span>
+                                    <span class="value">
+                                        <span itemprop="startDate" t-esc="event.date_begin.date()"/>
+                                        <span itemprop="startDateTime" t-esc="event.date_begin" t-options='{"widget": "datetime", "time_only": True, "hide_seconds": True}'/>
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">تاريخ النهاية</span>
+                                    <span class="value">
+                                        <span t-if="not event.is_one_day" itemprop="endDate" t-esc="event.date_end.date()"/>
+                                        <span itemprop="endDateTime" t-esc="event.date_end" t-options='{"widget": "datetime", "time_only": True, "hide_seconds": True}'/>
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">اسم الشخص</span>
+                                    <span class="value">
+                                        <span t-if="attendee" t-field="attendee.name"/>
+                                        <span t-elif="not attendee"><span>John Doe</span></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o_event_foldable_badge_ticket_wrapper_top page">
+                            <div t-if="event.address_id" class="o_event_foldable_badge_font_faded o_event_foldable_badge_font_small text-center">
+                                <t t-call="event.event_report_template_formatted_event_address"/>
+                            </div>
+                            <div class="text-center mt-5 pt-2">
+                                <t t-set="first_ticket" t-value="event.event_ticket_ids[0] if event.event_ticket_ids else None"/>
+                                <div t-if="attendee" class="o_event_foldable_badge_font_faded" t-field="attendee.event_ticket_id"/>
+                                <div t-elif="first_ticket" t-esc="first_ticket.name"
+                                    class="o_event_foldable_badge_font_faded"/>
+                            </div>
+                        </div>
+                        <div class="o_event_foldable_badge_barcode mt-2">
+                            <div class="o_event_foldable_badge_barcode_container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Inner left -->
+                <div class="page o_event_foldable_badge_bottom o_event_foldable_badge_left p-1 px-2 col-6 overflow-hidden">
+                    <div class="oe_structure"/>
+                    <div t-field="event.ticket_instructions" class="p-4"></div>
+                </div>
+                <!-- Inner right -->
+                <div class="page o_event_foldable_badge_bottom o_event_foldable_badge_right col-6 text-center">
+                    <div class="oe_structure"/>
+                    <div class="h-50 col-12 row m-0">
+                        <div class="col-6 h-100 p-0">
+                            <div class="o_event_foldable_badge_step font-weight-bold">1</div>
+                            <img src="/event/static/src/img/how_to_fold_1.png" class="w-100 h-100" alt="How to Fold (1)"/>
+                        </div>
+                        <div class="col-6 h-100 p-0">
+                            <div class="o_event_foldable_badge_step font-weight-bold">2</div>
+                            <img src="/event/static/src/img/how_to_fold_2.png" class="w-100 h-100" alt="How to Fold (2)"/>
+                        </div>
+                    </div>
+                    <div class="h-50 col-12 row m-0">
+                        <div class="col-6 h-100 p-0">
+                            <div class="o_event_foldable_badge_step font-weight-bold">3</div>
+                            <img src="/event/static/src/img/how_to_fold_3.png" class="w-100 h-100" alt="How to Fold (3)"/>
+                        </div>
+                        <div class="col-6 h-100 p-0">
+                            <div class="o_event_foldable_badge_step font-weight-bold">4</div>
+                            <img src="/event/static/src/img/how_to_fold_4.png" class="w-100 h-100" alt="How to Fold (4)"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

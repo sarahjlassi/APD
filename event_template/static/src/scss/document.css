@@ -1,0 +1,32 @@
+body.o_docs_share_page #wrap > header
+{
+    height: auto !important;
+}
+
+body.o_docs_share_page #wrap.o_share_multiple .o_docs_share_multible_bar .o_author
+{
+    margin: 0 !important;
+}
+
+.o_docs_share_page .footer {
+    background-color: #009877;
+    margin-top: 70px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.o_docs_share_page .footer a {
+    color: #fff;
+}
+
+.o_docs_share_page .footer p,
+.o_docs_share_page .footer a {
+    display: inline-block;
+}
+
+.o_docs_share_page .footer p,
+.o_docs_share_page .footer a {
+    margin: 0 20px;
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="sitemap_submenu_for_public_and_not_login_user" name="Submenu Custom">
+            <t t-if="counter > 1">
+                <t t-if="submenu.url != '/emp/new'">
+                    <li t-if="not submenu.child_id" class="sitemap-1">
+                        <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                            <a class="sitemap-2" t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                    </li>
+                </t>
+            </t>
+            <t t-else="">
+                <t t-if="submenu.url != '/emp/new'">
+                    <li t-if="not submenu.child_id" class="sitemap-4">
+                        <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                            <a class="sitemap-5" t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                    </li>
+                </t>
+            </t>
+            <t t-if="counter > 1">
+                <t t-if="submenu.url != '/emp/new'">
+                    <li class="sitemap-6" t-if="submenu.child_id">
+                        <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                            <a class="sitemap-7" href="#">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <a href="#">
+                                <span class="sitemap-8" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <ul class="sitemap-9">
+                            <t t-set="counter" t-value="counter+1"/>
+                            <t t-foreach="submenu.child_id" t-as="submenu">
+                                <t t-call="apd_sitemap.sitemap_submenu_for_public_and_not_login_user"/>
+                            </t>
+                        </ul>
+                    </li>
+                </t>
+            </t>
+            <t t-else="">
+                <t t-if="submenu.url != '/emp/new'">
+                    <li class="sitemap-10" t-if="submenu.child_id">
+                        <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                            <a class="sitemap-11" href="#">
+                                <span class="sitemap-3" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <a href="#">
+                                <span class="sitemap-12" t-field="submenu.name"/>
+                            </a>
+                        </t>
+                        <ul class="sitemap-13">
+                            <t t-set="counter" t-value="counter+1"/>
+                            <t t-foreach="submenu.child_id" t-as="submenu">
+                                <t t-call="apd_sitemap.sitemap_submenu_for_public_and_not_login_user"/>
+                            </t>
+                        </ul>
+                    </li>
+                </t>
+            </t>
+        </template>
+
+
+        <template id="sitemap_submenu" name="Submenu">
+            <t t-if="counter > 1">
+                <li t-if="not submenu.child_id" class="sitemap-1">
+                    <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                        <a class="sitemap-2" t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                </li>
+            </t>
+            <t t-else="">
+                <li t-if="not submenu.child_id" class="sitemap-4">
+                    <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                        <a class="sitemap-5" t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                </li>
+            </t>
+            <t t-if="counter > 1">
+                <li class="sitemap-6" t-if="submenu.child_id">
+                    <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                        <a class="sitemap-7" href="#">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <a href="#">
+                            <span class="sitemap-8" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <ul class="sitemap-9">
+                        <t t-set="counter" t-value="counter+1"/>
+                        <t t-foreach="submenu.child_id" t-as="submenu">
+                            <t t-call="apd_sitemap.sitemap_submenu"/>
+                        </t>
+                    </ul>
+                </li>
+            </t>
+            <t t-else="">
+                <li class="sitemap-10" t-if="submenu.child_id">
+                    <t t-if="submenu.parent_id.url == '/default-main-menu'">
+                        <a class="sitemap-11" href="#">
+                            <span class="sitemap-3" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <a href="#">
+                            <span class="sitemap-12" t-field="submenu.name"/>
+                        </a>
+                    </t>
+                    <ul class="sitemap-13">
+                        <t t-set="counter" t-value="counter+1"/>
+                        <t t-foreach="submenu.child_id" t-as="submenu">
+                            <t t-call="apd_sitemap.sitemap_submenu"/>
+                        </t>
+                    </ul>
+                </li>
+            </t>
+        </template>
+    </data>
+</odoo>

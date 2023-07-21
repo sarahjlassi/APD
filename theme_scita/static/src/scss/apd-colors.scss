@@ -1,0 +1,361 @@
+html
+{
+    body
+    {
+        #wrapwrap
+        {
+            /*===================== Start jobs page =========================*/
+            .o_website_hr_recruitment_jobs_list
+            {
+                #jobs_grid_left
+                {
+                    ul.nav.nav-pills
+                    {
+                        .nav-item
+                        {
+                            .nav-link
+                            {
+                                &.active
+                                {
+                                    background-color: #009877;
+                                }
+                            }
+                        }
+                    }
+                }
+                #jobs_grid
+                {
+                    >a
+                    {
+                        .card.card-default
+                        {
+                            .card-body
+                            {
+                                h3
+                                {
+                                    background-color: rgba($color: #ffb259, $alpha: 0.2);
+                                    font-family: "RB-Regular" !important;
+                                    span
+                                    {
+                                        font-family: "RB-Regular" !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /*===================== End jobs page =========================*/
+            /*===================== Start Events page =========================*/
+            .o_wevent_index.oe_website_sale
+            {
+                .navbar
+                {
+                    .navbar-brand
+                    {
+                        font-family: "RB-Bold" !important;
+                        &:before {
+                            background: #009877;
+                            background: -webkit-gradient(linear, right top, left top, from(#009877), to(#93d500));
+                            background: -o-linear-gradient(right, #009877 0%, #93d500 100%);
+                            background: linear-gradient(-90deg, #009877 0%, #93d500 100%);
+                        }
+                        &:after {
+                            background: #009877;
+                            background: -webkit-gradient(linear, right top, left top, from(#009877), to(#93d500));
+                            background: -o-linear-gradient(right, #009877 0%, #93d500 100%);
+                            background: linear-gradient(-90deg, #009877 0%, #93d500 100%);
+                        }
+                    }
+                    .input-group.o_wevent_event_searchbar_form
+                    {
+                        border: 1px solid #009877;
+                        .btn.btn-primary
+                        {
+                            background-color: #009877;
+                        }
+                    }
+                }
+                .card {
+                    &:hover
+                    {
+                        .card-body .card-title
+                        {
+                            color: #009877;
+                        }
+                    }
+                    .card-body
+                    {
+                        .card-title
+                        {
+                            span
+                            {
+                                font-family: "RB-Regular" !important;
+                            }
+                        }
+                    }
+                }
+                .o_wevent_events_list .o_wevent_event_date {
+                    background-color: #ffb259 !important;
+                    span:last-of-type
+                    {
+                        font-family: "RB-Bold" !important;
+                    }
+                }
+                .o_wevent_sidebar_title {
+                    font-family: "RB-Bold" !important;
+                }
+            }
+            /*===================== End Events page =========================*/
+            /*===================== Start Blogs Page =========================*/
+            .website_blog.oe_website_sale
+            {
+                .navbar.navbar-expand-sm
+                {
+                    ul.navbar-nav
+                    {
+                        li:first-of-type
+                        {
+                            span
+                            {
+                                font-family: "RB-Bold" !important;
+                                &:before {
+                                    background: #009877;
+                                    background: -webkit-gradient(linear, right top, left top, from(#009877), to(#93d500));
+                                    background: -o-linear-gradient(right, #009877 0%, #93d500 100%);
+                                    background: linear-gradient(-90deg, #009877 0%, #93d500 100%);
+                                }
+                                &:after {
+                                    background: #009877;
+                                    background: -webkit-gradient(linear, right top, left top, from(#009877), to(#93d500));
+                                    background: -o-linear-gradient(right, #009877 0%, #93d500 100%);
+                                    background: linear-gradient(-90deg, #009877 0%, #93d500 100%);
+                                }
+                            }
+                        }
+                        li:not(:first-of-type)
+                        {
+                            background-color: #ffb259;
+                        }
+                    }
+                    form.o_searchbar_form
+                    {
+                        .input-group
+                        {
+                            border: 1px solid #009877;
+                            .btn.btn-primary
+                            {
+                                background-color: #009877;
+                            }
+                        }
+                    }
+                }
+                #o_wblog_posts_loop_container
+                {
+                    article.card
+                    {
+                        &:hover
+                        {
+                            .card-body .card-title
+                            {
+                                color: #009877;
+                            }
+                        }
+                        .card-body
+                        {
+                            .o_blog_post_title
+                            {
+                                font-family: "RB-Regular" !important;
+                            }
+                        }
+                    }
+                }
+                .o_wblog_sidebar_block
+                {
+                    h6.text-uppercase.pb-2.mb-4
+                    {
+                        font-family: "RB-Bold" !important;
+                    }
+                }
+                .custom-select
+                {
+                    border-color: #009877;
+                }
+                .post_link
+                {
+                    background-color: #ffb259;
+                }
+            }
+            /*===================== End Blogs Page =========================*/
+            /*===================== Start forum page =========================*/
+            .dropdown-item.active,
+            .dropdown-item:active
+            {
+                background-color: #009877;
+            }
+            .o_wprofile_border_focus
+            {
+                border-left: 4px solid #009877;
+            }
+            .o_forum_nav_header_container
+            {
+                a
+                {
+                    color: #009877;
+                }
+                .container.flex-wrap.flex-md-nowrap
+                {
+                    background: #009877;
+                }
+            }
+            .col.o_wprofile_email_validation_container.mb16
+            {
+                a
+                {
+                    color: #009877;
+                }
+                .page-item.active .page-link
+                {
+                    background-color: #009877;
+                    border-color: #009877;
+                }
+                .d-flex.justify-content-end.flex-md-grow-1.col-md-auto.order-md-3
+                {
+                    .btn
+                    {
+                        &:hover
+                        {
+                            background-color: #ffb259;
+                        }
+                    }
+                }
+                aside.d-none.d-lg-flex.justify-content-end.col-auto
+                {
+                    .nav-link.d-flex.align-items-center.rounded-pill.text-reset
+                    {
+                        background: #ffb259;
+                    }
+                    .nav-link
+                    {
+                        &.disabled.mt-3
+                        {
+                            .pb-1.border-bottom
+                            {
+                                color: #ffb259 !important;
+                            }
+                        }
+                        .fa
+                        {
+                            color: #ffb259;
+                        }
+                    }
+                }
+                .o_wforum_nav.nav.nav-pills.justify-content-around
+                {
+                    > a
+                    {
+                        &.active
+                        {
+                            color: #009877 !important;
+                        }
+                    }
+                }
+                .col-6.col-md-auto.d-flex.align-items-center.justify-content-end.mt-lg-0
+                {
+                    .dropdown
+                    {
+                        .dropdown-toggle
+                        {
+                            color: #009877;
+                        }
+                    }
+                }
+                .mt-2.mb-4
+                {
+                    .media
+                    {
+                        .badge.badge-light
+                        {
+                            background: #ffb259;
+                        }
+                        .o_wforum_index_entry_title
+                        {
+                            a
+                            {
+                                color: #009877 !important;
+                                font-family: "RB-Bold" !important;
+                            }
+                        }
+                        .vote.text-center
+                        {
+                            b
+                            {
+                                color: #ffb259 !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .o_we_bg_filter.bg-black-50
+            {
+                background-color: rgba($color: #009877, $alpha: 0.5) !important;
+            }
+            .s_cover
+            {
+                h1.o_default_snippet_text
+                {
+                    font-family: "RB-Bold" !important;
+                }
+            }
+            #o_wforum_forums_index_list
+            {
+                .row.o_forum_row
+                {
+                    .o_wforum_forum_card_bg
+                    {
+                        background-color: #009877;
+                    }
+                    > .col-md-8.mt-2.mt-md-0.d-flex
+                    {
+                        h3.h4
+                        {
+                            color: #009877 !important;
+                            font-family: "RB-Regular" !important;
+                        }
+                        .col-md-12.pr-md-3
+                        {
+                            > div
+                            {
+                                strong
+                                {
+                                    color: #009877;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /*===================== End forum page =========================*/
+            /*===================== Start Single blog =========================*/
+            #o_wblog_post_top
+            {
+                .blog_header
+                {
+                    .o_wblog_post_title
+                    {
+                        #o_wblog_post_name
+                        {
+                            background-color: #009877;
+                            font-family: "RB-Bold" !important;
+                            &:after
+                            {
+                                background-color: #009877;
+                            }
+                        }
+                    }
+                }
+            }
+            /*===================== End Single blog =========================*/
+        }
+    }
+}

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="menu_website_contactus_helpdesk" model="website.menu">
+            <field name="name">Tickets</field>
+            <field name="url">/contactus/helpdesk/new</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <template id="contactus_first_page" name="Contact us First Page">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'contact us First Page'"/>
+                <div id="wrap" class="oe_structure oe_empt" style="padding: 70px 0;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <section class="helpdesk-forms col-md-8">
+                                <div class="helpdesk-content">
+                                    <script>
+                                        window.onload = function my_first() {
+                                        document.getElementById('div_for_sugg').style.display = 'block';
+                                        document.getElementById('div_for_inquiry').style.display = 'none';
+                                        }
+
+
+                                        function type_fields_for_description(){
+                                        if(document.getElementById('ticket_type').value == 'requ_open_data')
+                                        {
+                                        document.getElementById('div_for_sugg').style.display = 'none';
+                                        document.getElementById('div_for_inquiry').style.display = 'none';
+                                        }
+                                        else if (document.getElementById('ticket_type').value == 'sugg') {
+                                        document.getElementById('div_for_sugg').style.display = 'block';
+                                        document.getElementById('div_for_inquiry').style.display = 'none';
+                                        }
+                                        else {
+                                        document.getElementById('div_for_sugg').style.display = 'none';
+                                        document.getElementById('div_for_inquiry').style.display = 'block';
+                                        }
+                                        }
+
+
+                                    </script>
+                                    <form id="contactus_type" action="/contactus/helpdesk" method="post"
+                                          class="s_website_form container-fluid" enctype="multipart/form-data"
+                                          data-model_name="helpdesk.ticket"
+                                          data-success_page="/your-ticket-has-been-submitted" data-editable-form="false"
+                                          hide-change-model="true">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <div class="form-group form-field">
+                                            <div class="form-group field-ticket_type">
+                                                <label>Ticket Type</label>
+                                                <select name="ticket_type" onChange="type_fields_for_description();"
+                                                        id="ticket_type" class="form-control">
+                                                    <option value="sugg">اقتراح</option>
+                                                    <option value="inquiry">استفسار</option>
+                                                    <option value="requ_open_data">طلب بيانات مفتوحة</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group" id="div_for_sugg">
+                                                <div name="descrip_for_sugg" id="d_sugg" t-att-readonly="'readonly'">
+                                                    <span>تتيح هيئة رعاية الأشخاص ذوي الاعاقة لكافة افراد
+                                                        المجتمع المشاركة في الاقتراحات المتعلقة بالاشخاص ذوي الاعاقة
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="div_for_inquiry" style="display:none;">
+                                                <div name="descrip_for_inquiry" id="d_inqury"
+                                                     t-att-readonly="'readonly'">
+                                                    <span>تتيح هيئة رعاية الأشخاص ذوي الاعاقة قناة للاستفسارات المتعلقة
+                                                        بالاشخاص ذوي الاعاقة
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="contactus" name="Contact us">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'contact us'"/>
+                <div id="wrap" class="oe_structure oe_empt" style="padding: 70px 0;">
+                    <div class="container">
+                        <div class="main-title text-center mb-4">
+                            <h3><span class="o_default_snippet_text d-inline-block">تواصل معنا</span></h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <section class="helpdesk-forms col-md-8">
+                                <div class="helpdesk-content">
+                                    <script>
+
+                                        window.onload = function my_onload() {
+                                        document.getElementById("warranty_submit").disabled = true;
+                                        document.getElementById('terms_conditions').checked = false;
+
+                                        }
+
+                                        function check_uncheck(){
+                                        var checker = document.getElementById('terms_conditions');
+                                        var sendbtn = document.getElementById('warranty_submit');
+
+                                        if (checker.checked) {
+                                        sendbtn.disabled = false;
+                                        } else {
+                                        sendbtn.disabled = true;
+                                        }
+                                        }
+                                    </script>
+
+
+                                    <form id="contactus_type"
+                                          action="/contactus_type/submit" method="post"
+                                          class="s_website_form container-fluid" enctype="multipart/form-data"
+                                          data-model_name="helpdesk.ticket"
+                                          data-success_page="/your-ticket-has-been-submitted" data-editable-form="false"
+                                          hide-change-model="true">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <div class="form-group field-type_of_ticket" style="display:none;">
+                                            <label id="tick_type" for="ticket_type" class="control-label required">
+                                                Ticket Type :
+                                            </label>
+                                            <input type="text" name="ticket_type" t-att-value="ticket_type"
+                                                   id="ticket_type_as_id"
+                                                   class="form-control"
+                                                   t-att-readonly="'readonly'"/>
+                                        </div>
+                                        <div class="form-group field-name s_website_form_required">
+                                            <label id="namelbl" for="name" class="control-label required">Name <span class="s_website_form_mark"> *</span></label>
+
+                                            <input type="text" name="name" t-att-value="partner_data['name']" id="name"
+                                                   class="form-control" placeholder="e.g. John Doe"
+                                                   t-att-readonly="'readonly'" required=""/>
+                                        </div>
+
+                                        <div class="form-group form-field" id="ticket_type_line_div"></div>
+
+                                        <div class="form-group field-n_id">
+                                            <label id="n_idlbl" for="n_id" class="control-label required">National ID
+                                                <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <input type="text" name="n_id" t-att-value="partner_data['n_id']" id="n_id"
+                                                   class="form-control"
+                                                   t-att-readonly="'readonly'"
+                                            />
+                                        </div>
+                                        <div class="form-group field-phone">
+                                            <label id="mobilelbl" for="mobile" class="control-label required">Phone <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <input type="text" name="phone" t-att-value="partner_data['phone']"
+                                                   id="phone" class="form-control"
+                                                   t-att-readonly="'readonly'"
+                                            />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="state_id" class="control-label required">
+                                                City <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <select name="state_id" class="form-control"
+                                                    t-att-required="'required' if not only_passwords else False"
+                                                    oninput="this.setCustomValidity('')"
+                                                    oninvalid="this.setCustomValidity('Enter City Details')">
+                                                <option value="">Choose</option>
+                                                <t t-foreach="states" t-as="state">
+                                                    <option t-att-value="state.id"
+                                                            t-att-selected="state.id == int(state_id) if state_id else False">
+                                                        <t t-esc="state.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label id="subjectlbl" for="subject" class="control-label required">Subject <span class="s_website_form_mark"> *</span>
+
+                                            </label>
+                                            <input type="text" name="subject" id="subject" class="form-control" required=""
+                                            />
+                                        </div>
+                                        <div class="form-group">
+                                            <label id="descriptionlbl" for="descrip" class="control-label required">
+                                                Description <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <textarea class="form-control " name="descrip" id="descrip"
+                                                      data-error="Please add Descrption." required=""/>
+
+                                        </div>
+                                        <t t-if="ticket_type == 'sugg' or ticket_type == 'inquiry'">
+                                            <div class="form-group" id="dis_apility_div">
+                                                <label for="disability" class="control-label required">
+                                                    Are you a person with disability  <span class="s_website_form_mark"> *</span>
+                                                </label>
+                                                <select name="disability" class="form-control" required="" >
+                                                    <option value="">Choose</option>
+                                                    <option value="dis_apility">a person with a disability</option>
+                                                    <option value="parents">In loco parentis</option>
+                                                    <option value="s_provider">Service Provider</option>
+                                                    <option value="d_other">Other</option>
+
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group" id="beneficiary_div">
+                                                <label for="beneficiary" class="control-label required">
+                                                    Are you a beneficiary of the following <span class="s_website_form_mark"> *</span>
+                                                </label>
+                                                <select name="beneficiary" class="form-control" required="">
+                                                    <option value="">Choose</option>
+                                                    <option value="social">Ministry Of Human Resources And Social
+                                                        Development
+                                                    </option>
+                                                    <option value="education">Ministry Of Education</option>
+                                                    <option value="health">Ministry Of Health</option>
+                                                    <option value="b_other">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div id="attachment_div" class="form-group form-field">
+                                                <label class="col-form-label" for="attachments">Attachment(s)</label>
+                                                <input type="file" name="attachments" class="form-control o_website_form_input" multiple="true"
+                                                       accept="image/*,application/pdf,video/*"/>
+                                            </div>
+                                        </t>
+                                        <div class="form-group custom-control custom-checkbox oe_accept_cgv_button">
+                                            <label for="terms_con">
+                                                <input type="checkbox" id="terms_conditions" name="terms_conditions"
+                                                       onChange="check_uncheck();"/>
+                                               <span>I acknowledge the validity of the data recorded above and pledge to bear the full legal responsibility for violating this, and the Authority for the Care of Persons with Disabilities disclaims its responsibility resulting from violating this.</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success" id="warranty_submit" value="Submit">Submit</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="ticket_success_page" name="Ticket Page">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'contact us'"/>
+                <div id="wrap" class="oe_structure oe_empt" style="padding: 0 0 70px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <section class="helpdesk-forms col-md-8 text-center">
+                                <div class="ticket-done">
+                                    <script src="/theme_scita/static/src/js/lottie-player.js"></script>
+                                    <lottie-player src="/theme_scita/static/src/img/APD/done.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: 0 auto;" loop="" autoplay=""></lottie-player>
+                                    <h1>Your Ticket Has Been Successfully Submited with NO. <span t-esc="new_ticket.display_name"/></h1>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>
+

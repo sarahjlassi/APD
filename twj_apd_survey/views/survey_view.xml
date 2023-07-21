@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="survey_question_form_custom" model="ir.ui.view">
+            <field name="name">Custom.Survey.Question.Form</field>
+            <field name="model">survey.question</field>
+            <field name="inherit_id" ref="survey.survey_question_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook" position="inside">
+                    <page name="custom_field_attr" string="Custom Attributes" attrs="{'invisible':[('question_type','not in',['text_box','char_box','numerical_box'])]}">
+                        <group>
+                            <field name="max_length"/>
+                            <field name="min_length"/>
+                            <field name="start_with"/>
+                        </group>
+
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

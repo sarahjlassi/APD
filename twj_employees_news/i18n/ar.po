@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* twj_employees_news
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-24 09:22+0000\n"
+"PO-Revision-Date: 2022-11-24 09:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "' page header."
+msgstr "رأس الصفحة"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "'. Showing results for '"
+msgstr "اظهار نتائج ل"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "Atom Feed"
+msgstr ""
+
+#. module: twj_employees_news
+#: model:ir.model,name:twj_employees_news.model_blog_blog
+msgid "Blog"
+msgstr "المدونة"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "Edit the '"
+msgstr "عدل"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "Edit the 'All Blogs' page header."
+msgstr "عدل رأس صفحة كل المدونات"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "Edit the 'Filter Results' page header."
+msgstr ""
+
+#. module: twj_employees_news
+#: model:ir.model.fields.selection,name:twj_employees_news.selection__blog_blog__type_of_news__emp
+#: model:website.menu,name:twj_employees_news.menu_website_custom_for_emp_news
+msgid "Employees News"
+msgstr "أخبار الموظفين"
+
+#. module: twj_employees_news
+#: model:ir.model.fields.selection,name:twj_employees_news.selection__blog_blog__type_of_news__all
+msgid "General News"
+msgstr "أخبار عامة"
+
+#. module: twj_employees_news
+#: model:website.menu,carousel_header_name:twj_employees_news.menu_website_custom_for_emp_news
+msgid "Latest"
+msgstr "الاحدث"
+
+#. module: twj_employees_news
+#: model_terms:website.page,arch_db:twj_employees_news.enu_website_custom_for_emp_news_page
+msgid "No results found for '"
+msgstr "لا توجد نتائج"
+
+#. module: twj_employees_news
+#: model:ir.model.fields,field_description:twj_employees_news.field_blog_blog__type_of_news
+msgid "Type Of News"
+msgstr "نوع الاخبار"

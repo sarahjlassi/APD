@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <!-- Inherit Form View to Modify it -->
+       <record id="helpdesk_team_form_inherit_apd_helpdesk_website" model="ir.ui.view">
+           <field name="name">Helpdesk.Team</field>
+           <field name="model">helpdesk.team</field>
+           <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+           <field name="arch" type="xml">
+
+               <xpath expr="//div[hasclass('oe_title')]" position="inside">
+                   <label for="ticket_type_custom" string="Ticket Type"/>
+                   <h1 id="ticket_type"><field name="ticket_type_custom"/></h1>
+
+                   <label for="team_managers_ids" string="Team Managers"/>
+                   <h1 id="team_managers_ids"><field name="team_managers_ids" widget="many2many_tags"/></h1>
+
+                   <label for="team_members_ids" string="Team Members"/>
+                   <h1 id="team_members_ids"><field name="team_members_ids" widget="many2many_tags"/></h1>
+               </xpath>
+
+           </field>
+       </record>
+
+    </data>
+</odoo>

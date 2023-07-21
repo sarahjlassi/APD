@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+       <template id="web.brand_promotion_message" name="Brand Promotion Message">
+        <t t-set="odoo_logo">
+            <a target="_blank"
+                t-attf-href="http://www.odoo.com?utm_source=db&amp;utm_medium=#{_utm_medium}"
+                class="badge badge-light">
+                <img alt="Odoo"
+                        src="/web/static/img/odoo_logo_tiny.png"
+                        style="height: 1em; vertical-align: baseline;"/>
+            </a>
+        </t>
+        <t t-set="final_message"></t>
+        <t t-out="''"/>
+    </template>
+
+    </data>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- Inherit Form View to Modify it -->
+    <record id="form_inherit_for_helpdesk_stage" model="ir.ui.view">
+        <field name="name">Helpdesk Stage</field>
+        <field name="model">helpdesk.stage</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_stage_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='sequence']" position="after">
+                <field name="custom_users_ids" widget="many2many_tags"/>
+            </xpath>
+            <xpath expr="//field[@name='team_ids']" position="after">
+                <field name="allowed_members_managers"/>
+            </xpath>
+
+        </field>
+    </record>
+
+    </data>
+</odoo>

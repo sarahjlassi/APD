@@ -1,0 +1,7 @@
+<odoo>
+  <data>
+    <template id="apd_nafath.login" inherit_id="ejad_nafath.login" name="Sign in - Nafath">
+        <xpath expr="//div[@name='btn_nafath']" position="replace"/>
+    </template>
+  </data>
+</odoo>

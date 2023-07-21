@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="helpdisk_ticket_form_inherit_website" model="ir.ui.view">
+            <field name="name">Helpdesk.Ticket</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='team_id']" position="before">
+                    <field name="ticket_type_custom"/>
+                    <field name="current_stage_id" invisibl="1"/>
+                </xpath>
+                <xpath expr="//field[@name='email_cc']" position="before">
+                    <field name="n_id"/>
+                    <field name="state_id"/>
+                    <field name="disability_person"/>
+                    <field name="beneficiary"/>
+                </xpath>
+
+                <xpath expr="//field[@name='tag_ids']" position="after">
+                    <field name="attach_ids" widget="many2many_binary"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="list_view_inherit_for_helpdesk" model="ir.ui.view">
+            <field name="name">Helpdesk Tree</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.helpdesk_tickets_view_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='display_name']" position="after">
+                    <field name="name"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+html body #wrapwrap header .navbar #top_menu_container .navbar-collapse ul#top_menu .nav-item a.nav-link[href="/emp/new"]
+{
+    display: none
+}
+html body.o_connected_user #wrapwrap header .navbar #top_menu_container .navbar-collapse ul#top_menu .nav-item a.nav-link[href="/emp/new"]
+{
+    display: block
+}

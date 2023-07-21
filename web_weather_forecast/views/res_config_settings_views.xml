@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_weather" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.weather</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='languages']" position="after">
+                <h2>Weather Forecast</h2>
+                <div class="row mt16 o_settings_container">
+                    <div id="weather_forecast_container" class="col-xs-12 col-md-6 o_setting_box">
+                    	<div class="o_setting_left_pane">
+                            <div class="w-50">
+                                <div class="mt16 row">
+                                    <label for="openweather_api_key"></label>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <div class="w-50">
+                                <div class="mt16">
+                                    <field name="openweather_api_key" password="1" nolabel="1"/>
+                               	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

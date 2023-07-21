@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="apd_record_in_system_parameter_new" model="ir.config_parameter">
+            <field name="key">helpdesk_portal.name_of_chatter_for_internal</field>
+            <field name="value">APD</field>
+        </record>
+    </data>
+</odoo>

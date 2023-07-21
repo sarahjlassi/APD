@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="nafath_update_user_info" name="Update User Info">
+        <t t-call="web.login_layout">
+            <section class="navaz-page">
+                <div class="container">
+                    <div class="title-page text-center">
+                        <h2>Login Successfully</h2>
+                    </div>
+                    <div class="content-navaz">
+                        <h3 class="title-active">Update My Info</h3>
+                        <div class="content w-100">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="c-card">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <form action="/nafath_save_user_info" method="post" enctype="multipart/form-data" id="update_user_info">
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                    <input type="hidden" name="user_id" t-att-value="nafath_user_id"/>
+                                                    <div class="c-field u-mb-medium">
+                                                        <label for="login">Email</label>
+                                                        <input type="email" name="user_email" class="c-input" autofocus="autofocus" autocapitalize="off" required="required" t-att-value="user_email"/>
+                                                    </div>
+                                                    <div class="c-field u-mb-medium">
+                                                        <label for="login">Mobile</label>
+                                                         <input type="text" name="user_mobile" class="c-input" autofocus="autofocus" autocapitalize="off" required="required" t-att-value="user_mobile" maxlength="10" pattern="05\d{8}" title="الرجاء الالتزام بالشكل الاتي : 05xxxxxxxx"/>
+                                                    </div>
+                                                    <div class="c-field text-center">
+                                                       <button type="submit" class="c-btn c-btn--fullwidth">update</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

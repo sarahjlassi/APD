@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="degree_form_view" model="ir.ui.view">
+            <field name="name">Applicant Degree</field>
+            <field name="model">degree.degree</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="is_collage_degree_or_higher"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="degree_tree_view" model="ir.ui.view">
+            <field name="name">Applicant Degree</field>
+            <field name="model">degree.degree</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="is_collage_degree_or_higher"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="aplicant_degree_action" model="ir.actions.act_window">
+            <field name="name">Applicant Degree</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">degree.degree</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="degree_menuitem" name="Applicant Degree "
+                  parent="hr_recruitment.menu_hr_recruitment_configuration" action="aplicant_degree_action"
+                  sequence="100"/>
+
+    </data>
+</odoo>

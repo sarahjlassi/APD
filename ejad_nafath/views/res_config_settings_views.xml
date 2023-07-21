@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="res_config_settings_for_nafath" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.for.nafath</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="40"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Nafath" data-key="ejad_nafath"
+                         string="Nafath">
+
+                        <h2>Nafath Settings</h2>
+                        <br/>
+                        <div class="col-12 o_setting_box">
+
+                            <div class="content-group">
+
+                                <label for="sp_api_key" string="SP API Key"
+                                       class="col-lg-3 o_light_label"/>
+                                <div class="text-muted">
+
+                                </div>
+                                <field name="sp_api_key" class="col-lg-5"/>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 o_setting_box">
+
+                            <div class="content-group">
+
+                                <label for="nafath_url" string="Nafath URL"
+                                       class="col-lg-3 o_light_label"/>
+                                <div class="text-muted">
+
+                                </div>
+                                <field name="nafath_url" class="col-lg-5"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="nafath_window_settengs" model="ir.actions.act_window">
+            <field name="name">Nafath</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="res_config_settings_for_nafath"/>
+            <field name="target">inline</field>
+            <field name="context">{'module': 'ejad_nafath'}</field>
+        </record>
+
+
+    </data>
+</odoo>

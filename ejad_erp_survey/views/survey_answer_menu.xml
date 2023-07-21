@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<!--	  <record id="action_survey_user_input_idea_bank" model="ir.actions.act_window">-->
+<!--        <field name="name">إضافة فكرة (مبدئية)</field>-->
+<!--        <field name="res_model">survey.user_input</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="domain">[('category', '=', 'idea_bank'),('state', '=', 'done')]</field>-->
+<!--        <field name="help" type="html">-->
+<!--          <p class="o_view_nocontent_empty_folder">-->
+<!--            لم يرد أحد على استطلاعك بعد-->
+<!--          </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="action_survey_user_input_join_us" model="ir.actions.act_window">-->
+<!--        <field name="name">إنضم لنا</field>-->
+<!--        <field name="res_model">survey.user_input</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="domain">[('category', '=', 'joinus'),('state', '=', 'done')]</field>-->
+<!--        <field name="help" type="html">-->
+<!--          <p class="o_view_nocontent_empty_folder">-->
+<!--            لم يرد أحد على استطلاعك بعد-->
+<!--          </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--      <record id="action_survey_user_input_is_supplier" model="ir.actions.act_window">-->
+<!--        <field name="name">هل انت مورد</field>-->
+<!--        <field name="res_model">survey.user_input</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="domain">[('category', '=', 'is_supplier'),('state', '=', 'done')]</field>-->
+<!--        <field name="help" type="html">-->
+<!--          <p class="o_view_nocontent_empty_folder">-->
+<!--            لم يرد أحد على استطلاعك بعد-->
+<!--          </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--      <record id="action_survey_user_input_workshops" model="ir.actions.act_window">-->
+<!--        <field name="name">المشاركة في ورشة عمل</field>-->
+<!--        <field name="res_model">survey.user_input</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="domain">[('category', '=', 'workshops'),('state', '=', 'done')]</field>-->
+<!--        <field name="help" type="html">-->
+<!--          <p class="o_view_nocontent_empty_folder">-->
+<!--            لم يرد أحد على استطلاعك بعد-->
+<!--          </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--     <record id="action_survey_user_input_information_hour" model="ir.actions.act_window">-->
+<!--        <field name="name">المشاركة في ساعة المعرفة</field>-->
+<!--        <field name="res_model">survey.user_input</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="domain">[('category', '=', 'information_hour'),('state', '=', 'done')]</field>-->
+<!--        <field name="help" type="html">-->
+<!--          <p class="o_view_nocontent_empty_folder">-->
+<!--            لم يرد أحد على استطلاعك بعد-->
+<!--          </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <!-- Survey Parent menus -->
+  <menuitem name="الاجابات"
+    	id="survey_menu_answers"
+    	parent="survey.menu_surveys"
+    	sequence="100"/>
+
+<!--     <menuitem name="المشاركة في ورشة عمل"-->
+<!--        id="menu_survey_answers_workshops"-->
+<!--        parent="survey_menu_answers"-->
+<!--		action="action_survey_user_input_workshops"-->
+<!--        groups="ejad_erp_workshop.group_workshop_user"-->
+<!--        sequence="7"/>-->
+
+<!--     <menuitem name="المشاركة في ساعة المعرفة"-->
+<!--        id="menu_survey_answers_information_hour"-->
+<!--        parent="survey_menu_answers"-->
+<!--		action="action_survey_user_input_information_hour"-->
+<!--        groups="ejad_erp_workshop.group_survey_information_user"-->
+<!--        sequence="6"/>-->
+
+<!--	 <menuitem name="إنضم لنا"-->
+<!--        id="menu_survey_answers_joinus_form"-->
+<!--        parent="survey_menu_answers"-->
+<!--		action="action_survey_user_input_join_us"-->
+<!--        groups="hr.group_hr_manager"-->
+<!--        sequence="1"/>-->
+
+<!--	 <menuitem name="هل انت مورد"-->
+<!--        id="menu_survey_answers_is_supplier_form"-->
+<!--        parent="survey_menu_answers"-->
+<!--		action="action_survey_user_input_is_supplier"-->
+<!--        groups="purchase.group_purchase_manager"-->
+<!--        sequence="3"/>-->
+
+<!--    <menuitem name="إضافة فكرة (مبدئية)"-->
+<!--        id="menu_survey_answers_idea_bank"-->
+<!--        parent="survey_menu_answers"-->
+<!--		action="action_survey_user_input_idea_bank"-->
+<!--        groups="ejad_erp_idea_bank.group_bank_idea_user"-->
+<!--        sequence="4"/>-->
+
+<!--     <menuitem-->
+<!--        id="menu_hr_main_survey_joinus"-->
+<!--        name="الاستطلاعات"-->
+<!--        parent="hr.menu_hr_root"-->
+<!--        groups="ejad_erp_initiatives.group_joinus"-->
+<!--        sequence="4"/>-->
+
+<!--    <menuitem-->
+<!--        id="menu_hr_employee_survey_joinus"-->
+<!--        name="الاجابات"-->
+<!--        parent="menu_hr_main_survey_joinus"-->
+<!--        sequence="1"/>-->
+
+<!--    <menuitem-->
+<!--        id="menu_hr_employee_user_survey_joinus"-->
+<!--        name="إنضم لنا"-->
+<!--        action="action_survey_user_input_join_us"-->
+<!--        parent="menu_hr_employee_survey_joinus"-->
+<!--        groups="ejad_erp_initiatives.group_joinus"-->
+<!--        sequence="1"/>-->
+
+<!--    &lt;!&ndash; Purchase Survey Menu &ndash;&gt;-->
+<!--    <menuitem-->
+<!--        id="menu_purchase_main_survey_is_supplier"-->
+<!--        name="الاستطلاعات"-->
+<!--        parent="purchase.menu_purchase_root"-->
+<!--        sequence="12"/>-->
+
+<!--    <menuitem-->
+<!--        id="menu_purchase_survey_is_supplier"-->
+<!--        name="الاجابات"-->
+<!--        parent="menu_purchase_main_survey_is_supplier"-->
+<!--        groups="purchase.group_purchase_manager"-->
+<!--        sequence="1"/>-->
+
+<!--    <menuitem-->
+<!--        id="menu_purchase_survey_answer_is_supplier"-->
+<!--        name="هل انت مورد"-->
+<!--        action="action_survey_user_input_is_supplier"-->
+<!--        parent="menu_purchase_survey_is_supplier"-->
+<!--        groups="purchase.group_purchase_manager"-->
+<!--        sequence="1"/>-->
+
+</data>
+</odoo>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="website_blog.opt_blog_post_regular_cover" name="'Regular' Cover"
+                  inherit_id="website_blog.blog_post_complete" active="False" customize_show="True">
+            <xpath expr="//div[@id='title']" position="replace">
+                <div class="container">
+                    <t t-set="readableClass" t-if="opt_blog_post_readable and opt_blog_post_sidebar"
+                       t-value="'o_wblog_read_with_sidebar mx-auto'"/>
+                    <t t-set="readableClass" t-elif="opt_blog_post_readable" t-value="'container'"/>
+
+                    <div id="title" t-attf-class="blog_header o_wblog_regular_cover_container #{readableClass}">
+
+                        <t t-if="opt_blog_post_breadcrumb" t-call="website_blog.post_breadcrumbs">
+                            <t t-set="additionnal_classes" t-value="'mt-4 mb-3 bg-transparent'"></t>
+                        </t>
+
+                        <div t-att-class="not opt_blog_post_breadcrumb and 'pt-4'">
+                            <div t-attf-class="o_wblog_post_title mb-3 #{'js_tweet' if opt_blog_post_select_to_tweet else ''} #{'js_comment' if opt_blog_post_select_to_comment else ''}"
+                                 t-ignore="False">
+                                <div t-field="blog_post.name" id="o_wblog_post_name" data-oe-expression="blog_post.name"
+                                     t-att-data-blog-id="blog_post.id" placeholder="Title"/>
+                                <div t-field="blog_post.subtitle" id="o_wblog_post_subtitle" placeholder="Subtitle"/>
+                            </div>
+                            <div class="text-muted mb-2">
+                                <i class="fa fa-clock-o fa-fw"/>
+                                <span t-field="blog_post.post_date" class="text-muted"
+                                      t-options='{"format": "yyyy-MM-d"}'/>
+                                <span>by
+                                    <t t-call="website_blog.post_author">
+                                        <t t-set="additionnal_classes" t-value="'d-inline-flex mr-2'"/>
+                                        <t t-set="hide_date" t-value="True"/>
+                                    </t>
+                                </span>
+                                <span t-if="len(blog_post.message_ids) > 0" class="text-nowrap pl-2 o_not_editable">|
+                                    <i class="fa fa-comment text-muted mr-1"/>
+                                    <a href="#discussion">
+                                        <t t-esc="len(blog_post.message_ids)"/>
+                                        <t t-if="len(blog_post.message_ids)>1">Comments</t>
+                                        <t t-else="">Comment</t>
+                                    </a>
+                                </span>
+                                <span t-elif="is_view_active('website_blog.opt_blog_post_comment')">| No comments yet
+                                </span>
+                            </div>
+                        </div>
+
+                        <t t-call="website.record_cover">
+                            <t t-set="_record" t-value="blog_post"/>
+                            <t t-set="additionnal_classes"
+                               t-value="'o_wblog_post_page_cover o_wblog_post_page_cover_regular rounded shadow overflow-hidden'"/>
+                            <t t-set="use_size" t-value="True"/>
+                        </t>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+
+        <template id="website_blog.post_info">
+            <div class="d-flex small flex-wrap mb-1 w-100">
+                <div t-attf-class="d-flex flex-wrap align-items-center justify-content-between mx-n2 #{opt_blog_list_view and 'flex-grow-0 w-auto mw-100' or 'flex-grow-1' }">
+                    <time t-field="blog_post.post_date" class="text-nowrap font-weight-bold px-2"
+                          t-options='{"format": "yyyy-MM-d"}'/>
+                    <div t-if="is_view_active('website_blog.opt_posts_loop_show_stats')" class="px-2">
+                        <b class="text-nowrap" title="Comments">
+                            <i class="fa fa-comment text-muted mr-1"/>
+                            <t t-esc="len(blog_post.message_ids)"/>
+                        </b>
+                        <b class="text-nowrap pl-2" title="Views">
+                            <i class="fa fa-binoculars text-muted mr-1"/>
+                            <t t-esc="blog_post.visits"/>
+                        </b>
+                    </div>
+                    <b t-if="posts_list_show_parent_blog" class="text-nowrap text-truncate px-2">
+                        <i class="fa fa-folder-open text-muted"/>
+                        <a t-attf-href="/blog/#{slug(blog_post.blog_id)}" t-field="blog_post.blog_id"/>
+                    </b>
+                </div>
+            </div>
+        </template>
+
+    </data>
+</odoo>

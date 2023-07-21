@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="date_converter_form_view" model="ir.ui.view">
+            <field name="name">Date Converter</field>
+            <field name="model">date.convert</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="converter" widget="radio"/>
+                        </group>
+                        <center><h4 attrs="{'invisible':[('converter','!=','g_to_h')]}">Gregorian date To Hijri Date</h4></center>
+                        <group>
+                            <field name="g_day" attrs="{'invisible':[('converter','!=','g_to_h')]}"/>
+                            <field name="g_month" attrs="{'invisible':[('converter','!=','g_to_h')]}"/>
+                            <field name="g_year" attrs="{'invisible':[('converter','!=','g_to_h')]}"/>
+                        </group>
+                        <br />
+                        <br />
+                        <h4 attrs="{'invisible':[('converter','!=','g_to_h')]}">Hijri Date Is : </h4>
+                        <br /><center><h2><field name="h_result" attrs="{'invisible':[('converter','!=','g_to_h')]}"/></h2> </center>
+                        <br /><center><h2><field name="h_result_arabic" attrs="{'invisible':[('converter','!=','g_to_h')]}"/></h2> </center>
+
+
+                        <center><h4 attrs="{'invisible':[('converter','!=','h_to_g')]}"> Hijri date To Gregorian Date</h4></center>
+                        <group>
+                            <field name="h_day" attrs="{'invisible':[('converter','!=','h_to_g')]}"/>
+                            <field name="h_month" attrs="{'invisible':[('converter','!=','h_to_g')]}"/>
+                            <field name="h_year" attrs="{'invisible':[('converter','!=','h_to_g')]}"/>
+                        </group>
+                        <br />
+                        <br />
+                        <h4 attrs="{'invisible':[('converter','!=','h_to_g')]}">Gregorian Date Is : </h4>
+                        <br /><center><h2><field name="g_result" attrs="{'invisible':[('converter','!=','h_to_g')]}"/></h2> </center>
+                        <br /><center><h2><field name="g_result_arabic" attrs="{'invisible':[('converter','!=','h_to_g')]}"/></h2> </center>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="date_converter_view_action" model="ir.actions.act_window">
+            <field name="name">Date Converter</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">date.convert</field>
+            <field name="view_mode">form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+              </p><p>
+              </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="Date_Convert_Menuitem" name="Date Converter" sequence="99" action="date_converter_view_action"/>
+
+
+
+
+    </data>
+</odoo>

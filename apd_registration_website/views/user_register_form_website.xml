@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="test_sign_up_details_id" inherit_id="auth_signup.signup">
+            <xpath expr="//p[hasclass('alert-danger')]" position="attributes">
+                <attribute name="onclick">
+                    $(this).hide()
+                </attribute>
+            </xpath>
+        </template>
+        <template id="auth_signup_fields_extend" inherit_id="auth_signup.fields" name="Signup Fields Extend">
+            <xpath expr="//div[hasclass('field-login')]" position="replace">
+                <div class="form-group field-login">
+                    <label for="login" class="control-label required">البريد الالكتروني</label>
+                    <input type="text" name="login" t-att-value="login" id="login" class="form-control"
+                        autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[@class='form-group field-name']" position="replace" >
+              <div class="form-group field-name">
+                <label id="namelbl" for="name" class="control-label required">الاسم </label>
+                <input type="text" name="name" t-att-value="name" id="name" class="form-control" placeholder="e.g. John Doe"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+              </div>
+                <t t-if="only_passwords == False">
+                 <div class="form-group field-number">
+                        <label for="id_number" class="control-label required"> رقم الهوية \ الاقامة </label>
+                        <input type="text"  id="id_number"  name="id_number" t-att-value="id_number"
+                               onkeypress="return onlyNumberKey(event);" maxlength="10" class="form-control"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('فضلا تاكد من ادخال رقم الهوية الخاص بك')"
+                        />
+                    </div>
+                <div class="form-group field-phone" >
+                        <label for="phone" class="control-label required"> رقم الجوال </label>
+                        <input type="text"  id="phone"  name="phone" t-att-value="phone"
+                               onkeypress="return onlyNumberKey(event);" maxlength="10" class="form-control"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('فضلا تاكد من ادخال رقم الجوال الخاص بك')"
+
+                        />
+                    </div>
+
+                    <hr  id="hr_div2" style="color:black;"/>
+                    <div  id="state_id_div" class="form-group field-state_id">
+                        <label  for="state_id" class="control-label required">
+                            المدينة
+                        </label>
+                         <select name="state_id" id="state_id" class="form-control"
+                                 t-att-required="'required' if not only_passwords else False"
+                                 oninput="this.setCustomValidity('')"
+                                 oninvalid="this.setCustomValidity('ادخل بيانات المدينة')"
+                        >
+                            <option value="">اختر ...</option>
+                                <t t-foreach="states" t-as="state">
+                                    <option t-att-value="state.id" t-att-selected="state.id == int(state_id) if state_id else False">
+                                        <t t-esc="state.name"/>
+                                    </option>
+                                </t>
+                         </select>
+                    </div>
+                </t>
+           </xpath>
+            <xpath expr="//div[@class='form-group field-login']" position="before">
+                <style>
+                  .required:after {
+                    content:" *";
+                    color: red;
+                  }
+                </style>
+                <script>
+                    function onlyNumberKey(evt) {
+                        // Only ASCII character in that range allowed
+                        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+                        if (ASCIICode > 31 &amp;&amp; (ASCIICode &lt; 48 || ASCIICode > 57))
+                            return false;
+                        return true;
+                    }
+                    function onlyLettersAndNumbers(str) {
+                      return /^[A-Za-z0-9]*$/.test(str);
+                    }
+
+                </script>
+
+                    <hr style="color:black;" id="hr_div3" />
+            </xpath>
+        </template>
+    </data>
+</odoo>

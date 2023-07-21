@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <template id="email_template_for_marketing_one" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/01.png" />
+            </div>
+        </div>
+        <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+        <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+        <div class="container o_mail_table_styles">
+            <img src="/event_template/static/src/img/02.png" />
+        </div>
+    </div>
+    </div>
+</template>
+
+    <template id="email_template_for_marketing_two" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/03.png" />
+            </div>
+        </div>
+            <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+            <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/04.png" />
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <template id="email_template_for_marketing_three" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/05.png" />
+            </div>
+        </div>
+            <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+            <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/06.png" />
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <template id="email_template_for_marketing_four" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/07.png" />
+            </div>
+        </div>
+            <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+            <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/08.png" />
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <template id="email_template_for_marketing_five" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/09.png" />
+            </div>
+        </div>
+            <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+            <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/10.png" />
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <template id="email_template_for_marketing_six" name="Content">
+        <div class="px-3" style="background-color: #eefaf8;">
+            <div class="o_mail_snippet_general o_mail_block_header_logo s_header_logo">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/11.png" />
+            </div>
+        </div>
+            <div class="o_mail_snippet_general o_mail_block_title_text s_title_text pt-5 pb-5">
+            <h2 class="mt0">Thank you for joining us!</h2>
+            <p>We want to take this opportunity to welcome you to our ever-growing community!<br/></p>
+            <p>Your platform is ready for work. It will help you reduce the costs of digital signage, attract new customers and increase sales.</p>
+            <p>Enjoy,</p>
+            <img src="/mass_mailing/static/src/img/theme_default/demo/signature.png" style="width:125px; margin-top:8px;margin-bottom:-25px;" alt="Demo Signature"/>
+            <p>
+                <small>
+                    <strong>Michael Fletcher</strong><br/>
+                    <small>Community Manager</small>
+                </small>
+            </p>
+        </div>
+            <div class="s_footer_social o_mail_block_footer_social o_mail_footer_social_left o_mail_snippet_general">
+            <div class="container o_mail_table_styles">
+                <img src="/event_template/static/src/img/12.png" />
+            </div>
+        </div>
+        </div>
+    </template>
+
+
+
+    <template id="mass_mailing.email_designer_snippets" inherit_id="web_editor.snippets" primary="True" groups="base.group_user">
+    <xpath expr="//div[hasclass('o_we_website_top_actions')]" position="inside">
+        <div class="email_designer_top_actions">
+            <button class="o_codeview_btn btn btn-primary">
+                <i class="fa fa-code"></i>
+            </button>
+            <button class="o_fullscreen_btn btn btn-primary">
+                <img src="/web_editor/font_to_img/61541/rgb(255,255,255)/16" alt="Fullscreen"/>
+            </button>
+        </div>
+    </xpath>
+    <xpath expr="//div[@id='snippets_menu']" position="inside">
+        <button type="button" class="o_we_select_template text-uppercase"><span>Select a template</span></button>
+    </xpath>
+    <xpath expr="//t[@id='default_snippets']" position="replace">
+        <t id="default_snippets">
+            <t t-set="company_id" t-value="res_company"/>
+            <div id="email_designer_themes">
+                <div data-name="basic"
+                     data-nowrap="1"
+                     data-img="/mass_mailing/static/src/img/theme_imgs/basic_thumb"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="mass_mailing.theme_basic_template"/>
+                </div>
+                <div data-name="empty"
+                     data-img="/mass_mailing/static/src/img/theme_imgs/empty_thumb"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="mass_mailing.theme_empty_template"/>
+                </div>
+                <div data-name="default"
+                     data-img="/mass_mailing/static/src/img/theme_imgs/default_thumb"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="mass_mailing.theme_default_template"/>
+                </div>
+                 <div data-name="new"
+                     data-img="/event_template/static/src/img/email-1"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_one"/>
+                </div>
+                <div data-name="new"
+                     data-img="/event_template/static/src/img/email-2"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_two"/>
+                </div>
+                <div data-name="new"
+                     data-img="/event_template/static/src/img/email-3"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_three"/>
+                </div>
+                 <div data-name="new"
+                     data-img="/event_template/static/src/img/email-4"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_four"/>
+                </div>
+                <div data-name="new"
+                     data-img="/event_template/static/src/img/email-5"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_five"/>
+                </div>
+                 <div data-name="new"
+                     data-img="/event_template/static/src/img/email-6"
+                     data-images-info='{"logo": {"format": "png"}}'>
+                    <t t-call="event_template.email_template_for_marketing_six"/>
+                </div>
+            </div>
+            <div id="email_designer_default_headers" class="o_panel">
+                <div class="o_panel_header">Headers</div>
+                <div class="o_panel_body" id="email_designer_header_elements">
+                    <t t-snippet="mass_mailing.s_mail_block_header_social" t-thumbnail="/mass_mailing/static/src/img/blocks/block_header_social.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_header_text_social" t-thumbnail="/mass_mailing/static/src/img/blocks/block_header_text_social.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_header_logo" t-thumbnail="/mass_mailing/static/src/img/blocks/block_header_logo.png"/>
+                    <t t-snippet="mass_mailing.s_cover" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_cover.svg"/>
+                    <t t-snippet="mass_mailing.s_mail_block_header_view" t-thumbnail="/mass_mailing/static/src/img/blocks/block_header_browser.png"/>
+                </div>
+            </div>
+            <div id="email_designer_default_body" class="o_panel">
+                <div class="o_panel_header">Body</div>
+                <div class="o_panel_body" id="email_designer_body_elements">
+                    <t t-snippet="mass_mailing.s_title" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_title.svg"/>
+                    <t t-snippet="mass_mailing.s_text_block" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_text_block.svg"/>
+                    <t t-snippet="mass_mailing.s_comparisons" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_comparisons.svg"/>
+                    <t t-snippet="mass_mailing.s_color_blocks_2" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_color_blocks_2.svg"/>
+                    <t t-snippet="mass_mailing.s_three_columns" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_three_columns.svg"/>
+                    <t t-snippet="mass_mailing.s_image_text" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_image_text.svg"/>
+                    <t t-snippet="mass_mailing.s_text_image" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_text_image.svg"/>
+                    <t t-snippet="mass_mailing.s_picture" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_picture.svg"/>
+                    <t t-snippet="mass_mailing.s_features" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_features.svg"/>
+                    <t t-snippet="mass_mailing.s_numbers" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_numbers.svg"/>
+                    <t t-snippet="mass_mailing.s_masonry_block" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_masonry_block.svg"/>
+                    <t t-snippet="mass_mailing.s_media_list" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_media_list.svg"/>
+                    <t t-snippet="mass_mailing.s_showcase" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_showcase.svg"/>
+                </div>
+            </div>
+            <div id="email_designer_default_extra" class="o_panel">
+                <div class="o_panel_header">Marketing Content</div>
+                <div class="o_panel_body" id="email_designer_marketing_elements">
+                    <t t-snippet="mass_mailing.s_company_team" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_company_team.svg"/>
+                    <t t-snippet="mass_mailing.s_call_to_action" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_call_to_action.svg"/>
+                    <t t-snippet="mass_mailing.s_references" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_references.svg"/>
+                    <t t-snippet="mass_mailing.s_coupon_code" t-thumbnail="/mass_mailing/static/src/img/blocks/block_discount2.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_discount1" t-thumbnail="/mass_mailing/static/src/img/blocks/block_discount1.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_event" t-thumbnail="/mass_mailing/static/src/img/blocks/block_event.png"/>
+                    <t t-snippet="mass_mailing.s_product_list" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_product_list.svg"/>
+                    <t t-snippet="mass_mailing.s_features_grid" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_features_grid.svg"/>
+                </div>
+            </div>
+            <div id="email_designer_default_inner" class="o_panel">
+                <div class="o_panel_header">Inner Content</div>
+                <div class="o_panel_body" id="email_designer_inner_elements">
+                    <t t-snippet="mass_mailing.s_alert" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_alert.svg"/>
+                    <t t-snippet="mass_mailing.s_rating" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_rating.svg"/>
+                    <t t-snippet="mass_mailing.s_blockquote" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_blockquote.svg"/>
+                    <t t-snippet="mass_mailing.s_hr" t-thumbnail="/web_editor/static/src/img/snippets_thumbs/s_hr.svg"/>
+                    <t t-snippet="mass_mailing.s_text_highlight" t-thumbnail="/mass_mailing/static/src/img/snippets_thumbs/s_text_highlight.svg"/>
+                </div>
+            </div>
+            <div id="email_designer_default_footer" class="o_panel">
+                <div class="o_panel_header">Footers</div>
+                <div class="o_panel_body" id="email_designer_footer_elements">
+                    <t t-snippet="mass_mailing.s_mail_block_footer_social" t-thumbnail="/mass_mailing/static/src/img/blocks/block_footer_social.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_footer_social_left" t-thumbnail="/mass_mailing/static/src/img/blocks/block_footer_social_left.png"/>
+                </div>
+            </div>
+        </t>
+    </xpath>
+    <xpath expr="//div[@id='snippet_options']/t" position="attributes">
+        <attribute name="t-call">mass_mailing.snippet_options</attribute>
+    </xpath>
+</template>
+
+</odoo>

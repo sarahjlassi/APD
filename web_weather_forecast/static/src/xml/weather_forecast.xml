@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+	
+	<t t-name="web_weather_forecast.systray.WeatherForecast">
+        <li class="o_weather_forecast_systray_item">
+            <a class="dropdown-toggle o-no-caret" data-toggle="dropdown" data-display="static" aria-expanded="false" title="Weather" href="#" role="button">
+                <i class="fa fa-cloud weather_menu_cloud" role="img" aria-label="Weather Menus"/>
+                <img src="/web_weather_forecast/static/src/images/weather_alert.gif" style="display:none;height:100%;"/>
+            	<span class="o_weather_alert_counter badge badge-pill"></span>
+            </a>
+            <div class="o_weather_systray_dropdown dropdown-menu dropdown-menu-right" role="menu">
+                <div class="o_weather_forecast_systray_dropdown_items" style="min-width:25vw;"/>
+            </div>
+        </li>
+    </t>
+    
+    <t t-name="web_weather_forecast.systray.Previews">
+    	<t t-if="widget.alerts and widget.openweather_api_key">
+    		<div class="weather_container">
+    			<t t-raw="widget.alerts"/>
+    		</div>
+    	</t>
+    	<t t-elif="widget.openweather_api_key and !widget.json_error">
+			<div class="weather_container" t-attf-style="background-repeat:no-repeat;background:url('/web_weather_forecast/static/src/images/clouds/#{widget.weather_icon}.jpeg');background-size:100% 100%;padding:2%;">
+				<div t-if="!widget.openweather_api_key">
+					<h3>Please Configure Api Key to use weather forecast.</h3>
+				</div>
+				<div t-else="">
+					<div class="" style="text-align:right;">
+						<span class="current_location fa fa-map-marker" title="Location"> 
+							<t t-esc="widget.user_city"/>,
+							<t t-esc="widget.user_state"/>,
+							<t t-esc="widget.user_country"/>
+						</span>
+					</div>
+					
+					<div class="celsius_wether">
+						<span class="celsius" title="Celsius°|Fahrenheit°"> <t t-esc="widget.celsius"/>°C | <t t-esc="widget.fahrenheit"/>°F</span>
+					</div>
+					
+					<div class="">
+						<span title="Climate" class="weather_description"> <t t-esc="widget.weather_description"/></span>
+					</div>
+					
+					<table style="width:100%;">
+						<tbody>
+							<tr>
+								<td style="width:33.33%;">
+									<span class="sun_rise_set" title="Sunrise">
+										<svg style="width:30%;fill:white;color:white;" width="30" height = "30" class="Icon--icon--2AbGu Icon--actionTheme--2vSlg DetailsTable--icon--34dUa" theme="action" set="current-conditions" name="sunrise-sun" data-testid="Icon" aria-hidden="false" role="img" viewBox="0 0 30 30"><path d="M12.003 16.125v-2.21m-5.602 2.129l1.69 1.441m9.237-1.489l-1.4 1.63" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M4.05 20.938h2.48m11.27 0h2.481" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 9.938V4.426M8.563 6.5L12 3.062M15.438 6.5L12 3.062" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><path d="M12.02 21.605h3.059c.421 0 .543-.229.543-.455 0-1.735-1.613-3.142-3.602-3.142-1.99 0-3.603 1.407-3.603 3.142 0 .266.1.455.529.455h3.074z"></path></svg>
+										<t t-esc="widget.sunrise"/> 
+									</span>
+								</td>
+								
+								<td style="width:33.33%;" title="Sunset">
+									<span class="sun_rise_set">
+										<svg style="width:30%;fill:white;color:white;" width="30" height = "30" class="Icon--icon--2AbGu Icon--actionTheme--2vSlg DetailsTable--icon--34dUa" theme="action" set="current-conditions" name="sunset-sun" data-testid="Icon" aria-hidden="false" role="img" viewBox="0 0 30 30"><path d="M12.003 15.781v-2.21M6.401 15.7l1.69 1.442m9.237-1.49l-1.4 1.63" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M4.05 20.594h2.48m11.27 0h2.481" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3.063v5.51M8.563 6.5L12 9.938M15.438 6.5L12 9.938" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><path d="M12.02 21.261h3.059c.421 0 .543-.229.543-.455 0-1.735-1.613-3.142-3.602-3.142-1.99 0-3.603 1.407-3.603 3.142 0 .266.1.455.529.455h3.074z"></path></svg>
+										<t t-esc="widget.sunset"/> 
+									</span>
+								</td>
+								
+								<td style="width:33.33%;">
+								</td>
+							</tr>
+							
+							<tr>
+								<td style="width:33.33%;">
+									<span class="sun_rise_set" title="Wind Speed">
+										<svg style="width:30%;" xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" class="jsx-2927621360 eaw-forecast-detail-icon"><path d="M5.919 1.53a.615.615 0 0 1 .77-.108.68.68 0 0 1 .296.752.642.642 0 0 1-.617.493H.636c-.351 0-.636.298-.636.666C0 3.702.285 4 .636 4h5.729c.863.004 1.623-.603 1.849-1.479.225-.875-.14-1.8-.89-2.254A1.845 1.845 0 0 0 5.016.59a.69.69 0 0 0 .003.943c.249.26.652.258.9-.003zm1.006 9.88c.61.643 1.558.776 2.308.323.75-.453 1.116-1.379.89-2.254C9.897 8.603 9.138 7.996 8.272 8H.636C.285 8 0 8.298 0 8.667c0 .368.285.666.636.666h7.638a.643.643 0 0 1 .62.493.68.68 0 0 1-.296.752.615.615 0 0 1-.77-.108.616.616 0 0 0-.9-.003.69.69 0 0 0-.003.943zm4.173-7.785a.923.923 0 0 1 1.152-.158c.374.227.556.688.444 1.124a.963.963 0 0 1-.92.742H.636C.285 5.333 0 5.632 0 6c0 .368.285.667.636.667h11.139c1.009-.002 1.89-.712 2.15-1.731.26-1.02-.166-2.095-1.039-2.623a2.153 2.153 0 0 0-2.687.368.69.69 0 0 0-.001.943c.248.26.651.261.9.001z" class="weather_icons jsx-2927621360"></path></svg>
+										<t t-esc="widget.wind_speed"/> km/h
+									</span>
+								</td>
+								
+								<td style="width:33.33%;">
+									<span class="sun_rise_set" title="Pressure">
+										<svg style="width:30%;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="jsx-2927621360 eaw-forecast-detail-icon weather_icons"><path d="M9.193 5.707a2.545 2.545 0 1 1-.9-.9l1.252-1.252a.636.636 0 1 1 .9.9L9.193 5.707zm-2.83 6.985v-.601a.636.636 0 0 1 1.273 0v.601a5.73 5.73 0 0 0 5.056-5.056h-.601a.636.636 0 0 1 0-1.272h.601a5.73 5.73 0 0 0-5.056-5.056v.601a.636.636 0 0 1-1.272 0v-.601a5.73 5.73 0 0 0-5.056 5.056h.601a.636.636 0 0 1 0 1.272h-.601a5.73 5.73 0 0 0 5.056 5.056zM7 14A7 7 0 1 1 7 0a7 7 0 0 1 0 14zm0-5.727a1.273 1.273 0 1 0 0-2.546 1.273 1.273 0 0 0 0 2.546z" class="jsx-2927621360"></path></svg>
+										<t t-esc="widget.pressure"/>  hPa
+									</span>
+								</td>
+								
+								<td style="width:33.33%;">
+									<span class="sun_rise_set" title="Humidity">
+										<svg style="width:30%;" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" class="jsx-2927621360 eaw-forecast-detail-icon weather_icons"><path d="M2.701 4.838a4.547 4.547 0 0 0-1.013 5.01c.723 1.718 2.424 2.839 4.312 2.839 1.888 0 3.59-1.12 4.312-2.839a4.547 4.547 0 0 0-1.013-5.01L5.997 1.586 2.701 4.838zM6.468.192l3.773 3.717a5.846 5.846 0 0 1 1.302 6.442C10.615 12.56 8.427 14 6 14S1.385 12.56.457 10.35a5.846 5.846 0 0 1 1.301-6.44L5.525.193a.674.674 0 0 1 .943 0z" class="jsx-2927621360"></path></svg>
+										<t t-esc="widget.humidity"/> %
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="toggle_hourly_daily row" style="background-image: linear-gradient(to right, #2193b0 , #6dd5ed);margin:0px;">
+				<span class="col-6 hourly_tab active_forecast" style="font-size:large;cursor:pointer;">Hourly Forecast</span>
+				<span class="col-6 daily_tab inactive_forecast" style="font-size:large;cursor:pointer;"> Daily Forecast</span>
+			</div>
+			
+			<div id="hourlyWeatherControls" class="hourly_weather carousel slide" data-ride="carousel" data-interval="false">
+				<div class="hourly_forecast carousel-inner">
+					<t t-set="hourly_cnt" t-value="0"/>
+					<t t-foreach="widget.hourly_data" t-as="hour_data">
+						<div t-att-class="hour_data.id == 0 and 'hour carousel-item active align-self-center' or 'hour carousel-item align-self-center'" t-attf-id="hourly_#{hour_data.id}">
+							<span title="Date" t-esc="hour_data.date"/><br/>
+	                       	<span title="Time" t-esc="hour_data.time"/> <br/>
+	                       	<svg style="fill:white;color:white; opacity: 0;" width="30" height="30" class="Icon--icon--2AbGu Icon--actionTheme--2vSlg DetailsTable--icon--34dUa" theme="action" set="current-conditions" name="sunrise-sun" data-testid="Icon" aria-hidden="false" role="img" viewBox="0 0 30 30"><path d="M12.003 16.125v-2.21m-5.602 2.129l1.69 1.441m9.237-1.489l-1.4 1.63" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M4.05 20.938h2.48m11.27 0h2.481" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 9.938V4.426M8.563 6.5L12 3.062M15.438 6.5L12 3.062" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><path d="M12.02 21.605h3.059c.421 0 .543-.229.543-.455 0-1.735-1.613-3.142-3.602-3.142-1.99 0-3.603 1.407-3.603 3.142 0 .266.1.455.529.455h3.074z"></path></svg><br/>
+		                    <span class="daily_cel" title="Celsius°|Fahrenheit°" style="font-size:x-large;"><t t-esc="hour_data.celsius"/>°C | <t t-esc="hour_data.fahrenheit"/>°F </span><br/>
+		                    <img t-attf-src="/web_weather_forecast/static/src/images/cloud_icons/#{hour_data.weather_icon}.png" style="padding-bottom:5px;"/>
+		                    <span title="Climate" style="text-transform:capitalize;font-size:large;"><t t-esc="hour_data.weather_description"/></span>
+	                  	</div>
+	                  	<t t-set="hourly_cnt" t-value="hourly_cnt + 1"/>
+					</t>
+				</div>
+
+				<ul class="hourly_indicators carousel-indicators d-none">
+	                <t t-foreach="widget.hourly_data" t-as="hourly_data">
+	                    <li t-att-class="hourly_data.id == 0 and 'active' or None" data-target="#hourlyWeatherControls" data-slide-to="hourly_data.id"></li>
+	                </t>
+	               
+	            </ul>
+				
+				<a class="hourly_prev carousel-control-prev" href="#hourlyWeatherControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				    <span class="sr-only">Previous</span>
+			  	</a>
+		  		<a class="hourly_next carousel-control-next" href="#hourlyWeatherControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+				    <span class="sr-only">Next</span>
+			  	</a>
+			</div>
+			
+			<div id="dailyWeatherControls" class="daily_weather carousel slide" data-ride="carousel" data-interval="false" style="display:none;">
+					<div class="daily_forecast carousel-inner ">
+						<t t-set="daily_cnt" t-value="0"/>
+						<t t-foreach="widget.daily_data" t-as="daily_data">
+							<div t-att-class="daily_data.id == 0 and 'daily carousel-item active align-self-center' or 'daily carousel-item align-self-center'" t-attf-id="daily_#{daily_data.id}">
+								<span title="Date" t-esc="daily_data.date"/><br/>
+
+								<svg style="fill:white;color:white;" width="30" height = "30" class="Icon--icon--2AbGu Icon--actionTheme--2vSlg DetailsTable--icon--34dUa" theme="action" set="current-conditions" name="sunrise-sun" data-testid="Icon" aria-hidden="false" role="img" viewBox="0 0 30 30"><path d="M12.003 16.125v-2.21m-5.602 2.129l1.69 1.441m9.237-1.489l-1.4 1.63" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M4.05 20.938h2.48m11.27 0h2.481" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 9.938V4.426M8.563 6.5L12 3.062M15.438 6.5L12 3.062" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><path d="M12.02 21.605h3.059c.421 0 .543-.229.543-.455 0-1.735-1.613-3.142-3.602-3.142-1.99 0-3.603 1.407-3.603 3.142 0 .266.1.455.529.455h3.074z"></path></svg>
+								<span title="Sunrise" t-esc="daily_data.sunrise_time"/>
+
+								<svg style="fill:white;color:white;" width="30" height = "30" class="Icon--icon--2AbGu Icon--actionTheme--2vSlg DetailsTable--icon--34dUa" theme="action" set="current-conditions" name="sunset-sun" data-testid="Icon" aria-hidden="false" role="img" viewBox="0 0 30 30"><path d="M12.003 15.781v-2.21M6.401 15.7l1.69 1.442m9.237-1.49l-1.4 1.63" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M4.05 20.594h2.48m11.27 0h2.481" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3.063v5.51M8.563 6.5L12 9.938M15.438 6.5L12 9.938" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><path d="M12.02 21.261h3.059c.421 0 .543-.229.543-.455 0-1.735-1.613-3.142-3.602-3.142-1.99 0-3.603 1.407-3.603 3.142 0 .266.1.455.529.455h3.074z"></path></svg>		
+								<span title="Sunset" t-esc="daily_data.sunset_time"/>
+								<br/>
+								<br/>
+								<span class="daily_cel" title="Max °|Min °" style="font-size:x-large;">
+									<i class="fa fa-arrow-up"/>
+									<t t-esc="daily_data.max_celsius"/>°C 
+									|
+									<i class="fa fa-arrow-down"/>
+									<t t-esc="daily_data.min_celsius"/>°C
+								</span>
+								<br/>
+								<img t-attf-src="/web_weather_forecast/static/src/images/cloud_icons/#{daily_data.weather_icon}.png" style="padding-bottom:5px;"/>
+								<span title="Climate" style="text-transform:capitalize;font-size:large;"><t t-esc="daily_data.weather_description"/></span>
+	                    	</div>
+	                    	<t t-set="daily_cnt" t-value="hourly_cnt + 1"/>
+						</t>
+					</div>
+					
+					<ul class="daily_indicators carousel-indicators d-none">
+		               
+		                <t t-foreach="widget.daily_data" t-as="daily_data">
+		                    <li t-att-class="daily_data.id == 0 and 'active' or None" data-target="#dailyWeatherControls" data-slide-to="daily_data.id"></li>
+		                </t>
+		               
+		            </ul>
+					
+					<a class="daily_prev carousel-control-prev" href="#dailyWeatherControls" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+					    <span class="sr-only">Previous</span>
+				  	</a>
+			  		<a class="daily_next carousel-control-next" href="#dailyWeatherControls" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+					    <span class="sr-only">Next</span>
+				  	</a>
+			</div>
+		</t>
+
+		<t t-else="">
+			<div class="weather_container" style="font-size:medium;margin:5%;text-align:center;">
+				<t t-if="widget.json_error">
+					<span t-esc="widget.json_error"/>
+				</t>
+				<t t-else="">
+					<span> 
+						Please configure api key to enable weather forecasting.
+					</span>
+				</t>
+				
+			</div>
+			
+		</t>
+	</t>
+    
+    
+</templates>

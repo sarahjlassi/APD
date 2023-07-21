@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="portal.chatter_messages">
+        <t t-jquery=".o_portal_chatter_messages" t-operation="replace">
+        <div class="o_portal_chatter_messages">
+            <t t-foreach="widget.get('messages') || []" t-as="message">
+                <div class="media o_portal_chatter_message" t-att-id="'message-' + message.id">
+
+
+                <t t-if="message.is_internal_user">
+                                        <img class="o_portal_chatter_avatar"
+                                             src="/apd_ticket_portal/static/imgs/apd.png"
+                                             alt="avatar"/>
+                </t>
+                    <t t-else="">
+                        <img class="o_portal_chatter_avatar" t-att-src="message.author_avatar_url" alt="avatar"/>
+                    </t>
+                    <div class="media-body">
+                        <t t-call="portal.chatter_internal_toggle" t-if="widget.options['is_user_employee']"/>
+
+                        <div class="o_portal_chatter_message_title">
+                             <t t-if="message.is_internal_user">
+                                <h5 class='mb-1'><t t-esc="widget.options['parameter_name']"/></h5>
+                             </t>
+                            <t t-else="">
+                                <h5 class='mb-1'><t t-esc="message.author_id[1]"/></h5>
+                            </t>
+
+                            <p class="o_portal_chatter_puslished_date"><t t-esc="message.published_date_str"/></p>
+                        </div>
+                        <t t-out="message.body"/>
+
+                        <div class="o_portal_chatter_attachments">
+                            <t t-call="portal.Chatter.Attachments">
+                                <t t-set="attachments" t-value="message.attachment_ids"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+        </t>
+    </t>
+
+
+</templates>

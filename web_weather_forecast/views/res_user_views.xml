@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_users_form_from_weather" model="ir.ui.view">
+            <field name="name">res.users.weather.form.inherit</field>
+            <field name="model">res.users</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('oe_title')]//field[@name='partner_id']" position="after">
+                    <field name="weather_enable"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_users_form_simple_modif" model="ir.ui.view">
+        	 <field name="name">res.users.preferences.form</field>
+             <field name="model">res.users</field>
+             <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+             <field name="arch" type="xml">
+             	<xpath expr="//field[@name='tz']" position="after">
+             		<field name="weather_enable" invisible="1"/>
+             		<field name="mute_weather_alert" attrs="{'invisible' : [('weather_enable','=',False)]}"/>
+             	</xpath>
+             </field>
+        </record>
+
+        <record id="base.ir_cron_act" model="ir.actions.act_window">
+            <field name="domain" eval="[('id','!=', ref('mail.ir_cron_module_update_notification')),('is_weather_scheduler','!=', True)]"/>
+        </record>
+
+</odoo>

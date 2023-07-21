@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="vuesax_bulk_buliding" data-name="vuesax/bulk/buliding" transform="translate(-684 -188)">
+    <g id="buliding" transform="translate(684 188)">
+      <path id="Vector" d="M0,0H32V32H0Z" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M27.767,0H1A.994.994,0,0,0,0,.969a.994.994,0,0,0,1,.969H27.767a.994.994,0,0,0,1-.969A.994.994,0,0,0,27.767,0Z" transform="translate(1.615 28.448)" fill="#009877"/>
+      <path id="Vector-3" data-name="Vector" d="M18.861,0H5.389C1.347,0,0,2.4,0,5.367V26.833H24.25V5.367C24.25,2.4,22.9,0,18.861,0Z" transform="translate(3.875 2.583)" fill="#009877" opacity="0.4"/>
+      <g id="Group" transform="translate(8.393 21.044)">
+        <path id="Vector-4" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+      <g id="Group-2" data-name="Group" transform="translate(17.794 21.044)">
+        <path id="Vector-5" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+      <g id="Group-3" data-name="Group" transform="translate(8.393 15.031)">
+        <path id="Vector-6" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+      <g id="Group-4" data-name="Group" transform="translate(17.794 15.031)">
+        <path id="Vector-7" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+      <g id="Group-5" data-name="Group" transform="translate(8.393 9.019)">
+        <path id="Vector-8" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+      <g id="Group-6" data-name="Group" transform="translate(17.794 9.019)">
+        <path id="Vector-9" data-name="Vector" d="M4.844,1.938H.969A.976.976,0,0,1,0,.969.976.976,0,0,1,.969,0H4.844a.976.976,0,0,1,.969.969A.976.976,0,0,1,4.844,1.938Z" fill="#009877"/>
+      </g>
+    </g>
+  </g>
+</svg>

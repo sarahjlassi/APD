@@ -1,0 +1,215 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* apd_recruitment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-17 13:51+0000\n"
+"PO-Revision-Date: 2023-01-17 13:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: apd_recruitment
+#: model:ir.model,name:apd_recruitment.model_degree_degree
+msgid "Aplicant Degree"
+msgstr "شهادة المتقدم"
+
+#. module: apd_recruitment
+#: model:ir.model,name:apd_recruitment.model_hr_applicant
+msgid "Applicant"
+msgstr "المتقدم"
+
+#. module: apd_recruitment
+#: model:ir.actions.act_window,name:apd_recruitment.aplicant_degree_action
+msgid "Applicant Degree"
+msgstr "شهادة المتقدم"
+
+#. module: apd_recruitment
+#: model:ir.ui.menu,name:apd_recruitment.degree_menuitem
+msgid "Applicant Degree "
+msgstr "شهادة المتقدم"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__birthday_c
+msgid "Birthday"
+msgstr "تاريخ الميلاد"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__state_id
+msgid "City"
+msgstr "المدينة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__create_uid
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__create_date
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__degree_id_c
+msgid "Degree"
+msgstr "الشهادة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__name
+msgid "Disability Name"
+msgstr "اسم الاعاقة"
+
+#. module: apd_recruitment
+#: model:ir.model,name:apd_recruitment.model_d_type
+msgid "Disability Type"
+msgstr "نوع الاعاقة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__dis_id
+msgid "Disability Type "
+msgstr "نوع الاعاقة"
+
+#. module: apd_recruitment
+#: model:ir.actions.act_window,name:apd_recruitment.d_type_action_view
+msgid "Disability Types"
+msgstr "انواع الاعاقة"
+
+#. module: apd_recruitment
+#: model:ir.ui.menu,name:apd_recruitment.disability_type_menuitem
+msgid "Disability Types "
+msgstr "انواع الاعاقة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__display_name
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__employer
+msgid "Employer"
+msgstr "جهة العمل"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__experience
+msgid "Experience"
+msgstr "الخبرة العملية"
+
+#. module: apd_recruitment
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__gender_custom__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__gpa
+msgid "GPA"
+msgstr "الدرجة العلمية"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__gender_custom
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__grade_degree
+msgid "Graduation Year"
+msgstr "سنة التخرج"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__id
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__id
+msgid "ID"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__is_collage_degree_or_higher
+msgid "Is Collage Degree Or Higher"
+msgstr "شهادة جامعية او اعلى"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__job_title_custom
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type____last_update
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__write_uid
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_d_type__write_date
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__linkedin_pro
+msgid "Linkedin Profile"
+msgstr "حساب اللينكدان"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__accept_terms
+msgid "I accept sharing my info for hiring purposes"
+msgstr "اوافق علي مشاركة بياناتي مع جهات التوظيف الأخري -لأغراض التوظيف- وفق الضوابط والشروط المنظمة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__gender_custom__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: apd_recruitment
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__experience__no
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__p_with_d__no
+msgid "NO"
+msgstr "لا"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_degree_degree__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__nationality_c
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__p_with_d
+msgid "Person With Disability"
+msgstr "شخص ذو اعاقة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__special_c
+msgid "Specialization"
+msgstr "التخصص"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__ex_years
+msgid "Years Of Experience"
+msgstr "عدد سنوات الخبرة"
+
+#. module: apd_recruitment
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__experience__yes
+#: model:ir.model.fields.selection,name:apd_recruitment.selection__hr_applicant__p_with_d__yes
+msgid "Yes"
+msgstr "نعم"
+
+#. module: apd_recruitment
+#: model:ir.model.fields,field_description:apd_recruitment.field_hr_applicant__accom
+msgid "accommodations"
+msgstr "الترتيبات التيسيرية التي يجب توفيرها "

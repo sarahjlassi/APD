@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ejad_nafath.login" inherit_id="web.login" name="Sign in - Nafath">
+        <xpath expr="//button[@type='submit']" position="after">
+            <div class="justify-content-between mt-2 d-flex small" name="btn_nafath">
+<!--                <a class="btn btn-primary btn-block" t-attf-href="/signin/nafath?{{ keep_query() }}"-->
+<!--                   onclick="window.open('https://www.iam.sa/nafath/', '_blank')">-->
+                <a class="btn btn-primary btn-block" t-attf-href="/signin/nafath?{{ keep_query() }}">
+                    Sign in with Nafath
+                </a>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="ejad_nafath.nafath_login_template" name="Sign in - Nafath">
+        <t t-call="web.login_layout">
+            <form t-attf-action="/nafath/sendID?{{ keep_query() }}"
+                  method="post" enctype="multipart/form-data" id="nafathForm">
+
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div t-if="show_id_number">
+                    <section class="navaz-page">
+                        <div class="container">
+                            <div class="title-page text-center">
+                                <h2>System Login</h2>
+                            </div>
+                            <div class="content-navaz">
+                                <h3 class="title-active">Nafath Application</h3>
+                                <div class="content w-100">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                            <div class="c-card">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <form novalidate="novalidate">
+                                                            <div class="c-field u-mb-medium">
+                                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                                <label for="login">National/Iqama ID</label>
+                                                                <input type="tel" name="NAT_ID" id="NAT_ID" class="c-input"
+                                                                       autofocus="autofocus" autocapitalize="off" required="required" maxlength="10" minlength="10"
+                                                                       onkeypress="return onlyNumberKey(event)" onkeyup="validIdNumber()" placeholder="Enter National/Iqama ID"/>
+                                                            </div>
+                                                            <div class="c-field text-center">
+                                                                 <p class="alert alert-danger" role="alert" id="error" style="display:none;"/>
+                                                                <input type="hidden" name="old_user_id" class="form-control form-control-sm" t-att-value="old_user_id"/>
+                                                                <input type="hidden" name="redirect_url" class="form-control form-control-sm" t-att-value="redirect_url"/>
+                                                                <button type="submit" class="c-btn c-btn--fullwidth">
+                                                                    <i class="far fa-sign-in"></i>
+                                                                    <span>Login</span>
+                                                                </button>
+                                                                <div class="u-mt-medium u-color-secondary">
+                                                                    <p> To download nafath app</p>
+                                                                </div>
+                                                                <div class="d-flex justify-content-center payment-method">
+                                                                    <a id="link" href="https://apps.apple.com/sa/app/نفاذ-nafath/id1598909871" target="_blank">
+                                                                        <img src="/ejad_nafath/static/src/img/apple_store.png" width="100" height="100"/>
+                                                                    </a>
+                                                                    <a id="link_andr" href="https://play.google.com/store/apps/details?id=sa.gov.nic.myid" target="_blank">
+                                                                        <img src="/ejad_nafath/static/src/img/google_play.png" width="100" height="100"/>
+                                                                    </a>
+                                                                    <a id="link_andr" href="https://appgallery.huawei.com/app/C106870695" target="_blank">
+                                                                        <img src="/ejad_nafath/static/src/img/huawei_store.jpg" width="120"/>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="mt-md-50 col-md-5 text-center u-p-small u-mh-small u-hidden-down@mobile u-color-secondary">
+                                                        <img src="/ejad_nafath/static/src/img/secure.svg" width="150" class="master-img"/>
+                                                        <p>Please introduce your National/Iqama ID.<br/>
+                                                            then click Login.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="/web/login" class="link-user">اسم المستخدم وكلمة المرور</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="random-div" t-if="show_random_number">
+                    <section class="navaz-page">
+                        <div class="container">
+                            <div class="title-page text-center">
+                                <h2>System Login</h2>
+                            </div>
+                            <div class="content-navaz">
+                                <h3 class="title-active">Nafath Application</h3>
+                                <div class="content w-100">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                            <div class="c-card text-center">
+                                                 <span class="c-btn mb-3" style="width: auto;">
+                                                    <span t-esc="random"/>
+                                                     <input type="hidden" name="redirect_url" class="form-control form-control-sm" t-att-value="redirect_url"/>
+
+                                                 </span>
+<!--                                                 <button type="submit" class="btn btn-primary">-->
+<!--                                                    <span t-esc="random"/>-->
+<!--                                                 </button>-->
+                                                <p>Please open nafath mobile app and approve the request by<br/>
+                                                    selecting above number</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="form-group field-login">
+                        <input type="hidden" name="nationalId" id="nationalId"  t-att-value="nationalId"/>
+                        <input type="hidden" name="transId" id="transId"  t-att-value="transId"/>
+                        <input type="hidden" name="random" id="random"  t-att-value="random"/>
+                    </div>
+                </div>
+            </form>
+            <script>
+                function validIdNumber() {
+                    let x = document.getElementById("NAT_ID");
+                    var error = document.getElementById("error")
+                    if (x.value == "") {
+                        error.style.display = "block";
+                        error.textContent = "أدخل رقم بطاقة الأحوال"
+                        error.style.color = "red"
+                        setTimeout(() => {
+                            error.style.display = 'none';
+                        }, 3000);
+                    } else if (x.value.length &lt; 10) {
+                        error.style.display = "block";
+                        error.textContent = "تأكد من أنها عشر خانات"
+                        error.style.color = "red"
+                    } else {
+                        error.style.display = "none";
+                        error.textContent = ""
+                    }
+                }
+                function onlyNumberKey(evt) {
+                    var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+                    if (ASCIICode > 31 &amp;&amp; (ASCIICode &lt; 48 || ASCIICode &gt; 57))
+                        return false;
+                    return true;
+                }
+                var element =  document.getElementById('random-div');
+                if (typeof(element) != 'undefined' &amp;&amp; element != null)
+                {
+                    document.getElementById("nafathForm").submit();
+                }
+            </script>
+        </t>
+    </template>
+</odoo>

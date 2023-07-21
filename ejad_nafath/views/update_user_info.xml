@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="nafath_update_user_info" name="Update User Info">
+        <t t-call="web.login_layout">
+            <form action="/nafath_save_user_info"
+                  method="post" enctype="multipart/form-data" id="update_user_info">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <input type="hidden" name="user_id" t-att-value="nafath_user_id"/>
+                <div class="col-lg-4">
+                    <div class="form-group field-login">
+                        <label for="email">Email</label>
+                        <input type="email" name="user_email" class="form-control form-control-sm"
+                               autofocus="autofocus" autocapitalize="off" required="required" t-att-value="user_email"/>
+                    </div>
+                    <div class="form-group field-login">
+                        <label for="mobile">Mobile</label>
+                        <input type="text" name="user_mobile" class="form-control form-control-sm"
+                               autofocus="autofocus" autocapitalize="off" required="required"
+                               t-att-value="user_mobile" maxlength="10"
+                               pattern="05\d{8}" title="الرجاء الالتزام بالشكل الاتي : 05xxxxxxxx"/>
+                    </div>
+                    <div class="justify-content-between mt-2 d-flex small">
+                        <button type="submit" class="btn btn-primary btn-block">update</button>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+</odoo>
