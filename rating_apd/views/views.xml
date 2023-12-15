@@ -1,0 +1,108 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="rating_tree">
+            <field name="name">Rating tree</field>
+            <field name="model">rating.page</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="path"/>
+                    <field name="page_name"/>
+
+                    <field name="rating"/>
+                    <field name="utile"/>
+                    <!--  <field name="visite"/>
+                      <field name="ease"/>
+                      <field name="clarity"/>
+                      <field name="satisfaction"/>-->
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="rating_view_form" model="ir.ui.view">
+            <field name="name">rating.page.form</field>
+            <field name="model">rating.page</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+
+
+                            <field name="path"/>
+                            <field name="page_name"/>
+                            <field name="rating"/>
+
+                            <field name="utile"/>
+
+                            <field name="cas_yes" attrs="{'invisible': [('utile', '!=', 'yes')]}"/>
+                            <field name="cas_no" attrs="{'invisible': [('utile', '!=', 'no')]}"/>
+
+                            <field name="comment_yes" attrs="{'invisible': [('utile', '!=', 'yes')]}"/>
+                            <field name="comment_no" attrs="{'invisible': [('utile', '!=', 'no')]}"/>
+                            <!--  <field name="visite"/>
+                              <field name="ease"/>
+                              <field name="clarity"/>
+                              <field name="satisfaction"/>
+                                          <field name="comment"/>-->
+                        </group>
+
+
+                    </sheet>
+
+
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="rating_search_view">
+            <field name="name">rating.page.search</field>
+            <field name="model">rating.page</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="path"/>
+                    <field name="page_name"/>
+                    <filter string="الافادة" name="utile" context="{'group_by':'utile'}"/>
+                    <filter string="أسباب القبول" name="cas_yes" context="{'group_by':'cas_yes'}"
+                            domain="[('utile', '=', 'yes')]"/>
+                    <filter string="أسباب عدم القبول" name="cas_no" context="{'group_by':'cas_no'}"
+                            domain="[('utile', '=', 'no')]"/>
+
+
+                    <!--  <filter string="الصفحة" name="path" context="{'group_by':'path'}"/>-->
+                    <!--             <filter string="الزيارات" name="visite" context="{'group_by':'visite'}"/>
+                                <filter string="السهولة" name="ease" context="{'group_by':'ease'}"/>
+                               <filter string="الوضزح" name="clarity" context="{'group_by':'clarity'}"/>
+                               <filter string="الرضى" name="satisfaction" context="{'group_by':'satisfaction'}"/>
+                              <filter string="التاريخ" name="create_date" context="{'group_by':'create_date'}" />-->
+                </search>
+            </field>
+        </record>
+        <record id="rating_report_view_graph" model="ir.ui.view">
+            <field name="name">rating.page.graph</field>
+            <field name="model">rating.page</field>
+            <field name="arch" type="xml">
+                <graph string="Analysis" sample="1">
+
+
+                </graph>
+            </field>
+        </record>
+        <record id="action_rating_page" model="ir.actions.act_window">
+            <field name="name">التقييم</field>
+            <field name="res_model">rating.page</field>
+            <field name="view_mode">tree,form,graph</field>
+
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+
+                </p>
+            </field>
+        </record>
+        <menuitem id="fund1" name="التقييم" sequence="16" web_icon="rating,static/description/portable.png"/>
+        <menuitem id="fund2" name="التقييم" parent="fund1"
+                  action="action_rating_page"/>
+
+
+    </data>
+</odoo>

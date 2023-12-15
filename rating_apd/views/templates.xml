@@ -1,0 +1,262 @@
+<odoo>
+    <data>
+        <template id="rating_template" inherit_id="website.layout">
+            <xpath expr="//div[@id='footer']" position="before">
+
+                <!--<link rel="stylesheet" href="rating_apd/static/src/css/rating.css" type="text/css"/>-->
+                <div class="wrapped_rating">
+                    <div t-if="request.httprequest.path not in ['/','/rating/rate', '/service-statistic']"
+                         class="wrapped_form">
+
+                        <form class="form_rating" method="post" t-attf-action="/rating/rate">
+                            <fieldset>
+                                <legend style="display: none;">.</legend>
+                                <div class="rating">
+                                    <h3 class="rate_page" style="color: #636569; font-family: 'RB-Bold' !important;">
+
+
+                                        تقييم الصفحة
+
+                                        <span style="font-size: 18px;
+                margin-left: 5px;">(التقييم
+                                        </span>
+
+                                    </h3>
+                                    <input type="radio" id="star5" name="rating" value="5" data-text="Very Good"/>
+                                    <label class="star_label" for="star5">&amp;nbsp;</label>
+                                    <input type="radio" id="star4" name="rating" value="4" data-text="Good"/>
+                                    <label for="star4">&amp;nbsp;</label>
+                                    <input type="radio" id="star3" name="rating" value="3" data-text="Neutral"/>
+                                    <label for="star3">&amp;nbsp;</label>
+                                    <input type="radio" id="star2" name="rating" value="2" data-text="Bad"/>
+                                    <label for="star2">&amp;nbsp;</label>
+                                    <input type="radio" id="star1" name="rating" value="1" data-text="Very Bad"/>
+                                    <label for="star1">&amp;nbsp;</label>
+                                    <!-- Add the star rating HTML code here -->
+                                    <!-- ... (star rating HTML) ... -->
+                                </div>
+                                <div class="form-container">
+                                    <!-- <label class="label_form" for="visite">عدد زياراتك للبوابة الإلكترونية:</label>
+                                     <select id="visite" name="visite" required="" class="form-control">
+                                         <option value="first">الزيارة الأولى</option>
+                                                                                     <option value="daily">يوميا</option>
+
+                                                                                     <option value="monthly">شهريا</option>
+                                                                                     <option value="sometimes">ليس دائما </option>
+
+
+
+                                     </select>
+                                     <label class="label_form" for="ease">سهولة تصفح البوابة الإلكترونية:</label>
+                                     <select id="ease" name="ease" required="" class="form-control">
+                                         <option value="very_easy">سهلة جدا</option>
+                                                                                     <option value="easy">سهلة </option>
+
+                                                                                     <option value="neutral">محايد</option>
+                                                                                     <option value="difficult">صعبة</option>
+                                          <option value="very_difficult">صعبة جدا</option>
+
+
+
+                                     </select>
+
+                                      <label class="label_form" for="clarity">مدى وضوح البوابة الإلكترونية وتنظيمها:</label>
+                                     <select id="clarity" name="clarity" required="" class="form-control">
+                                         <option value="very_clear">واضحة تماما</option>
+                                                                                     <option value="clear">واضحة </option>
+
+                                                                                     <option value="neutral">محايد</option>
+                                                                                     <option value="not_clear">غير واضحة</option>
+                                          <option value="not_clear_at_all">غير واضحة اطلاقا </option>
+
+
+
+                                     </select>
+
+
+                                      <label class="label_form" for="satisfaction">مدى رضاك عن تصميم البوابة لإلكترونية:</label>
+                                     <select id="satisfaction" name="satisfaction" required="" class="form-control">
+                                         <option value="very_satisfied">راضي بشدة</option>
+                                                                                     <option value="satisfied">راضي </option>
+
+                                                                                     <option value="neutral">محايد</option>
+                                                                                     <option value="not_satisfied">غير راضي</option>
+                                          <option value="not_satisfied_at_all">غير راضي اطلاقا </option>
+
+
+
+                                     </select>-->
+
+
+                                    <label class="label_form">هل وجدت هذا المحتوى مفيدا؟</label>
+                                    <div style=" display: inline-block;
+    margin: 10px;" class="options">
+                                        <input style="display: none;" type="radio" name="choice" id="yes" class="choice"
+                                               value="yes"/>
+                                        <label for="yes" class="emoji">مفيد <i class="fa fa-thumbs-up"
+                                                                               style="color: #009877;"></i>
+                                        </label>
+                                    </div>
+                                    <div style=" display: inline-block;
+    margin: 10px;" class="options">
+                                        <input style="display: none;" type="radio" name="choice" id="no" class="choice"
+                                               value="no"/>
+                                        <label for="no" class="emoji">غير مفيد <i class="fa fa-thumbs-down"
+                                                                                  style="color: #009877;"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="radio-group" id="radio-group-yes">
+                                        <p style="  color: #636569;
+    font-size: 16px;
+    line-height: normal;">
+                                            <strong>أضف سبب:</strong>
+                                        </p>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_yes" id="radio1" value="utile"/>
+                                            <label class="label_form" for="radio1">كانت مفيدة</label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_yes" id="radio2" value="liaison"/>
+                                            <label class="label_form" for="radio2">الإجابات كانت مرتبطة
+                                            </label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_yes" id="radio3" value="good"/>
+                                            <label class="label_form" for="radio3">مكتوبة بشكل جيد</label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_yes" id="radio4" value="facile"/>
+                                            <label class="label_form" for="radio4">التصميم جعله من السهل قراءته</label>
+                                        </div>
+
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_yes" id="radio5" value="autre_yes"/>
+                                            <label class="label_form" for="radio5">أخرى</label>
+                                        </div>
+
+                                        <div id="comment-container_yes" style="display: none;">
+                                            <label class="label_form cmt" for="satisfaction">التعليق:
+                                                <span style="font-size:12px ;
+                margin-left: 5px;">زائر علق على المحتوى
+                                                </span>
+
+                                            </label>
+                                            <textarea name="comment_yes" class="form-control" id="satisfaction"
+                                                      cols="30" rows="6" t-att-value="comment_yes"
+                                            ></textarea>
+
+
+                                        </div>
+                                        <br/>
+                                        <input t-if="request.env.lang == 'ar_001'" class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="ارسال"/>
+
+                                        <input t-if="request.env.lang == 'en_US'" class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="Submit"/>
+
+                                    </div>
+
+
+                                    <div class="radio-group" id="radio-group-no">
+                                        <p style="  color: #636569;
+    font-size: 16px;
+    line-height: normal;">
+                                            <strong>أضف سبب:</strong>
+                                        </p>
+                                        <div class="radio-options">
+
+                                            <input type="radio" name="radio-choice_no" id="radio6" value="problem"/>
+                                            <label class="label_form" for="radio6">توجد مشكلة تقنية</label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_no" id="radio7" value="manque"/>
+                                            <label class="label_form" for="radio7">لم استطع إيجاد إجابة ذات صلة
+                                            </label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_no" id="radio8" value="bad"/>
+                                            <label class="label_form" for="radio8">مكتوبة بشكل سيء</label>
+                                        </div>
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_no" id="radio9" value="difficile"/>
+                                            <label class="label_form" for="radio9">التصميم جعله من الصعب قراءته</label>
+                                        </div>
+
+                                        <div class="radio-options">
+                                            <input type="radio" name="radio-choice_no" id="radio10" value="autre_no"/>
+                                            <label class="label_form" for="radio10">أخرى</label>
+                                        </div>
+
+                                        <div id="comment-container_no" style="display: none;">
+                                            <label class="label_form cmt" for="satisfaction_no">التعليق:
+                                                <span style="font-size:12px ;
+                margin-left: 5px;">زائر علق على المحتوى
+                                                </span>
+
+                                            </label>
+                                            <textarea name="comment_no" class="form-control" id="satisfaction_no"
+                                                      cols="30" rows="6" t-att-value="comment_no"
+                                            ></textarea>
+
+
+                                        </div>
+                                        <br/>
+
+
+                                        <input t-if="request.env.lang == 'ar_001'" class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="ارسال"/>
+
+                                        <input t-if="request.env.lang == 'en_US'" class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="Submit"/>
+                                    </div>
+
+
+                                    <input type="hidden" name="rating" t-att-value="selected_stars"/>
+
+                                    <input id="path" type="hidden" name="path" t-att-value="request.httprequest.path"/>
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                    <br/>
+                </div>
+
+
+            </xpath>
+        </template>
+        <template id="feedback_sent" name="Feedback Page">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'Feedback'"/>
+                <div id="wrap" class="oe_structure oe_empt" style="padding: 0 0 70px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <section class="helpdesk-forms col-md-8 text-center">
+                                <div class="ticket-done">
+                                    <script src="/theme_scita/static/src/js/lottie-player.js"></script>
+                                    <lottie-player src="/theme_scita/static/src/img/APD/done.json"
+                                                   background="transparent" speed="1"
+                                                   style="width: 300px; height: 300px; margin: 0 auto;" loop=""
+                                                   autoplay=""></lottie-player>
+                                    <h1>شكرا لك على ملاحظاتك. تم الارسال بنجاح</h1>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

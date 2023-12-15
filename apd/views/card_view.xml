@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+        <record model="ir.ui.view" id="card_tree_view">
+            <field name="name">shop card tree</field>
+            <field name="model">shop.card</field>
+            <field name="arch" type="xml">
+                <tree string="shop card list">
+<!--                    <field name="name"/>-->
+                    <field name="logo"/>
+                    <field name="discount"/>
+                    <field name="discount_type"/>
+                    <field name="website"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+
+
+
+        <record model="ir.ui.view" id="card_form_view">
+            <field name="name">shop card form</field>
+            <field name="model">shop.card</field>
+            <field name="arch" type="xml">
+                <form string="shop card form">
+                    <sheet>
+                        <group>
+<!--                            <field name="name"/>-->
+                            <field name="logo"/>
+                            <field name="discount"/>
+                            <field name="discount_type"/>
+                            <field name="website"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+
+
+
+    </data>
+
+</odoo>

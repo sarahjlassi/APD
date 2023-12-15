@@ -1,0 +1,400 @@
+<odoo>
+<data>
+
+    <template id="searchbox_inherit" inherit_id="website.website_search_box">
+
+
+
+    <xpath expr="//i[hasclass('fa-search')]" position="replace">
+        <strong class="fa fa-search"/>
+    </xpath>
+
+
+        <xpath expr="//input[@name='search']" position="attributes">
+        <attribute name="id">search</attribute>
+    </xpath>
+
+          <xpath expr="//input[@name='search']" position="after">
+              <label for="search" hidden="hidden">search</label>
+    </xpath>
+    </template>
+
+<template id="search_inherit1" inherit_id="website.website_search_box_input">
+
+    <xpath expr="//input[@name='search']" position="after">
+        <select t-if="siteweb==True" name="ordre" t-att-value="ordre" id="ordre"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;
+margin-right: 10px;
+margin-left: 10px;
+"
+
+                                                                    >
+                                                                <option value="asc" t-att-selected="ordre == 'asc'">أ-ي</option>
+                                                                <option value="desc" t-att-selected="ordre == 'desc'">ي-أ</option>
+
+
+                                                            </select>
+
+    <!--       <select t-if="siteweb==True" name="type" t-att-value="type" id="type"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+                <option value="all" t-att-selected="type == 'all'">الجميع</option>
+                                                                <option value="blogs" t-att-selected="type == 'blogs'">الأخبار</option>
+                                                                <option value="events" t-att-selected="type == 'events'">الفعاليات</option>
+
+
+                                                            </select>
+ <input t-if="siteweb==True" name="date_begin" t-att-value="date_begin" id="date_begin" type="text" placeholder="تاريخ البدء"
+                    onfocus="(this.type='date')"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+
+
+                                                            </input>
+
+         <input t-if="siteweb==True" name="date_end" t-att-value="date_end" id="date_end" type="text" placeholder="تاريخ النهاية"
+                    onfocus="(this.type='date')"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+
+
+                                                            </input>
+-->
+    </xpath>
+
+        <xpath expr="//div[@role='search']" position="after">
+
+            <a t-if="siteweb==True" class="advanced-search-link" href="#">بحث متقدم</a>
+
+            <br/>
+<div  class="advanced-search-form" t-if="siteweb==True" style="display: none; width:60%;">
+
+            <form  class="form_advanced"   action="/website/search" method="get">
+        <input type="text" class="form-control" name="search_ad" t-att-value="search_ad" placeholder="بحث ..."/>
+        <label for="ordred">الترتيب:</label>
+        <select t-if="siteweb==True" name="ordred" t-att-value="ordred" id="ordred"
+                                  class="form-control"
+                                                                    >
+                                                                <option value="asc" t-att-selected="ordre == 'asc'">أ-ي</option>
+                                                                <option value="desc" t-att-selected="ordre == 'desc'">ي-أ</option>
+
+
+                                                            </select>
+
+        <label for="type">نوع الصفحة</label>
+        <select t-if="siteweb==True" name="type" t-att-value="type" id="type"
+                             class="form-control"                                    >
+                <option value="all" t-att-selected="type == 'all'">الجميع</option>
+                                                                <option value="blogs" t-att-selected="type == 'blogs'">الأخبار</option>
+                                                                <option value="events" t-att-selected="type == 'events'">الفعاليات</option>
+
+
+                                                            </select>
+
+                  <label for="date_begin">تاريخ البدء</label>
+                     <input t-if="siteweb==True" name="date_begin" t-att-value="date_begin" id="date_begin" type="text" placeholder="تاريخ البدء"
+                    onfocus="(this.type='date')"
+                                                                class="form-control" >
+
+
+                                                            </input>
+ <label for="date_end"> تاريخ النهاية </label>
+                      <input t-if="siteweb==True" name="date_end" t-att-value="date_end" id="date_end" type="text" placeholder="تاريخ النهاية"
+                    onfocus="(this.type='date')"
+                                 class="form-control"
+                                                                   >
+
+
+                                                            </input>
+
+
+
+<br/>
+        <button class="btn btn-success" type="submit">البحث</button>
+    </form>
+
+</div>
+
+        </xpath>
+
+
+
+</template>
+
+    <template id="search_inherit2" inherit_id="website.website_search_box">
+            <xpath expr="//input[@name='search']" position="attributes">
+        <attribute name="t-att-data-search-type">search_type</attribute>
+        <attribute name="t-att-data-limit">limit or '5'</attribute>
+        <attribute name="t-att-data-display-image">display_image or 'true'</attribute>
+        <attribute name="t-att-data-display-description">display_description or 'true'</attribute>
+        <attribute name="t-att-data-display-extra-link">display_extra_link or 'true'</attribute>
+        <attribute name="t-att-data-display-detail">display_detail or 'true'</attribute>
+        <attribute name="t-att-data-order-by">order_by</attribute>
+    </xpath>
+    </template>
+
+
+
+    <template id="search_inherit_test" inherit_id="website.layout">
+         <xpath expr="//div[@id='footer']" position="before">
+
+<!--<link rel="stylesheet" href="website_inherit/static/src/css/rating.css" type="text/css"/>-->
+<div class="wrapped_rating">
+    <div t-if="request.httprequest.path not in ['/rating/rate', '/service-statistic', '/e-portalresults']"  class="wrapped_form">
+
+                     <form class="form_rating" method="post" t-attf-action="/rating/rate">
+<fieldset>
+<legend>Donut Type</legend>
+            <div class="rating">
+                 <h3 class="rate_page" style="color: #636569; font-family: 'RB-Bold' !important;" >
+
+
+
+
+                     تقييم الصفحة
+                 </h3>
+                    <input type="radio" id="star5" name="rating" value="5" data-text="Very Good"/>
+        <label for="star5">5</label>
+        <input type="radio" id="star4" name="rating" value="4" data-text="Good"/>
+        <label for="star4">4</label>
+        <input type="radio" id="star3" name="rating" value="3" data-text="Neutral"/>
+        <label for="star3">3</label>
+        <input type="radio" id="star2" name="rating" value="2" data-text="Bad"/>
+        <label for="star2">2</label>
+        <input type="radio" id="star1" name="rating" value="1" data-text="Very Bad"/>
+        <label for="star1">1</label>
+                <!-- Add the star rating HTML code here -->
+                <!-- ... (star rating HTML) ... -->
+            </div>
+            <div class="form-container">
+               <!-- <label class="label_form" for="visite">عدد زياراتك للبوابة الإلكترونية:</label>
+                <select id="visite" name="visite" required="" class="form-control">
+                    <option value="first">الزيارة الأولى</option>
+                                                                <option value="daily">يوميا</option>
+
+                                                                <option value="monthly">شهريا</option>
+                                                                <option value="sometimes">ليس دائما </option>
+
+
+
+                </select>
+                <label class="label_form" for="ease">سهولة تصفح البوابة الإلكترونية:</label>
+                <select id="ease" name="ease" required="" class="form-control">
+                    <option value="very_easy">سهلة جدا</option>
+                                                                <option value="easy">سهلة </option>
+
+                                                                <option value="neutral">محايد</option>
+                                                                <option value="difficult">صعبة</option>
+                     <option value="very_difficult">صعبة جدا</option>
+
+
+
+                </select>
+
+                 <label class="label_form" for="clarity">مدى وضوح البوابة الإلكترونية وتنظيمها:</label>
+                <select id="clarity" name="clarity" required="" class="form-control">
+                    <option value="very_clear">واضحة تماما</option>
+                                                                <option value="clear">واضحة </option>
+
+                                                                <option value="neutral">محايد</option>
+                                                                <option value="not_clear">غير واضحة</option>
+                     <option value="not_clear_at_all">غير واضحة اطلاقا </option>
+
+
+
+                </select>
+
+
+                 <label class="label_form" for="satisfaction">مدى رضاك عن تصميم البوابة لإلكترونية:</label>
+                <select id="satisfaction" name="satisfaction" required="" class="form-control">
+                    <option value="very_satisfied">راضي بشدة</option>
+                                                                <option value="satisfied">راضي </option>
+
+                                                                <option value="neutral">محايد</option>
+                                                                <option value="not_satisfied">غير راضي</option>
+                     <option value="not_satisfied_at_all">غير راضي اطلاقا </option>
+
+
+
+                </select>-->
+
+
+                <label class="label_form">هل وجدت هذا المحتوى مفيدا؟</label>
+ <div style=" display: inline-block;
+    margin: 10px;" class="options">
+    <input style="display: none;" type="radio" name="choice" id="yes" class="choice" value="yes"/>
+    <label for="yes" class="emoji"> مفيد &#128578;</label>
+  </div>
+  <div style=" display: inline-block;
+    margin: 10px;" class="options">
+    <input style="display: none;" type="radio" name="choice" id="no" class="choice" value="no"/>
+    <label for="no" class="emoji"> غير مفيد &#128577;</label>
+  </div>
+
+                  <div class="radio-group" id="radio-group-yes">
+                      <p style="  color: #636569;
+    font-size: 16px;
+    line-height: normal;"><strong>  أضف سبب:  </strong></p>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_yes" id="radio1" value="utile"/>
+      <label class="label_form" for="radio1">كانت مفيدة</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_yes" id="radio2"  value="liaison"/>
+      <label class="label_form" for="radio2">الإجابات كانت مرتبطة
+</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_yes" id="radio3" value="good"/>
+      <label class="label_form" for="radio3" >مكتوبة بشكل جيد</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_yes" id="radio4" value="facile"/>
+      <label class="label_form" for="radio4" >التصميم جعله من السهل قراءته</label>
+    </div>
+
+                        <div class="radio-options">
+      <input type="radio" name="radio-choice_yes" id="radio5" value="autre_yes"/>
+      <label class="label_form" for="radio5" >أخرى</label>
+    </div>
+
+ <div id="comment-container_yes" style="display: none;">
+ <label class="label_form cmt" for="satisfaction">التعليق:</label>
+                <textarea name="comment_yes" class="form-control" id="satisfaction"
+                                                              cols="30" rows="6"  t-att-value="comment_yes"
+                                               ></textarea>
+
+
+ </div>
+                        <br/>
+                <input class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="ارسال"/>
+  </div>
+
+
+  <div class="radio-group" id="radio-group-no">
+        <p style="  color: #636569;
+    font-size: 16px;
+    line-height: normal;"><strong>  أضف سبب:  </strong></p>
+    <div class="radio-options">
+
+      <input type="radio" name="radio-choice_no" id="radio6" value="problem"/>
+      <label class="label_form" for="radio6" >توجد مشكلة تقنية</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_no" id="radio7" value="manque"/>
+      <label class="label_form" for="radio7" >لم استطع إيجاد إجابة ذات صلة
+</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_no" id="radio8" value="bad"/>
+      <label class="label_form" for="radio8" >مكتوبة بشكل سيء</label>
+    </div>
+    <div class="radio-options">
+      <input type="radio" name="radio-choice_no" id="radio9" value="difficile"/>
+      <label class="label_form" for="radio9" >التصميم جعله من الصعب قراءته</label>
+    </div>
+
+       <div class="radio-options">
+      <input type="radio" name="radio-choice_no" id="radio10"  value="autre_no"/>
+      <label class="label_form" for="radio10">أخرى</label>
+    </div>
+
+       <div id="comment-container_no" style="display: none;">
+ <label class="label_form cmt" for="satisfaction_no">التعليق:</label>
+                <textarea name="comment_no" class="form-control" id="satisfaction_no"
+                                                              cols="30" rows="6"  t-att-value="comment_no"
+                                               ></textarea>
+
+
+ </div>
+       <br/>
+                <input class="submit_rating" style="   background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);" type="submit" value="ارسال"/>
+  </div>
+
+
+                <input type="hidden" name="rating" t-att-value="selected_stars"/>
+
+ <input id="path" type="hidden" name="path" t-att-value="request.httprequest.path"/>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+
+
+            </div>
+</fieldset>
+        </form>
+
+    </div>
+     <br/>
+</div>
+
+
+         </xpath>
+    </template>
+
+
+
+
+            <template id="feedback_sent" name="Feedback Page">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'Feedback'"/>
+                <div id="wrap" class="oe_structure oe_empt" style="padding: 0 0 70px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <section class="helpdesk-forms col-md-8 text-center">
+                                <div class="ticket-done">
+                                    <script src="/theme_scita/static/src/js/lottie-player.js"></script>
+                                    <lottie-player src="/theme_scita/static/src/img/APD/done.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: 0 auto;" loop="" autoplay=""></lottie-player>
+                                    <h1>شكرا لك على ملاحظاتك. تم الارسال بنجاح</h1>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+
+    <template id="last_bug" inherit_id="website.layout">
+ <xpath expr="//script[@id='tracking_code']" position="replace">
+       <script id="tracking_code" async="async" t-attf-src="https://www.googletagmanager.com/gtag/js?id={{ website.google_analytics_key }}"></script>
+
+ </xpath>
+    </template>
+
+    <template id="menu_bug" inherit_id="website.navbar_nav">
+    <xpath expr="//ul[@id='top_menu']" position="attributes">
+        <attribute name="role">menu</attribute>
+    </xpath>
+</template>
+</data>
+</odoo>

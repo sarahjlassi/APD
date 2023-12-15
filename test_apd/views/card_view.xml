@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="card_tree_view">
+            <field name="name">shop card tree</field>
+            <field name="model">shop.card</field>
+            <field name="arch" type="xml">
+                <tree string="shop card list">
+                    <field name="name"/>
+                    <field name="discount"/>
+                    <field name="discount_types"/>
+                    <field name="category"/>
+                    <field name="city"/>
+                    <field name="website"/>
+                    <field name="clicks"></field>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="card_form_view">
+            <field name="name">shop card form</field>
+            <field name="model">shop.card</field>
+            <field name="arch" type="xml">
+                <form string="shop card form">
+                    <sheet>
+                        <group>
+                            <field name="logo" widget="image" class="oe_avatar"/>
+                            <field name="name"/>
+                            <field name="discount"/>
+                            <field name="discount_types"/>
+                            <field name="website"/>
+                            <field name="category"/>
+                            <field name="city"/>
+                            <field name="clicks"></field>
+                            <field name="special_offer" widget="boolean_toggle"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    </data>
+
+</odoo>

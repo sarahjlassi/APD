@@ -1,0 +1,51 @@
+<odoo>
+<data>
+<template id="event_calendar_inherit" inherit_id="website_event.index">
+
+
+
+    <xpath expr="//div[hasclass('container')]" position="replace">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <div class="container" id="event_container">
+                    <div class="row">
+                        <t t-call="website_event.searched_tags"/>
+                    </div>
+             <div class="row">
+                   <input type="hidden" id="current_lang" name="current_lang" t-att-value="request.env.lang"/>
+<!--  <input  id="current_tz" name="current_tz" t-att-value="request.context.get('tz')"/>-->
+
+                 <button type="button" id="toggleCardView">
+    <i class="fa fa-list"></i>
+</button> &amp;nbsp;
+<button type="button" id="toggleCalendarView">
+    <i class="fa fa-calendar"></i>
+</button>
+             </div>
+                    <div id="cardViewContainer" class="row">
+                        <div id="o_wevent_index_main_col" t-attf-class="col-md my-5 #{opt_events_list_columns and 'opt_events_list_columns' or 'opt_events_list_rows'}">
+                            <div class="row">
+
+
+                                <!-- Events List -->
+                                <t t-call="website_event.events_list"/>
+                            </div>
+                        </div>
+                    </div>
+
+              <div id="calendarViewContainer" class="row" style="display: none;">
+                  <br/>
+                  <br/>
+                <div id="calendar"></div>
+            </div>
+
+
+
+
+                </div>
+
+    </xpath>
+
+
+</template>
+</data>
+</odoo>

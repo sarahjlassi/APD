@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+    <data>
+
+
+        <record model="ir.actions.act_window" id="quiz_action_view">
+            <field name="name">registration quiz</field>
+            <field name="res_model">registration.quiz</field>
+            <field name="view_mode">tree,form,graph</field>
+        </record>
+
+       <record model="ir.actions.act_window" id="category_action_view">
+          <field name="name">shop category</field>
+          <field name="res_model">shop.category</field>
+        <field name="view_mode">tree,form</field>
+     </record>
+
+      <record model="ir.actions.act_window" id="card_action_view">
+          <field name="name">shop card category</field>
+          <field name="res_model">shop.card</field>
+            <field name="view_mode">tree,form</field>
+     </record>
+
+
+        <menuitem name="All about shop" id="root_menu"/>
+        <menuitem name="نموذج التسجيل" id="quiz_menu" parent="root_menu" action="quiz_action_view"/>
+        <menuitem name="تصنيفات" id="category_menu" parent="root_menu" action="category_action_view"/>
+        <menuitem name=" بطاقة عرض المشاركين والمتاجر" id="card_menu" parent="root_menu" action="card_action_view"/>
+    </data>
+</odoo>

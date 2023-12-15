@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+    <template id="last_bug" inherit_id="website.layout">
+ <xpath expr="//script[@id='tracking_code']" position="replace">
+       <script id="tracking_code" async="async" t-attf-src="https://www.googletagmanager.com/gtag/js?id={{ website.google_analytics_key }}"></script>
+
+ </xpath>
+    </template>
+
+    <template id="menu_bug" inherit_id="website.navbar_nav">
+    <xpath expr="//ul[@id='top_menu']" position="attributes">
+        <attribute name="role">menu</attribute>
+    </xpath>
+</template>
+    </data>
+</odoo>

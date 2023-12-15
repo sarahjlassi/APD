@@ -1,0 +1,25 @@
+// Add a keydown event listener to customize keyboard navigation
+// Add a keydown event listener to customize keyboard navigation
+// Get all the images, p, and h1 elements on the page
+const elements = document.querySelectorAll('img, p, h1,a, h3');
+
+// Loop through the elements and add tabindex="0"
+elements.forEach(element => {
+  element.setAttribute('tabindex', '0');
+});
+
+
+
+
+
+
+
+/* Add a blue outline to focused elements when using Tab key */
+:focus:not(:focus-visible) {
+    outline: none; /* Remove outline for mouse click */
+}
+
+:focus-visible {
+    outline: 2px solid blue; /* Add outline only for keyboard focus */
+}
+

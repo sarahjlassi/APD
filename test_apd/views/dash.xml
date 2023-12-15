@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <template id="tmp_cards_data" name="Dashboard Page">
+
+            <t t-name="website.mbdr-lsbt-lbnfsjy-ltsjyl">
+                <t t-call="website.layout">
+
+                    <style>
+                        html body #wrapwrap header .navbar {
+                        background: #752c8b !important;
+                        }
+
+                        html body #wrapwrap header {
+                        background: #752c8b
+                        }
+
+
+                        footer{
+                        display: none;
+                        }
+
+                        .card {
+                        box-sizing: border-box;
+                        width: 300px;
+                        background: rgba(0, 256, 0, 1);
+                        border: 10px solid green;
+                        box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+                        backdrop-filter: blur(60px);
+                        border-radius: 17px;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        user-select: none;
+                        font-weight: normal;
+
+                        }
+
+                        .card:hover {
+                        border: 1px solid black;
+                        transform: scale(1.05);
+                        background: rgba(0, 256, 0, 1);
+                        }
+
+                        .card:active {
+                        transform: scale(0.95) rotateZ(1.7deg);
+                        }
+
+                        .website{
+                        justify-content: center;
+                        }
+
+                    </style>
+
+
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/card.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/grid.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/label.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/icon.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/button.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/input.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/segment.min.css"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/animate.min.css"/>
+                    <script src="/web/content/14382/jquery-3.6.4.slim.min.js"/>
+                    <link rel="stylesheet" href="/home/sarra/odoo15/portal/test_apd/static/css/ps-style.css"/>
+
+
+                    <div id="wrap" class="oe_structure oe_empty oe_website_sale js_sale">
+                        <section class="intro-title about_us_v_2 o_colored_level" data-disp="about_us"
+                                 data-snippet="about_us_v_2" data-name="About Us Snippet 3"
+                                 style="background-image: none;">
+                            <div class="container">
+                                <div class="main-title">
+                                    <h3>
+                                        <span class="animate__animated animate__zoomIn">مبادرة السبت البنفسجي لعام 2023م
+                                            <br/>
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </section>
+                        <center>
+                            <div>
+                                <img class="animate__animated animate__zoomIn" style="max-width: 350px "
+                                     src="/web/image/1619-ba3e0bb1/logo.png" alt="" loading="lazy"/>
+                            </div>
+                            <div>
+                                <h4 class="animate__animated animate__zoomIn">مبادرة السبت البنفسجي عبارة عن يوم مخصص
+                                    لتقديم عروض ومزايا تجارية وخدمية للأشخاص ذوي الإعاقة في السبت الأخير من شهر يوليو في
+                                    كل عام والذي يوافق 29 يوليو 2023
+                                </h4>
+                            </div>
+
+                            <div class="animate__animated animate__flipInX"
+                                 style="display: flex ; justify-content: center ;margin: 20px; " dir="rtl">
+                                <a style="width: 250px;  background-color: #752c8b; color: white; padding: 20px; border-radius: 86% 14% 85% 15% / 0% 100% 0% 100%; border: 1px solid #752c8b; border-left: 5px solid #ecbd58; border-right: 3px solid #ecbd58;"
+                                   class="ui label" href="/ps-registration">اضغط هنا للتسجيل
+                                </a>
+                                <a style="width: 250px;  background-color: #752c8b; color: white; padding: 20px; border-radius: 86% 14% 85% 15% / 0% 100% 0% 100%; border: 1px solid #752c8b; border-left: 5px solid #ecbd58; border-right: 3px solid #ecbd58;"
+                                   class="ui label"
+                                   href="/web/content/17303/دليل%20هوية%20يوم%20السبت%20البنفسجي%2023.pdf">دليل الهوية
+                                    البصرية
+                                </a>
+
+                            </div>
+
+                            <div class="animate__animated animate__flipInX"
+                                 style="display: flex ; justify-content: center; " dir="rtl">
+                                <p style="width: auto;height: auto;  background-color: transparent; color: #752c8b; padding: 10px; border-radius: 86% 14% 85% 15% / 0% 100% 0% 100%; border-top: 3px solid #ecbd58; border-right: transparent; border-left: transparent; border-bottom: transparent;">
+                                    <img style="width:150px " alt="شعار تطبيق مزيد"
+                                         src="/web/image/17788-d24350c1/mazeed.png?height=256" loading="lazy"/>
+                                    <br/>
+                                    <b>حمل التطبيق الان</b>
+                                    <b style="background-color: #ecbd58 ;" class="ui small label">4000 منتج</b>
+
+                                    <br/>
+                                    <a href="https://apps.apple.com/app/id1597799560?mt=8">
+                                        <img style="max-width: 150px;"
+                                             src="/web/image/17810-236911ab/app_store.png?height=256" loading="lazy"/>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=sa.zid.mazeed">
+                                        <img style="max-width: 150px;"
+                                             src="/web/image/17809-1c64f523/google_play.png?height=256" loading="lazy"/>
+                                    </a>
+                                </p>
+                            </div>
+
+
+                        </center>
+
+
+                        <section class="table-tabs s_tabs pt48 pb48 o_colored_level" data-vcss="001"
+                                 data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                            <div class="container">
+                                <div class="s_tabs_main">
+                                    <div class="s_tabs_content tab-content">
+                                        <div class="tab-pane fade active show" id="tab-content-01" role="tabpanel"
+                                             aria-labelledby="tab-1">
+                                            <section class="our-rules-page service_varient_2 o_colored_level pb48"
+                                                     data-disp="service" data-snippet="service_varient_2"
+                                                     data-name="Service Snippet 3" data-original-title="" title=""
+                                                     aria-describedby="tooltip9237">
+                                                <div class="container">
+                                                    <div style="margin-bottom: 30px;" class="ui search">
+                                                        <div class="ui fluid input">
+                                                            <form class="form-searching  "
+                                                                  action="/purple-saturday-2023"
+                                                                  method="post">
+                                                                <input style="text-align: right; max-width: auto; border: 1px solid rgba(103, 36, 118, 1);"
+                                                                       class="prompt" id="myInput"
+                                                                       placeholder="البحث بإسم المتجر او مقدار الخصم او طريقة الإستفادة من الخصم..."
+                                                                       type="search" name="search"
+                                                                       t-att-value="request.params.get('search') or search"
+
+                                                                />
+
+                                                                <div class="btn-group">
+
+                                                                </div>
+
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+
+
+                                                                <div class="row">
+
+
+                                                                    <select onchange="this.form.submit();"
+                                                                            style="border: none; border-radius: 20px; padding: 5px; max-width: 200px;background-color: rgba(103, 36, 118, 1); color: white;"
+                                                                            class=""
+                                                                            id="categoryDropdown"
+                                                                            name="search_name"
+
+                                                                    >
+                                                                        <option value="" disabled="disabled"
+                                                                                selected="selected">تصنيفات
+                                                                        </option>
+                                                                        <t t-foreach="categories" t-as="category">
+
+                                                                            <option name='selected_category'
+
+                                                                                    t-att-value="category.name"
+                                                                                    t-att-selected="category.name == search_name ">
+                                                                                <t t-esc="category.name"
+
+                                                                                />
+                                                                            </option>
+
+                                                                        </t>
+
+                                                                    </select>
+                                                                    <div>
+                                                                        <select onchange="this.form.submit();"
+                                                                                style="border: none; border-radius: 20px; padding: 5px; max-width: 200px;background-color: rgba(103, 36, 118, 1); color: white;"
+                                                                                class=""
+                                                                                name="search_city"
+
+
+                                                                        >
+                                                                            <option disabled="disabled" value=""
+                                                                                    selected="selected">مدن
+                                                                            </option>
+                                                                            <t t-foreach="cities" t-as="zone">
+
+                                                                                <option name='selected_city'
+                                                                                        t-att-selected="zone == search_city "
+                                                                                        t-att-value="zone"
+                                                                                >
+
+                                                                                    <t t-esc="zone"
+
+
+                                                                                    />
+
+                                                                                </option>
+
+
+                                                                            </t>
+
+                                                                        </select>
+                                                                    </div>
+
+                                                                </div>
+                                                            </form>
+                                                            <form class="form-searching  "
+                                                                  action="/purple-saturday-2023"
+                                                                  method="post">
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+
+                                                                <div>
+
+                                                                </div>
+
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <center>
+                                                        <div style="margin: 20px;" dir="rtl" id="myBtnContainer">
+
+
+                                                            <form action="/purple-saturday-2023" method="get">
+
+                                                                <input id="all_cards" class="form-control"
+                                                                       name="all_cards" t-att-value="True"
+                                                                       type="hidden"/>
+
+                                                                <button style="width: 200px;" class="ui label"
+                                                                        type="submit">الكل
+
+                                                                </button>
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+                                                            </form>
+
+                                                            <form action="/purple-saturday-2023" method="get">
+
+
+                                                                <input id="special_cards" class="form-control"
+                                                                       name="special_cards"
+                                                                       t-att-value="True" type="hidden"/>
+
+                                                                <button style="width: 200px;"
+                                                                        type="submit"
+                                                                        class="ui label animate__animated animate__headShake animate__repeat-3">
+                                                                    <i class="fa fa-star"></i>
+                                                                    العروض المميزة
+                                                                </button>
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+                                                            </form>
+
+
+                                                            <form action="/purple-saturday-2023" method="get">
+
+
+                                                                <input id="clicks_cards" class="form-control"
+                                                                       name="clicks_cards"
+                                                                       t-att-value="True" type="hidden"/>
+
+                                                                <button style="width: 200px;"
+                                                                        type="submit"
+                                                                        class="ui label animate__animated animate__headShake animate__repeat-3">
+                                                                    <i class="fa fa-star"></i>
+                                                                    الاكثر زيارة
+                                                                </button>
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+                                                            </form>
+
+                                                            <form action="/purple-saturday-2023" method="get">
+
+
+                                                                <input id="discount_cards" class="form-control"
+                                                                       name="discount_cards"
+                                                                       t-att-value="True" type="hidden"/>
+
+                                                                <button style="width: 200px;"
+                                                                        type="submit"
+                                                                        class="ui label animate__animated animate__headShake animate__repeat-3">
+                                                                    <i class="fa fa-star"></i>
+                                                                    الاكثر تخفيضا
+                                                                </button>
+                                                                <input type="hidden" name="csrf_token"
+                                                                       t-att-value="request.csrf_token()"/>
+                                                            </form>
+
+
+                                                        </div>
+                                                    </center>
+
+
+                                                    <div id="uisearch">
+
+                                                        <div class="row c1 important" data-original-title="" title=""
+                                                             aria-describedby="tooltip252291">
+                                                            <t t-if="all_cards==True">
+                                                                <t t-foreach="records" t-as="card">
+                                                                    <div class="col-sm-4 o_colored_level col-lg-4 filterDiv">
+                                                                        <div class="card item">
+                                                                            <!-- Your existing card content -->
+                                                                            <div class="icon">
+                                                                                <img t-att-src="image_data_uri(card.logo)"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <h5 t-esc="card.name">
+                                                                                    <br/>
+                                                                                </h5>
+                                                                                <p class="ui orange circular label right">
+                                                                                    <span t-esc="card.discount"/>%
+                                                                                </p>
+                                                                                <p>الإستفادة من الخصم</p>
+                                                                                <p class="ui tiny purple label"
+                                                                                   t-field="card.discount_types"/>
+                                                                                <a class="ui tiny purple label">
+                                                                                    زيارة
+                                                                                    الفروع
+                                                                                </a>
+                                                                            </div>
+                                                                            <a class="ui tiny purple label website"
+                                                                               t-att-data-card-id="card.id"
+                                                                               t-attf-href="{{ card.website }}"
+
+                                                                            >
+
+                                                                                <p class="btn-services container">
+                                                                                    <i class="fad fa-external-link"/>
+                                                                                    زيارة المتجر
+                                                                                </p>
+                                                                            </a>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                            </t>
+                                                        </div>
+
+
+                                                        <div class="row c1 important" data-original-title="" title=""
+                                                             aria-describedby="tooltip252291">
+                                                            <t t-if="special_cards==True">
+                                                                <t t-foreach="records" t-as="card">
+                                                                    <t t-if="card.special_offer==True">
+                                                                        <div class="col-sm-4 o_colored_level col-lg-4 filterDiv">
+                                                                            <div class="card item">
+                                                                                <div class="icon">
+                                                                                    <img t-att-src="image_data_uri(card.logo)"
+                                                                                    />
+                                                                                </div>
+                                                                                <div class="info">
+                                                                                    <h5 t-esc="card.name">
+                                                                                        <br/>
+                                                                                    </h5>
+                                                                                    <p class="ui orange circular label right">
+                                                                                        <span t-esc="card.discount"/>%
+                                                                                    </p>
+                                                                                    <p>الإستفادة من الخصم</p>
+                                                                                    <p class="ui tiny purple label"
+                                                                                       t-field="card.discount_types"/>
+                                                                                    <a class="ui tiny purple label">
+                                                                                        زيارة
+                                                                                        الفروع
+                                                                                    </a>
+                                                                                </div>
+                                                                                <a class="ui tiny purple label website"
+                                                                                   t-att-data-card-id="card.id"
+                                                                                   t-attf-href="{{ card.website }}"
+
+                                                                                >
+
+                                                                                    <p class="btn-services container">
+                                                                                        <i class="fad fa-external-link"/>
+                                                                                        زيارة المتجر
+                                                                                    </p>
+                                                                                </a>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </t>
+                                                                </t>
+
+                                                            </t>
+                                                        </div>
+
+                                                        <div class="row c1 important" data-original-title="" title=""
+                                                             aria-describedby="tooltip252291">
+                                                            <t t-if="clicks_cards==True">
+                                                                <t t-foreach="clicks_records" t-as="card">
+                                                                    <div class="col-sm-4 o_colored_level col-lg-4 filterDiv">
+                                                                        <div class="card item">
+                                                                            <div class="icon">
+                                                                                <img t-att-src="image_data_uri(card.logo)"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <h5 t-esc="card.name">
+                                                                                    <br/>
+                                                                                </h5>
+                                                                                <p class="ui orange circular label right">
+                                                                                    <span t-esc="card.discount"/>%
+                                                                                </p>
+                                                                                <p>الإستفادة من الخصم</p>
+                                                                                <p class="ui tiny purple label"
+                                                                                   t-field="card.discount_types"/>
+                                                                                <a class="ui tiny purple label">
+                                                                                    زيارة
+                                                                                    الفروع
+                                                                                </a>
+                                                                            </div>
+                                                                            <a class="ui tiny purple label website"
+                                                                               t-att-data-card-id="card.id"
+                                                                               t-attf-href="{{ card.website }}"
+
+                                                                            >
+
+                                                                                <p class="btn-services container">
+                                                                                    <i class="fad fa-external-link"/>
+                                                                                    زيارة المتجر
+                                                                                </p>
+                                                                            </a>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </t>
+
+                                                            </t>
+                                                        </div>
+
+                                                        <div class="row c1 important" data-original-title="" title=""
+                                                             aria-describedby="tooltip252291">
+                                                            <t t-if="discount_cards==True">
+                                                                <t t-foreach="discount_records" t-as="card">
+                                                                    <div class="col-sm-4 o_colored_level col-lg-4 filterDiv">
+                                                                        <div class="card item">
+                                                                            <div class="icon">
+                                                                                <img t-att-src="image_data_uri(card.logo)"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <h5 t-esc="card.name">
+                                                                                    <br/>
+                                                                                </h5>
+
+                                                                                <p class="ui orange circular label right">
+                                                                                    <span t-esc="card.discount"/>%
+                                                                                </p>
+                                                                                <p>الإستفادة من الخصم</p>
+                                                                                <p class="ui tiny purple label"
+                                                                                   t-field="card.discount_types"/>
+                                                                                <a class="ui tiny purple label">
+                                                                                    زيارة
+                                                                                    الفروع
+                                                                                </a>
+                                                                            </div>
+                                                                            <a class="ui tiny purple label website"
+                                                                               t-att-data-card-id="card.id"
+                                                                               t-attf-href="{{ card.website }}"
+
+                                                                            >
+
+                                                                                <p class="btn-services container">
+                                                                                    <i class="fad fa-external-link"/>
+                                                                                    زيارة المتجر
+                                                                                </p>
+                                                                            </a>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </t>
+
+                                                            </t>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </section>
+                    </div>
+
+
+                    <!--                    <script>-->
+
+
+                    <!--                        var clicks = 0;-->
+                    <!--                        function onClick() {-->
+                    <!--                        clicks += 1;-->
+                    <!--                        document.getElementById("click").innerHTML = clicks;-->
+                    <!--                        console.log('Number of clicks:', clicks);-->
+
+                    <!--                        };-->
+
+
+                    <!--                    </script>-->
+
+
+                </t>
+            </t>
+
+
+        </template>
+
+
+    </data>
+</odoo>

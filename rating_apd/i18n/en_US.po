@@ -1,0 +1,270 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rating_apd
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-30 08:03+0000\n"
+"PO-Revision-Date: 2023-08-30 08:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "&amp;nbsp;&amp;nbsp;"
+msgstr "&amp;nbsp;&amp;nbsp;"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid ""
+"<span class=\"o_default_snippet_text\">نتائج تقييم البوابة "
+"الإلكترونية</span>"
+msgstr "<span class=\"o_default_snippet_text\">Website rating results </span>"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "<strong>  أضف سبب:  </strong>"
+msgstr "<strong> Add a reason: </strong>"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_report_view_graph
+msgid "Analysis"
+msgstr "الاحصائيات"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__id
+msgid "ID"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model,name:rating_apd.model_rating_page
+msgid "rating.page"
+msgstr ""
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_no__autre_no
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_yes__autre_yes
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "أخرى"
+msgstr "other"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_search_view
+msgid "أسباب القبول"
+msgstr "satisfaction reasons"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_search_view
+msgid "أسباب عدم القبول"
+msgstr "Non satisfaction reasons"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "أعلى المحتوى تقييما (حتى 5 صفحات)"
+msgstr "Best rated contents (up to 5 pages)"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "أقل المحتوى تقييما (حتى 5 صفحات)"
+msgstr "Worst rated contents (up to 5 pages)"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "اختر الشهر"
+msgstr "Choose month"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__page_name
+msgid "اسم الصفحة"
+msgstr "Page's name"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_yes__liaison
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "الإجابات كانت مرتبطة"
+msgstr "The answers were related"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_search_view
+msgid "الافادة"
+msgstr "Satisfaction"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_yes__facile
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "التصميم جعله من السهل قراءته"
+msgstr "The design makes it easy to read"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_no__difficile
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "التصميم جعله من الصعب قراءته"
+msgstr "The design made it hard to read"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__comment_no
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__comment_yes
+msgid "التعليق"
+msgstr "Comment"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid ""
+"التعليق:\n"
+"  <span style=\"font-size:12px ;                 margin-left: 5px;\">زائر علق على المحتوى </span>"
+msgstr "Comment: <span style=\"font-size:12px ;                 margin-left: 5px;\">Visitors commented this content</span>"
+
+#. module: rating_apd
+#: model:ir.actions.act_window,name:rating_apd.action_rating_page
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__rating
+#: model:ir.ui.menu,name:rating_apd.fund1
+#: model:ir.ui.menu,name:rating_apd.fund2
+msgid "التقييم"
+msgstr "Rating"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__cas_no
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__cas_yes
+msgid "السبب"
+msgstr "Reason"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__path
+msgid "الصفحة"
+msgstr "Page"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid ""
+"تقييم الصفحة\n"
+"\n"
+"                <span style=\"font-size: 18px;                 margin-left: 5px;\"> (التقييم </span>"
+msgstr "Page Rating"
+"<span style=\"font-size: 18px;                 margin-left: 5px;\">  (Rating </span>"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_no__problem
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "توجد مشكلة تقنية"
+msgstr "There is a technical problem"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.feedback_sent
+msgid "شكرا لك على ملاحظاتك. تم الارسال بنجاح"
+msgstr "Thank you for your feedback, Submitted successfully"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "عدد الأصوات"
+msgstr "Votes number"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__utile__no
+msgid "غير مفيد"
+msgstr "Not useful"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "غير مفيد <i class=\"fas fa-thumbs-down\" style=\"color: #009877;\"/>"
+msgstr "Not useful <i class=\"fas fa-thumbs-down\" style=\"color: #009877;\"/>"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_yes__utile
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "كانت مفيدة"
+msgstr "Useful"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "لا, لم تكن الصفحة مفيدة"
+msgstr "No, The page was not useful"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_no__manque
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "لم استطع إيجاد إجابة ذات صلة"
+msgstr "Couldn't find a related answer"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__utile__yes
+msgid "مفيد"
+msgstr "Useful"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "مفيد <i class=\"fas fa-thumbs-up\" style=\"color: #009877;\"/>"
+msgstr "Useful <i class=\"fas fa-thumbs-up\" style=\"color: #009877;\"/>"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_yes__good
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "مكتوبة بشكل جيد"
+msgstr "Well written"
+
+#. module: rating_apd
+#: model:ir.model.fields.selection,name:rating_apd.selection__rating_page__cas_no__bad
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "مكتوبة بشكل سيء"
+msgstr "Poorly written"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "نسبة الاستفادة"
+msgstr "Satisfaction rate"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.dash
+msgid "نعم, كانت الصفحة مفيدة"
+msgstr "Yes, The page was useful"
+
+#. module: rating_apd
+#: model:ir.model.fields,field_description:rating_apd.field_rating_page__utile
+msgid "هل وجدت هذا المحتوى مفيدا"
+msgstr "Did you find this content useful ?"
+
+#. module: rating_apd
+#: model_terms:ir.ui.view,arch_db:rating_apd.rating_template
+msgid "هل وجدت هذا المحتوى مفيدا؟"
+msgstr "Did you find this content useful ?"

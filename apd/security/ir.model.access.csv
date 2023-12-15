@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_registration_quiz,registration.quiz,model_registration_quiz,base.group_user,1,1,1,1
+access_shop_category,shop.category,model_shop_category,base.group_user,1,1,1,1
+access_shop_card,shop.card,model_shop_card,base.group_user,1,1,1,1

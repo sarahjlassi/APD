@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+    <data>
+
+
+        <record model="ir.actions.act_window" id="quiz_action_view">
+            <field name="name">طلبات التسجيل</field>
+            <field name="res_model">registration.quiz</field>
+            <field name="view_mode">tree,form,graph</field>
+        </record>
+
+       <record model="ir.actions.act_window" id="category_action_view">
+          <field name="name">النصنيفات</field>
+          <field name="res_model">shop.category</field>
+        <field name="view_mode">tree,form</field>
+     </record>
+
+      <record model="ir.actions.act_window" id="card_action_view">
+          <field name="name">العروض</field>
+          <field name="res_model">shop.card</field>
+            <field name="view_mode">tree,form</field>
+     </record>
+
+
+        <menuitem name="السبت البنفسجي" id="root_menu"/>
+        <menuitem name="طلبات التسجيل" id="quiz_menu" parent="root_menu" action="quiz_action_view"/>
+        <menuitem name="التصنيفات" id="category_menu" parent="root_menu" action="category_action_view"/>
+        <menuitem name="العروض" id="card_menu" parent="root_menu" action="card_action_view"/>
+    </data>
+</odoo>

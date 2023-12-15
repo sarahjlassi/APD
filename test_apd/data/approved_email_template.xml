@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="samedi_approval" model="mail.template">
+
+            <field name="name">Approval</field>
+            <field name="model_id" ref="test_apd.model_registration_quiz"/>
+            <field name="email_from">sarrajlassislnee123@gmail.com</field>
+            <field name="email_to">{{object.shop_email}}</field>
+            <field name="subject">APPROVAL</field>
+            <field name="body_html" type="html">
+
+                <center>
+                    <header>
+
+                        <div style="margin-bottom: 60px; color: black; text-decoration: underline;">
+                            <p style="color: black;" class="last-child">
+                                <a style="color: black;" href="https://mailchi.mp/apd/uwv6aytk5b?e=[UNIQID]">View this
+                                    email in your browser
+                                </a>
+                            </p>
+                        </div>
+<a href="https://apd.gov.sa/">
+                        <img style="border:0;width:564px;height:auto;max-width:100%;max-height:100%;display:block;margin-bottom: 40px;"
+                             alt=""
+                             src="https://dim.mcusercontent.com/cs/15eb475752da52e857f01da45/images/86be141e-da9d-434a-6ce2-f13e0240fda1.png?w=564&amp;dpr=2"
+                             role="presentation" class="imageDropZone" width="564" height="auto"/>
+</a>
+                        <a href="https://apd.gov.sa/ps-registration">
+                        <img style="border:0;width:438px;height:auto;max-width:100%;max-height:100%;display:block;margin-bottom: 50px;"
+                             alt="شعار السبت البنفسجي"
+                             src="https://dim.mcusercontent.com/cs/15eb475752da52e857f01da45/images/c6282f62-d78c-9d07-5d54-acaf2c386d9e.png?w=438&amp;dpr=2"
+                             class="" width="438" height="auto"/>
+                        </a>
+                    </header>
+                    <p style="text-align: center; direction: rtl; color: black; ">
+                        <span style="color:#000000;">
+
+                            شريكنا العزيز،
+                            <span style="font-family: 'DM Sans', sans-serif; font-size: 16px"  t-out="object.shop_name or ''"/>
+                        </span>
+
+                    </p>
+                    <p style="text-align: center; direction: rtl; color: black; ">
+                        <span style="color:#000000;">
+                            <span style="font-family: 'DM Sans', sans-serif;font-size: 16px">نشكر لكم دعمكم مبادرة السبت البنفسجي في
+                                موسمها
+                                الثالث
+                            </span>
+                        </span>
+                    </p>
+                    <p style="text-align: center; direction: rtl; color: black; ">
+                        <span style="color:#000000;">
+                            <span style="font-family: 'DM Sans', sans-serif ;font-size: 16px">يمنكم الإطلاع على تفاصيل أكثر حول المبادرة
+                                وإتمام عملية التسجيل.
+                            </span>
+                        </span>
+                    </p>
+                    <br/>
+                    <p style="text-align: center; direction: rtl; color: black; " >
+                        <span style="color:#000000;">
+                            <span style="font-family: 'DM Sans', sans-serif;font-size: 16px">للمشاركة عبر موقعكم الالكتروني أو حسابات
+                                التواصل الاجتماعي الخاصة بكم.
+                            </span>
+
+                        </span>
+                    </p>
+
+                    <p style="text-align: center; direction: rtl; color: black; " class="last-child">
+                        <span style="color:#000000;">
+                            <span style="font-family: 'DM Sans', sans-serif; font-size: 16px">و</span>
+                        </span>
+                        لتسويق عرضكم الخاص بالسبت البنفسجي
+                        <span style="color:#000000;">
+                            <span style="font-family: 'DM Sans', sans-serif;font-size: 16px">، يمكنكم الإطلاع على ملف الهوية الخاص
+                                بالمبادرة
+                            </span>
+                        </span>
+                    </p>
+
+
+                    <div style="margin-top: 40px;margin-bottom: 30px;">
+                        <a href="https://mcusercontent.com/15eb475752da52e857f01da45/files/a93ba4b4-b6d5-d75a-fd16-d02a1c803de4/PS_Brand.pdf">
+                        <img style="border:0;width:564px;height:auto;max-width:100%;max-height:100%;display:block"
+                             alt="دليل الهوية البصرية للسبت البنفسجي"
+                             src="https://dim.mcusercontent.com/cs/15eb475752da52e857f01da45/images/17a3e9fa-c548-46cb-2e39-2ac92c95e00d.png?w=564&amp;dpr=2"
+                             class="" width="564" height="auto"/>
+                        </a>
+                    </div>
+
+                    <div>
+
+                        <button style="
+                width: 150px;
+                height: 40px;
+                background-color: #7304a8;
+                color: white;
+                border: 2px solid black;
+                display: block;
+  margin-bottom: 10px;
+
+          " onclick="window.location.href = 'https://apd.gov.sa/ps-registration'">
+                            للمزيد و التسجيل
+                        </button>
+
+                        <button style="
+                width: 200px;
+                height: 40px;
+                background-color: #7304a8;;
+                color: white;
+                border: 2px solid black;
+                display: block;
+                margin-bottom: 10px;
+
+          " class="purple-button" onclick="window.location.href = 'https://twitter.com/purple_sat_ksa'">
+                            تابع حساب السبت البنفسجي
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <hr style="min-width: 0%; border-top: 2px solid #000000; margin-top: 25px; margin-bottom: 25px;"
+                            valign="top; "/>
+                    </div>
+                    <div>
+                                                <a href="https://www.tiktok.com/@apd_ksa">
+
+                        <img style="border:0;width:40px;height:auto;max-width:100%;max-height:100%;display:inline-block;margin-right:30px;"
+                             alt="TikTok icon"
+                             src="https://dim.mcusercontent.com/https/cdn-images.mailchimp.com%2Ficons%2Fsocial-block-v3%2Fblock-icons-v3%2Ftiktok-filled-gray-40.png?w=40&amp;dpr=2"
+                             class="" width="40" height="auto"/>
+                        </a>
+                        <a href="https://www.instagram.com/apd_ksa/">
+
+                        <img style="border:0;width:40px;height:auto;max-width:100%;max-height:100%;display:inline-block;margin-right:30px;"
+                             alt="Instagram icon"
+                             src="https://dim.mcusercontent.com/https/cdn-images.mailchimp.com%2Ficons%2Fsocial-block-v3%2Fblock-icons-v3%2Finstagram-filled-gray-40.png?w=40&amp;dpr=2"
+                             class="" width="40" height="auto"/>
+                        </a>
+                        <a href="https://www.linkedin.com/company/apdksa">
+
+                        <img style="border:0;width:40px;height:auto;max-width:100%;max-height:100%;display:inline-block;margin-right:30px;"
+                             alt="LinkedIn icon"
+                             src="https://dim.mcusercontent.com/https/cdn-images.mailchimp.com%2Ficons%2Fsocial-block-v3%2Fblock-icons-v3%2Flinkedin-filled-gray-40.png?w=40&amp;dpr=2"
+                             class="" width="40" height="auto"/>
+                        </a>
+                        <a href="https://twitter.com/APD_ksa">
+
+                        <img style="border:0;width:40px;height:auto;max-width:100%;max-height:100%;display:inline-block;"
+                             alt="Twitter icon"
+                             src="https://dim.mcusercontent.com/https/cdn-images.mailchimp.com%2Ficons%2Fsocial-block-v3%2Fblock-icons-v3%2Ftwitter-filled-gray-40.png?w=40&amp;dpr=2"
+                             class="" width="40" height="auto"/>
+                        </a>
+                    </div>
+
+
+                    <div style="margin-bottom: 25px;margin-top: 25px;">
+
+                        <img data-block-id="8"
+                             style="width:237.8649517684887px;height:auto;max-width:100%; max-height:100%;display:block"
+                             alt=""
+                             src="https://dim.mcusercontent.com/cs/15eb475752da52e857f01da45/images/366b3add-fe3f-ac76-28d2-a92d36af23fc.png?w=238&amp;dpr=2"
+                             role="presentation" class="imageDropZone" width="237.8649517684887" height="auto"/>
+                    </div>
+
+                    <div style="color: black;">
+                        <span style="font-size: 12px">Copyright (C) 2023 Authority of People with Disability. All rights
+                            reserved.
+                        </span>
+                    </div>
+
+                    <div style="margin-bottom: 30px; margin-top: 30px;">
+                        <span style="font-size: 12px; color: black;">Our mailing address is:</span>
+                    </div>
+                    <div>
+                        <span style="font-size: 12px ; color: black;">Want to change how you receive these emails?
+                        </span>
+                    </div>
+                    <div>
+                        <span style="font-size: 12px; color: black;">You can</span>
+                        <a href="https://apd.us9.list-manage.com/profile?u=15eb475752da52e857f01da45&amp;id=dcc7904e6b&amp;e=[UNIQID]&amp;c=0b9a69f918">
+                            <span style="font-size: 12px; color: black; text-decoration: underline;">update your
+                                preferences
+                            </span>
+                        </a>
+                        <span style="font-size: 12px; color: black;">or</span>
+                        <a href="https://apd.us9.list-manage.com/unsubscribe?u=15eb475752da52e857f01da45&amp;id=dcc7904e6b&amp;e=[UNIQID]&amp;c=0b9a69f918">
+                            <span style="font-size: 12px; color: black; text-decoration: underline;">unsubscribe</span>
+                        </a>
+                    </div>
+                </center>
+            </field>
+
+
+        </record>
+
+    </data>
+</odoo>

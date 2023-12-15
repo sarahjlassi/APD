@@ -1,0 +1,265 @@
+<odoo>
+    <data>
+    <template id="searchbox_inherit" inherit_id="website.website_search_box">
+
+<!-- accessibility check fix-->
+
+    <xpath expr="//i[hasclass('fa-search')]" position="replace">
+        <strong class="fa fa-search"/>
+    </xpath>
+
+
+        <xpath expr="//input[@name='search']" position="attributes">
+        <attribute name="id">search</attribute>
+    </xpath>
+
+          <xpath expr="//input[@name='search']" position="after">
+              <label for="search" hidden="hidden">search</label>
+    </xpath>
+    </template>
+
+<template id="search_inherit1" inherit_id="website.website_search_box_input">
+
+    <xpath expr="//input[@name='search']" position="after">
+        <select t-if="siteweb==True" name="ordre" t-att-value="ordre" id="ordre"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;
+margin-right: 10px;
+margin-left: 10px;
+"
+
+                                                                    >
+                                                                <option value="asc" t-att-selected="ordre == 'asc'">أ-ي</option>
+                                                                <option value="desc" t-att-selected="ordre == 'desc'">ي-أ</option>
+
+
+                                                            </select>
+
+    <!--       <select t-if="siteweb==True" name="type" t-att-value="type" id="type"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+                <option value="all" t-att-selected="type == 'all'">الجميع</option>
+                                                                <option value="blogs" t-att-selected="type == 'blogs'">الأخبار</option>
+                                                                <option value="events" t-att-selected="type == 'events'">الفعاليات</option>
+
+
+                                                            </select>
+ <input t-if="siteweb==True" name="date_begin" t-att-value="date_begin" id="date_begin" type="text" placeholder="تاريخ البدء"
+                    onfocus="(this.type='date')"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+
+
+                                                            </input>
+
+         <input t-if="siteweb==True" name="date_end" t-att-value="date_end" id="date_end" type="text" placeholder="تاريخ النهاية"
+                    onfocus="(this.type='date')"
+                                                                   style="    background: white;
+    color: rgba(0,0,0,.6)!important;
+    font-weight: 400;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none!important;
+    border: 1px solid #CED4DA;"
+                                                                   >
+
+
+                                                            </input>
+-->
+    </xpath>
+
+        <xpath expr="//div[@role='search']" position="after">
+
+
+           <!--  <style>
+.form_advanced {
+    text-align: center;
+}
+
+.form_advanced .input-group {
+    display: flex;
+    align-items: center;
+    margin: 100px 0; /* Adjust margin as needed for spacing between label-input pairs */
+}
+
+.form_advanced label {
+    flex: 1;
+    text-align: right;
+
+}
+
+.form_advanced input[type="text"],
+.form_advanced select {
+    flex: 2;
+    width: 100%;
+    padding: 8px;
+                 margin-right: 10px !important ;
+}
+
+
+
+
+
+    </style>-->
+
+            <br/>
+            <a t-if="siteweb==True and request.env.lang == 'ar_001'" style="color: #009877; text-align: right !important;" class="advanced-search-link" href="#" >بحث بسيط</a>
+ <a t-if="siteweb==True and request.env.lang == 'en_US'" style="color: #009877; text-align: left !important;" class="advanced-search-link" href="#" >Simple Search</a>
+
+                        <a t-if="request.httprequest.path not in ['/','/rating/rate', '/service-statistic'] and request.env.lang == 'ar_001'" style="color: #009877; text-align: right !important;" href="/website/search" >بحث متقدم</a>
+ <a t-if="siteweb!=True and request.env.lang == 'en_US'" style="color: #009877; text-align: left !important;"  href="/website/search" >Advanced Search</a>
+
+
+            <br/>
+            <br/>
+<div  class="advanced-search-form" t-if="siteweb==True" style="display: block; width:60%;">
+         <input type="hidden" class="current_lang_s" name="current_lang_s" t-att-value="request.env.lang"/>
+            <form  class="form_advanced"   action="/website/search" method="get">
+
+
+                 <div class="input-group">
+                     <label for="search_ad">كلمة البحث:</label>
+
+        <input t-if="request.env.lang == 'ar_001'" style="margin-right: 10px !important ;" type="text" id="search_ad" class="form-control" name="search_ad" t-att-value="search_ad" placeholder="بحث ..."/>
+
+                       <input t-if="request.env.lang == 'en_US'" style="margin-left: 10px !important ;" type="text" id="search_ad" class="form-control" name="search_ad" t-att-value="search_ad" placeholder="بحث ..."/>
+
+
+                 </div>
+<br/>
+                 <div class="input-group">
+        <label for="ordred">الترتيب:</label>
+        <select  style="margin-right: 38px !important ;" t-if="siteweb==True and request.env.lang == 'ar_001' " name="ordred" t-att-value="ordred" id="ordred"
+                                  class="form-control"
+                                                                    >
+                                                                <option value="asc" t-att-selected="ordre == 'asc'">أ-ي</option>
+                                                                <option value="desc" t-att-selected="ordre == 'desc'">ي-أ</option>
+
+
+                                                            </select>
+         <select style="margin-left: 59px !important ;" t-if="siteweb==True and request.env.lang == 'en_US'" name="ordred" t-att-value="ordred" id="ordred"
+                                  class="form-control"
+                                                                    >
+                                                                <option value="asc" t-att-selected="ordre == 'asc'">أ-ي</option>
+                                                                <option value="desc" t-att-selected="ordre == 'desc'">ي-أ</option>
+
+
+                                                            </select>
+
+
+                 </div>
+                <br/>
+                 <div class="input-group">
+        <label for="type">نوع الصفحة:</label>
+        <select style="margin-right: 10px !important ;" t-if="siteweb==True and request.env.lang == 'ar_001'" name="type" t-att-value="type" id="type"
+                             class="form-control"                                    >
+                <option value="all" t-att-selected="type == 'all'">الجميع</option>
+                                                                <option value="blogs" t-att-selected="type == 'blogs'">الأخبار</option>
+                                                                <option value="events" t-att-selected="type == 'events'">الفعاليات</option>
+
+
+                                                            </select>
+
+
+                      <select style="margin-left: 30px !important ;" t-if="siteweb==True  and request.env.lang == 'en_US'" name="type" t-att-value="type" id="type"
+                             class="form-control"                                    >
+                <option value="all" t-att-selected="type == 'all'">الجميع</option>
+                                                                <option value="blogs" t-att-selected="type == 'blogs'">الأخبار</option>
+                                                                <option value="events" t-att-selected="type == 'events'">الفعاليات</option>
+
+
+                                                            </select>
+                 </div>
+<br/>
+                 <div class="input-group">
+                  <label for="date_begin">تاريخ البدء:</label>
+                     <input style="margin-right: 20px !important ;" t-if="siteweb==True and request.env.lang == 'ar_001'" name="date_begin" t-att-value="date_begin" id="date_begin" type="text" placeholder="تاريخ البدء"
+                    onfocus="(this.type='date')"
+                                                                class="form-control" >
+
+
+                                                            </input>
+
+
+                        <input style="margin-left: 27px !important ;" t-if="siteweb==True  and request.env.lang == 'en_US'" name="date_begin" t-att-value="date_begin" id="date_begin" type="text" placeholder="تاريخ البدء"
+                    onfocus="(this.type='date')"
+                                                                class="form-control" >
+
+
+                                                            </input>
+                 </div>
+
+                <br/>
+                 <div class="input-group">
+
+                <label for="date_end"> تاريخ النهاية:</label>
+                      <input style="margin-right: 8px !important ;" t-if="siteweb==True and request.env.lang == 'ar_001'" name="date_end" t-att-value="date_end" id="date_end" type="text" placeholder="تاريخ النهاية"
+                    onfocus="(this.type='date')"
+                                 class="form-control"
+                                                                   >
+
+
+                                                            </input>
+
+
+                         <input style="margin-left: 34px !important ;" t-if="siteweb==True and request.env.lang == 'en_US'" name="date_end" t-att-value="date_end" id="date_end" type="text" placeholder="تاريخ النهاية"
+                    onfocus="(this.type='date')"
+                                 class="form-control"
+                                                                   >
+
+
+                                                            </input>
+
+                 </div>
+
+<br/>
+                 <div class="input-group">
+        <button style="   background: #009877;
+        color: #FFFFFF;
+    min-height: 52px;
+    border-radius: 8px;
+    border-color:#009877;
+    margin:20px;
+    width:100px;
+  " type="submit">البحث</button>
+                 </div>
+    </form>
+
+</div>
+
+        </xpath>
+
+
+
+</template>
+
+    <template id="search_inherit2" inherit_id="website.website_search_box">
+            <xpath expr="//input[@name='search']" position="attributes">
+        <attribute name="t-att-data-search-type">search_type</attribute>
+        <attribute name="t-att-data-limit">limit or '5'</attribute>
+        <attribute name="t-att-data-display-image">display_image or 'true'</attribute>
+        <attribute name="t-att-data-display-description">display_description or 'true'</attribute>
+        <attribute name="t-att-data-display-extra-link">display_extra_link or 'true'</attribute>
+        <attribute name="t-att-data-display-detail">display_detail or 'true'</attribute>
+        <attribute name="t-att-data-order-by">order_by</attribute>
+    </xpath>
+    </template>
+    </data>
+</odoo>
