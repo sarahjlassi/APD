@@ -1,0 +1,260 @@
+
+
+        <odoo>
+  <data>
+
+         <template id="dash" name="Dashboard Page">
+            <t t-call="website.layout">
+              <t t-set="pageName" t-value="'Dashboard'"/>
+              <style>
+                html body.uc_theme_roboto  #wrapwrap
+{
+    .licened-companies-table .dataTables_wrapper .table tr
+    {
+        th, td
+        {
+            font-size: 0.875em;
+            .btn
+            {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .videos-album
+    {
+        text-align: center;
+        .item
+        {
+            margin-bottom: 50px;
+            h5
+            {
+                font-family: "RB-Bold" !important;
+                padding: 0 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .o_portal_wrap #o_my_sidebar .o_portal_my_details h4 a.btn,
+    .oe_website_login_container .oe_login_form .justify-content-between.mt-2.d-flex.small,
+    #o_wblog_post_top .o_wblog_post_title + .text-muted span:last-of-type
+    {
+        display: none !important
+    }
+    #o_portal_navbar_content .nav.flex-column.flex-lg-row.ml-auto.p-0.mb-3.mb-lg-0.mt-1.mt-lg-0
+    {
+        display: none;
+    }
+}
+html body.site-dark #wrapwrap
+{
+    .bg-white,
+    .bg-light,
+    #jobs_grid a.text-decoration-none .card
+    {
+        background: #262837 !important;
+        color: #fff;
+    }
+    .bg-200
+    {
+        background-color: #1F1D2C !important;
+        color: #fff;
+    }
+    .card-body,
+    .text-dark,
+    #jobs_grid a.text-decoration-none .card .card-body h3
+    {
+        color: #fff !important;
+    }
+}
+html[lang="ar-001"] body.uc_theme_roboto  #wrapwrap
+{
+    .oe_website_sale .breadcrumb .breadcrumb-item + .breadcrumb-item::before
+    {
+        transform: scaleX(-1);
+    }
+}
+
+html body.uc_theme_roboto  #wrapwrap
+{
+    .licened-companies-table .dataTables_wrapper .table tr
+    {
+        th, td
+        {
+            font-size: 0.875em;
+            .btn
+            {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .videos-album
+    {
+        text-align: center;
+        .item
+        {
+            margin-bottom: 50px;
+            h5
+            {
+                font-family: "RB-Bold" !important;
+                padding: 0 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .o_portal_wrap #o_my_sidebar .o_portal_my_details h4 a.btn,
+    .oe_website_login_container .oe_login_form .justify-content-between.mt-2.d-flex.small
+    {
+        display: none !important
+    }
+    #o_portal_navbar_content .nav.flex-column.flex-lg-row.ml-auto.p-0.mb-3.mb-lg-0.mt-1.mt-lg-0
+    {
+        display: none;
+    }
+}
+html body.site-dark #wrapwrap
+{
+    .bg-white,
+    .bg-light,
+    #jobs_grid a.text-decoration-none .card
+    {
+        background: #262837 !important;
+        color: #fff;
+    }
+    .bg-200
+    {
+        background-color: #1F1D2C !important;
+        color: #fff;
+    }
+    .card-body,
+    .text-dark,
+    #jobs_grid a.text-decoration-none .card .card-body h3
+    {
+        color: #fff !important;
+    }
+}
+html[lang="ar-001"] body.uc_theme_roboto  #wrapwrap
+{
+    .oe_website_sale .breadcrumb .breadcrumb-item + .breadcrumb-item::before
+    {
+        transform: scaleX(-1);
+    }
+}
+
+
+              </style>
+
+                    <div id="wrap" class="oe_structure oe_empty oe_website_sale js_sale">
+    <section class="intro-title about_us_v_2 o_colored_level" data-disp="about_us" data-snippet="about_us_v_2" style="background-image: none;" data-name="Main Title">
+        <div class="container">
+          <div class="main-title">
+            <h3>
+              <span class="o_default_snippet_text">نتائج تقييم البوابة الإلكترونية</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="mt-4 mt-lg-0 o_colored_level col-lg-6">
+              <div class="s_chart" data-type="doughnut" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2" t-att-data-data="value1" data-snippet="s_chart" data-name="Chart">
+                <h2 style="text-align: center;">نسبة الاستفادة</h2>
+                <canvas width="300" style=""/>
+              </div>
+
+
+              <div class="s_chart" data-type="horizontalBar" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2" t-att-data-data="value3" data-snippet="s_chart" data-name="Chart">
+                <h2>&amp;nbsp;</h2>
+                <h2>&amp;nbsp;</h2>
+
+                <h2 style="text-align: center;">&amp;nbsp;&amp;nbsp;</h2>
+                <p style="text-align: center;">&amp;nbsp;</p>
+                <h2 style="text-align: center;">نعم, كانت الصفحة مفيدة</h2>
+                <canvas width="300" style=""/>
+              </div>
+
+                <div class="s_chart" data-type="horizontalBar" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2" t-att-data-data="value5" data-snippet="s_chart" data-name="Chart">
+                <h2>&amp;nbsp;</h2>
+                <h2>&amp;nbsp;</h2>
+                                          <form action="/e-portalresults/best_by_month" id="monthForm">
+    <label for="monthSelect">اختر الشهر</label>
+    <select id="monthSelect" style="width: 150px;" class="form-control" name="selectedMonth" t-att-value="selectedMonth">
+         <t t-foreach="latest_months" t-as="option">
+                <option t-att-value="option[0]" t-att-selected="option[0] == selected_month">   <t t-esc="option[1]" /></option>
+            </t>
+       <!-- <option t-att-value="selectedMonth" t-att-selected="selectedMonth"> <t t-esc="month_best"/> </option>-->
+    </select>
+                                  <input type="hidden" name="csrf_token"
+                                                       t-att-value="request.csrf_token()"/>
+
+</form>
+                <h2 style="text-align: center;">&amp;nbsp;&amp;nbsp;</h2>
+                <p style="text-align: center;">&amp;nbsp;</p>
+                <h2 style="text-align: center;">  أعلى المحتوى تقييما (حتى 5 صفحات)  </h2>
+                <canvas width="300" style=""/>
+              </div>
+            </div>
+            <div class="mt-4 mt-lg-0 o_colored_level col-lg-6 pt0">
+              <div class="s_chart" data-type="doughnut" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2" t-att-data-data="value2"  data-snippet="s_chart" data-name="Chart">
+                <h2 style="text-align: center;">عدد الأصوات</h2>
+                <canvas width="300" style=""/>
+              </div>
+
+                <br/>
+
+              <div class="s_chart" data-type="horizontalBar" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2"  t-att-data-data="value4" data-snippet="s_chart" data-name="Chart">
+                 <h2>&amp;nbsp;</h2>
+
+
+                <h2 style="text-align: center;">&amp;nbsp;</h2>
+                <p style="text-align: center;">&amp;nbsp;</p>
+                <h2 style="text-align: center;">لا, لم تكن الصفحة مفيدة</h2>
+                <canvas width="300" style=""/>
+              </div>
+ <br/>
+<br/>
+
+                 <div class="s_chart" data-type="horizontalBar" data-legend-position="top" data-tooltip-display="true" data-stacked="false" data-border-width="2"  t-att-data-data="value6" data-snippet="s_chart" data-name="Chart">
+
+                <h2>&amp;nbsp;</h2>
+
+                                                                                 <form action="/e-portalresults/worst_by_month" id="monthForm1">
+    <label for="monthSelect1">اختر الشهر</label>
+    <select id="monthSelect1" style="width: 150px;" class="form-control" name="selectedMonth1" t-att-value="selectedMonth1">
+        <t t-foreach="latest_months1" t-as="option">
+                <option t-att-value="option[0]" t-att-selected="option[0] == selected_month1">   <t t-esc="option[1]" /></option>
+            </t>
+    </select>
+                                  <input type="hidden" name="csrf_token"
+                                                       t-att-value="request.csrf_token()"/>
+
+</form>
+             <h2 style="text-align: center;">&amp;nbsp;&amp;nbsp;</h2>
+                <p style="text-align: center;">&amp;nbsp;</p>
+                <h2 style="text-align: center;"> أقل المحتوى تقييما (حتى 5 صفحات) </h2>
+                <canvas width="300" style=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                    </div>
+            </t>
+
+<script>
+      // Automatically submit the form when a month is selected
+    monthSelect.addEventListener("change", function() {
+        document.getElementById("monthForm").submit();
+    });
+
+                     // Automatically submit the form when a month is selected
+    monthSelect1.addEventListener("change", function() {
+        document.getElementById("monthForm1").submit();
+    });
+</script>
+        </template>
+
+  </data>
+        </odoo>

@@ -4,7 +4,7 @@
         <t name="AMP Main layout" t-name="theme_scita.layout">&lt;!DOCTYPE html&gt;
             <html amp="amp" t-att-lang="lang and lang.replace('_', '-')" t-att-data-website-id="website.id if (editable or translatable) and website else None" t-att-data-editable="'1' if editable else None" t-att-data-translatable="'1' if translatable else None" t-att-data-edit_translations="'1' if edit_translations else None" t-att-data-view-xmlid="xmlid if editable or translatable else None" t-att-data-main-object="repr(main_object) if editable or translatable else None" t-att-data-oe-company-name="res_company.name">
                 <head>
-                    <meta charset="utf-8"/>
+                    <meta charset="utf-16"/>
                     <script async="async" src="https://cdn.ampproject.org/v0.js"/>
                     <script async="async" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"/>
                     <script async="async" custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>

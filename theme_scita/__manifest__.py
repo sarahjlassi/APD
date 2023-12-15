@@ -85,7 +85,7 @@ AMP Support
         'views/footer_option.xml',
         'views/header_option.xml',
         'views/res_config_view.xml',
-        'views/views.xml',
+        'views/card_view.xml',
         'views/res_company_view.xml',
         'data/data.xml',
         'views/sliders_view.xml',
@@ -185,6 +185,7 @@ AMP Support
             '/theme_scita/static/src/scss/custom.scss',
             '/theme_scita/static/src/scss/apd-colors.scss',
             '/theme_scita/static/src/js/jquery.creaseFont.min.js',
+#'/theme_scita/static/src/js/responsivevoice.js',
             '/theme_scita/static/src/js/plugins.js',
         ],
         'website.assets_editor': [

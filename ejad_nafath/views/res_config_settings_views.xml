@@ -41,6 +41,20 @@
 
                             </div>
                         </div>
+
+                            <div class="col-12 o_setting_box">
+
+                            <div class="content-group">
+
+                                <label for="user_info" string="User Info Server URL"
+                                       class="col-lg-3 o_light_label"/>
+                                <div class="text-muted">
+
+                                </div>
+                                <field name="user_info" class="col-lg-5"/>
+
+                            </div>
+                        </div>
                     </div>
                 </xpath>
             </field>

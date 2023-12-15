@@ -5,8 +5,8 @@
         <template id="web.layout" name="Web layout">&lt;!DOCTYPE html&gt;
             <html t-att="html_data or {}">
                 <head>
-                    <meta charset="utf-8"/>
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                    <meta charset="utf-16"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
                     <title t-esc="'APD' or title "/>
                     <link type="image/x-icon" rel="shortcut icon" t-att-href="'/apd_fav_icon/static/img/apd.png' or x_icon"/>

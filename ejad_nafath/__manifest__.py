@@ -11,6 +11,7 @@
         'views/res_config_settings_views.xml',
         'views/auth_signup_login_templates.xml',
         'views/update_user_info.xml',
+
     ],
     'installable': True,
     'auto_install': False,

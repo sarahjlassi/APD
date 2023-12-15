@@ -1,0 +1,455 @@
+<data active="False" inherit_id="website.layout" name="Header option 1">
+    <xpath expr="//header//nav" position="replace">
+        <div class="oe_structure">
+            <div class="container">
+                <div class="top-header">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5 sct-same-side sct_left_side">
+
+
+                            <!--
+
+                                      <div class="popup-container" id="popupContainer">
+                                 <button class="read-button" id="readButton">Read</button>
+
+
+
+
+
+                              </div>
+
+                                 -->
+
+
+                            <script>
+
+                                //test
+                                window.onload = function myClock() {
+                                setTimeout(function() {
+                                const d = new Date();
+                                const n = d.toLocaleTimeString();
+                                document.getElementById("time").innerHTML = n;
+                                myClock();
+                                }, 1000)
+                                document.getElementById('date').value =
+                                new Intl.DateTimeFormat('ar-FR-u-ca-islamic', {day: 'numeric', month: 'numeric',weekday:
+                                'long',year : 'numeric'}).format(Date.now());
+                                document.getElementById('en_date').value = new Date().toLocaleDateString('en-CA', {year:
+                                'numeric', month: '2-digit', day: '2-digit'})
+
+                                }
+
+
+                                document.addEventListener("DOMContentLoaded", function() {
+                                var showModalLink = document.getElementById("showModalshort");
+                                var closeModalButton = document.getElementById("closeModalshort");
+                                var modal = document.getElementById("modalshort");
+
+                                showModalLink.addEventListener("click", function() {
+                                modal.style.display = "block";
+                                });
+
+                                closeModalButton.addEventListener("click", function() {
+                                modal.style.display = "none";
+                                });
+                                });
+
+
+                            </script>
+                            <div class="h-left">
+                                <ul class="head-cinfo nav">
+                                    <li id="time" class="">15:06:54</li>
+                                    <li class="arabic-only date">
+                                        <input type="text" name="date" id="date" title="" t-att-readonly="'readonly'"/>
+                                        <label for="date" hidden="hidden">1</label>
+                                    </li>
+                                    <li class="english-only date">
+                                        <input type="text" name="en_date" id="en_date" title=""
+                                               t-att-readonly="'readonly'"/>
+                                        <label for="en_date" hidden="hidden">2</label>
+                                    </li>
+                                    <li t-if="res_company.phone" t-ignore="true">
+                                        <a t-attf-href="tel:#{res_company.phone}">
+                                            <i class="fad fa-phone-rotary"/>
+                                            <span t-field="res_company.phone"/>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="left-side">
+                                <a href="/mobile_app" title="تطبيقات الجوال">
+                                    <span class="fal fa-mobile-android" t-if="request.env.lang == 'ar_001'"
+                                          style=" margin-left: 1px; font-size: 1em; ">تطبيقات الجوال
+
+                                    </span>
+
+                                    <span class="fal fa-mobile-android" t-if="request.env.lang == 'en_US'"
+                                          style="font-size: 1em; margin-left: 1px; ">&amp;nbsp; Mobile App
+                                    </span>
+                                </a>
+
+
+                                <a id="showModalshort" style=" z-index : 1346568888888888888;"
+                                   t-if="request.env.lang == 'ar_001'" href="#">
+                                    <span style="font-size: 1em; ">اختصارات</span>
+                                </a>
+
+
+                                <a id="showModalshort" style=" z-index : 1346568888888888888;"
+                                   t-if="request.env.lang == 'en_US'" href="#">
+                                    <span style="font-size: 1em; ">Shortcuts</span>
+                                </a>
+
+
+                                <div t-if="request.env.lang == 'ar_001'" id="modalshort" class="modalshort">
+                                    <div class="modalshort-content">
+                                        <div class="modalshort-header">
+                                            <h3 id="modal_title" title="shortcuts">اختصارات</h3>
+                                            <span class="closeshort" id="closeModalshort">x</span>
+                                        </div>
+                                        <div class="modalshort-body">
+                                            <table class="shortcuts-table">
+                                                <tr>
+                                                    <th>الوصف</th>
+                                                    <th>ويندوز/لينكس</th>
+                                                    <th>ماك</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>الرئيسية</td>
+                                                    <td>Alt + h + التتبع</td>
+                                                    <td>Command + Control + h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>حسابي</td>
+                                                    <td>Alt + b + التتبع</td>
+                                                    <td>Command + Control + b</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>الأخبار</td>
+                                                    <td>Alt + n + التتبع</td>
+                                                    <td>Command + Control + n</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>الفعاليات</td>
+                                                    <td>Alt + e + التتبع</td>
+                                                    <td>Command + Control + e</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>تواصل معنا</td>
+                                                    <td>Alt + c + التتبع</td>
+                                                    <td>Command + Control + c</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>الأدلة الإرشادية</td>
+                                                    <td>Alt + g + التتبع</td>
+                                                    <td>Command + Control + g</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>المشاركة الالكترونية</td>
+                                                    <td>Alt + p + التتبع</td>
+                                                    <td>Command + Control + p</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div t-if="request.env.lang == 'en_US'" id="modalshort" class="modalshort">
+                                    <div class="modalshort-content">
+                                        <div class="modalshort-header">
+                                            <h3 id="modal_title" title="shortcuts">Shortcuts</h3>
+                                            <span class="closeshort" id="closeModalshort">x</span>
+                                        </div>
+                                        <div class="modalshort-body">
+                                            <table class="shortcuts-table">
+                                                <tr>
+                                                    <th>Description</th>
+                                                    <th>Windows/Linux</th>
+                                                    <th>Mac</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Home</td>
+                                                    <td>Alt + Control + h</td>
+                                                    <td>Command + Control + h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>My account</td>
+                                                    <td>Alt + Control + b</td>
+                                                    <td>Command + Control + b</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>News</td>
+                                                    <td>Alt + Control + n</td>
+                                                    <td>Command + Control + n</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Events</td>
+                                                    <td>Alt + Control + e</td>
+                                                    <td>Command + Control + e</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>Contact Us</td>
+                                                    <td>Alt + Control + c</td>
+                                                    <td>Command + Control + c</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Guidelines</td>
+                                                    <td>Alt + Control + g</td>
+                                                    <td>Command + Control + g</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>E-Participation</td>
+                                                    <td>Alt + Control + p</td>
+                                                    <td>Command + Control + p</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <a class="color-gray">
+                                    <img src="/theme_scita/static/src/img/APD/Header/Nav-Icons/paint.svg"
+                                         class="img-fluid" alt="Icon"/>
+                                    <span>الوضع الرمادى</span>
+                                </a>
+                                <a class="dark-mode" onclick="themeToggle()">
+                                    <img src="/theme_scita/static/src/img/APD/Header/Nav-Icons/dark-mode.svg"
+                                         class="img-fluid" alt="Icon"/>
+                                    <span>الوضع الليلى</span>
+                                </a>
+                                <div id="theme" class="d-none"/>
+                                <div class="login-menu">
+                                    <div t-att-class="'h-cart' if request.env.user._is_public() else 'h-cart log_in_user'">
+                                        <ul class="list-inline">
+                                            <li class="configuration">
+                                                <t t-if="website.user_id != user_id">
+                                                    <a class="top-link-wishlist" href="javascript:void(0);"
+                                                       id="user_account" title="My Profile">
+                                                        <img id="user_account_icon"
+                                                             src="/theme_scita/static/src/img/APD/Header/Nav-Icons/user.svg"
+                                                             class="img-fluid" alt="Icon"/>
+                                                        مرحبا
+                                                        <b>
+                                                            <t t-esc="user_id.name"/>
+                                                        </b>
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+
+
+                                                    <a class="top-link-wishlist" href="javascript:void(0);"
+                                                       id="user_account" title="My Profile">
+                                                        تسجيل الدخول
+                                                    </a>
+                                                </t>
+                                                <div class="toggle-config o_hidden">
+                                                    <div class="personal-info">
+                                                        <ul>
+                                                            <t t-if="website.user_id != user_id">
+                                                                <li>
+                                                                    <a href="/my/home">My account</a>
+                                                                </li>
+
+                                                                <!--
+
+                                                                   <li>
+                                                                                                                   <a id="showModalshort" style=" z-index : 1346568888888888888;"  href="#"> <span style="font-size: 1em; ">اختصارات</span></a>
+
+                                                     </li>
+
+                                                                   -->
+
+                                                                <li>
+                                                                    <a role="menuitem"
+                                                                       t-attf-href="/web/session/logout?redirect=/">
+                                                                        Logout
+                                                                    </a>
+                                                                </li>
+                                                            </t>
+                                                            <!-- Sign In -->
+                                                            <t t-call="portal.placeholder_user_sign_in">
+                                                                <t t-set="_item_class" t-value=""/>
+                                                                <t t-set="_link_class" t-value=""/>
+                                                            </t>
+                                                            <!--                                      <t t-if="request.env['res.users']._get_signup_invitation_scope() == 'b2c'">-->
+                                                            <!--                                        <li t-if="website.user_id == user_id">-->
+                                                            <!--                                          <a href="/web/signup">Register</a>-->
+                                                            <!--                                        </li>-->
+                                                            <!--                                      </t>-->
+                                                            <t>
+                                                                <li t-if="website.user_id == user_id">
+                                                                    <a href="/signin/nafath">تسجيل دخول المواطنين</a>
+                                                                </li>
+                                                            </t>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="hm-search">
+                                                    <a style="border: 1px solid white; ; border-radius: 10px; padding: 10px;"
+                                                       class="static-search" href="#">
+                                                        <strong title="البحث" style="font-size: large;"
+                                                                class="fa fa-search"/>
+                                                        البحث
+                                                    </a>
+                                                    <div class="header-search o_hidden">
+                                                        <span id="close_search_bar">
+                                                            <strong class="fal fa-times"/>
+                                                        </span>
+                                                        <t t-call="website.website_search_box_input">
+                                                            <t t-set="_classes" t-valuef="mt8"/>
+                                                            <t t-set="search_type" t-valuef="all"/>
+                                                            <t t-set="action" t-valuef="/website/search"/>
+                                                        </t>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div t-if="request.website.viewref('website.header_language_selector').active and ((request.is_frontend_multilang and len(languages) &gt; 1) or editable)"
+                                     class="language-bar js_language_selector" id="lang">
+                                    <img src="/theme_scita/static/src/img/APD/Header/Nav-Icons/global.svg"
+                                         class="img-fluid" alt="Icon"/>
+                                    <ul class="js_language_selector">
+                                        <t t-foreach="languages" t-as="lg">
+                                            <li>
+                                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                                                   class="js_change_lang" t-att-data-url_code="lg[1]">
+                                                    <t t-esc="lg[2].split('/').pop()"/>
+                                                </a>
+                                                <!--<a t-if="lg[1] == 'en'" href="/en" class="js_change_lang" t-att-data-url_code="'en' if lg[1] == 'en' else 'ar'">-->
+                                                <!--  <t t-esc="lg[2].split('/').pop()"/>-->
+                                                <!--</a>-->
+                                                <!--<a t-if="lg[1] == 'ar'" href="https://apd.gov.sa/ar" class="js_change_lang" t-att-data-url_code="'en' if lg[1] == 'en' else 'ar'">-->
+                                                <!--  <t t-esc="lg[2].split('/').pop()"/>-->
+                                                <!--</a>-->
+                                            </li>
+                                        </t>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav data-name="Navbar" class="navbar navbar-expand-md navbar-light o_colored_level o_cc py-0">
+            <div id="top_menu_container" class="container">
+                <div class="header-logos">
+                    <a href="https://www.vision2030.gov.sa/ar/" class="">
+                        <img src="/theme_scita/static/src/img/APD/visionlogo.svg" class="img-fluid" alt="Vision"
+                             loading="lazy" style="" data-original-title="" title="test"
+                             aria-describedby="tooltip930223"/>
+                    </a>
+                    <span class="divider"/>
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'m-0'"/>
+                    </t>
+                </div>
+                <t t-call="website.navbar_toggler"/>
+                <!-- Nav -->
+                <div id="top_menu_collapse" class="collapse navbar-collapse">
+                    <t t-call="website.navbar_nav">
+                        <t t-set="_nav_class"/>
+                        <!-- Menu -->
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu">
+                                <t t-set="item_class" t-value="'nav-item'"/>
+                                <t t-set="link_class" t-value="'nav-link'"/>
+                            </t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </nav>
+        <div class="social-icons">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://www.facebook.com/APDksa">
+                        <img src="/theme_scita/static/src/img/APD/Header/Social-Icons/facebook.svg" class="img-fluid"
+                             alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/APD_ksa">
+                        <img src="/theme_scita/static/src/img/APD/Header/Social-Icons/twitter.svg" class="img-fluid"
+                             alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCcYtc4Y44oGxhXzaaO8fg2A">
+                        <img src="/theme_scita/static/src/img/APD/Header/Social-Icons/youtube.svg" class="img-fluid"
+                             alt="Facebook"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="apd-controls">
+            <ul class="list-unstyled">
+                <li>
+
+                    <!--
+                          <script src="https://code.responsivevoice.org/responsivevoice.js?key=sgIsHThH"/>
+                        -->
+
+
+                    <script src="/theme_scita/static/src/js/responsivevoice.js"></script>
+
+                    <a href="#" id="readButton">
+                        <img src="/theme_scita/static/src/img/APD/Header/Controls/Microphone.svg" class="img-fluid"
+                             alt="Microphone"/>
+                    </a>
+
+                </li>
+                <li>
+
+
+                    <a href="#" id="responsiveMic">
+
+                        <img src="/theme_scita/static/src/img/APD/Header/Controls/Microphone_no.svg" class="img-fluid"
+                             alt="Microphone"/>
+                    </a>
+
+
+                </li>
+
+
+                <li>
+                    <a href="#?" id="fontLarge" title="تكبير حجم الخط">
+                        <img src="/theme_scita/static/src/img/APD/Header/Controls/Zoom-In.svg" class="img-fluid"
+                             alt="Zoom In"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#?" id="fontSmall" title="تصغير حجم الخط">
+                        <img src="/theme_scita/static/src/img/APD/Header/Controls/Zoom-Out.svg" class="img-fluid"
+                             alt="Zoom Out"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </xpath>
+</data>

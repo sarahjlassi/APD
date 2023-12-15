@@ -1,0 +1,324 @@
+    .rating {
+            display: inline-block;
+            font-size: 30px;
+        }
+        .rating > input {
+            display: none;
+        }
+        .rating > label:before {
+            content: "\2605";
+            padding: 5px;
+            color: #ddd;
+            cursor: pointer;
+        }
+        .rating > label {
+            display: inline-block;
+        }
+        .rating > input:checked ~ label:before,
+        .rating > input:checked ~ label ~ label:before {
+            color: gold;
+        }
+        .rating > input:checked ~ label[data-text]:before {
+            content: attr(data-text);
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #009877;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+
+    .wrapped_rating {
+    background-color: white;
+    }
+
+    .wrapped_form {
+
+    max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+    }
+
+    .label_form {
+    color: #636569;
+    font-size: 16px;
+    line-height: normal;
+    }
+
+    .rate_page {
+    color: #636569;
+    }
+
+    .submit_rating {
+    background: #009877;
+    min-height: 52px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 24px rgba(0, 152, 119, 0.24);}
+
+
+
+      .options {
+    display: inline-block;
+    margin: 10px;
+  }
+  .radio-group {
+    display: none;
+  }
+  .radio-options {
+       display: flex;
+    align-items: center;
+
+
+  }
+
+    .radio-options label {
+    margin-left: 8px; /* Adjust this value to control the spacing */
+  }
+
+
+  label {
+    cursor: pointer;
+  }
+  .emoji {
+    font-size: 24px;
+    color: #009877;
+  }
+
+
+
+  html body.uc_theme_roboto  #wrapwrap
+{
+    .licened-companies-table .dataTables_wrapper .table tr
+    {
+        th, td
+        {
+            font-size: 0.875em;
+            .btn
+            {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .videos-album
+    {
+        text-align: center;
+        .item
+        {
+            margin-bottom: 50px;
+            h5
+            {
+                font-family: "RB-Bold" !important;
+                padding: 0 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .o_portal_wrap #o_my_sidebar .o_portal_my_details h4 a.btn,
+    .oe_website_login_container .oe_login_form .justify-content-between.mt-2.d-flex.small,
+    #o_wblog_post_top .o_wblog_post_title + .text-muted span:last-of-type
+    {
+        display: none !important
+    }
+    #o_portal_navbar_content .nav.flex-column.flex-lg-row.ml-auto.p-0.mb-3.mb-lg-0.mt-1.mt-lg-0
+    {
+        display: none;
+    }
+}
+html body.site-dark #wrapwrap
+{
+    .bg-white,
+    .bg-light,
+    #jobs_grid a.text-decoration-none .card
+    {
+        background: #262837 !important;
+        color: #fff;
+    }
+    .bg-200
+    {
+        background-color: #1F1D2C !important;
+        color: #fff;
+    }
+    .card-body,
+    .text-dark,
+    #jobs_grid a.text-decoration-none .card .card-body h3
+    {
+        color: #fff !important;
+    }
+}
+html[lang="ar-001"] body.uc_theme_roboto  #wrapwrap
+{
+    .oe_website_sale .breadcrumb .breadcrumb-item + .breadcrumb-item::before
+    {
+        transform: scaleX(-1);
+    }
+}
+
+html body.uc_theme_roboto  #wrapwrap
+{
+    .licened-companies-table .dataTables_wrapper .table tr
+    {
+        th, td
+        {
+            font-size: 0.875em;
+            .btn
+            {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .videos-album
+    {
+        text-align: center;
+        .item
+        {
+            margin-bottom: 50px;
+            h5
+            {
+                font-family: "RB-Bold" !important;
+                padding: 0 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .o_portal_wrap #o_my_sidebar .o_portal_my_details h4 a.btn,
+    .oe_website_login_container .oe_login_form .justify-content-between.mt-2.d-flex.small
+    {
+        display: none !important
+    }
+    #o_portal_navbar_content .nav.flex-column.flex-lg-row.ml-auto.p-0.mb-3.mb-lg-0.mt-1.mt-lg-0
+    {
+        display: none;
+    }
+}
+html body.site-dark #wrapwrap
+{
+    .bg-white,
+    .bg-light,
+    #jobs_grid a.text-decoration-none .card
+    {
+        background: #262837 !important;
+        color: #fff;
+    }
+    .bg-200
+    {
+        background-color: #1F1D2C !important;
+        color: #fff;
+    }
+    .card-body,
+    .text-dark,
+    #jobs_grid a.text-decoration-none .card .card-body h3
+    {
+        color: #fff !important;
+    }
+}
+html[lang="ar-001"] body.uc_theme_roboto  #wrapwrap
+{
+    .oe_website_sale .breadcrumb .breadcrumb-item + .breadcrumb-item::before
+    {
+        transform: scaleX(-1);
+    }
+}
+.white_class {
+    color:#FFFFFF;
+}
+ #wrapwrap footer .col-sm-2  p strong{
+     color: #FFFFFF !important;
+ }
+
+  #wrapwrap footer .col-sm-2 p span{
+     color: #FFFFFF !important;
+ }
+
+  #wrapwrap footer .col-sm-2 p {
+     color: #FFFFFF !important;
+ }
+.fix_w3c_wcag {
+   color: #FFFFFF !important;
+}
+
+
+.modalshort {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modalshort-content {
+    background-color: #fff;
+    margin: 12% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+}
+.modalshort-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.closeshort {
+    font-size: 24px;
+    cursor: pointer;
+    color:#000000;
+}
+#modal_title {
+color:#000000;
+}
+th, td {
+color:  #000000;
+}
+.shortcuts-table {
+    width: 100%;
+    border-collapse: separate; /* Use separate border model */
+    border-spacing: 10px; /* Add spacing between columns */
+    margin-top: 10px;
+}
+.shortcuts-table th,
+.shortcuts-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.shortcuts-table th {
+    background-color: #f2f2f2;
+}
+

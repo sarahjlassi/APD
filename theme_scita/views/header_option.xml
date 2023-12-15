@@ -25,7 +25,8 @@
                         <ul class="head-cinfo nav">
                           <li id="time" class="">10:49:58 AM</li>
                           <li class="arabic-only date">
-                            <input type="text" name="date" id="date" t-att-readonly="'readonly'"/>
+                              <label id="date"></label>
+                            <input type="text" title="" name="date" id="date" t-att-readonly="'readonly'"/>
                           </li>
                           <li class="english-only date">
                             <input type="text" name="en_date" id="en_date" t-att-readonly="'readonly'"/>

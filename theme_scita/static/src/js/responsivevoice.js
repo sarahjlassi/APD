@@ -1,5 +1,5 @@
-let matchMedia = window.matchMedia("(max-width:767px)");
-if(matchMedia.matches){
+//let matchMediatest = window.matchMedia("(max-width:767px)");
+if(window.matchMedia("(max-width:767px)").matches){
     console.log("false")
 }
 else{
@@ -456,14 +456,93 @@ else{
         function onMouseUp() {
             selectedText = getSelectionText();
             console.log("Selected text *" + selectedText + "*");
+
             if (selectedText != last_selectedText && selectedText != "") {
                 last_selectedText = selectedText;
+               //  const popupContainer = document.getElementById('popupContainer');
+             //console.log('popup container',popupContainer)
 
+  //popupContainer.style.display = 'block';
+
+    //  popupContainer.style.top = `${event.pageY - 40}px`; // Adjust the value to position the popup above the selected text
+ //     popupContainer.style.left = `${event.pageX}px`;
+//console.log('popup container after',popupContainer)
+      const readButton = document.getElementById('readButton');
+      console.log('button',readButton);
+
+       readButton.addEventListener('click', () => {
                 responsiveVoice.cancel(); // stop anything currently being spoken
                 responsiveVoice.speak(selectedText, 'Arabic Male'); //speak the text as returned by getSelectionText
                 trackEvent('agentFeature', 'highlightText');
-            }
+               // popupContainer.style.display = 'none';
+          });
+           }
         }
+
+   document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.altKey && e.key === 'h') {
+            console.log('go to home');
+            window.location.href = '/';
+        } else if (e.ctrlKey && e.altKey && e.key === 'b') {
+            window.location.href = '/my/home';
+        } else if (e.ctrlKey && e.altKey && e.key === 'n') {
+            window.location.href = '/blog/news-2';
+        } else if (e.ctrlKey && e.altKey && e.key === 'e') {
+            window.location.href = '/event';
+        } else if (e.ctrlKey && e.altKey && e.key === 'c') {
+            window.location.href = '/contact-us';
+        } else if (e.ctrlKey && e.altKey && e.key === 'g') {
+            window.location.href = '/sources';
+        } else if (e.ctrlKey && e.altKey && e.key === 'p') {
+            window.location.href = '/e-participation';
+        }
+    });
+
+(function() {
+  let onpageLoad = localStorage.getItem("theme") || "light";
+  let element = document.body;
+  if(element && onpageLoad){
+     element.classList.toggle(onpageLoad);
+     document.getElementById("theme").textContent = localStorage.getItem("theme") || "light";
+     let mic = document.getElementById('responsiveMic')
+
+     console.log('the mic',mic)
+     if (!mic) {
+        mic = document.getElementById('fontLarge')
+     }
+     mic.addEventListener('click', () => {
+     console.log('button stop clicked');
+         if (responsiveVoice.isPlaying()) {
+         console.log("yes it's playing");
+            responsiveVoice.cancel();
+        }
+     })
+  }
+
+})();
+
+      /*  document.addEventListener('mouseup', (event) => {
+ const selectedText = getSelectionText();
+ console.log("test function")
+ console.log("Selected text *" + selectedText + "*");
+   const popupContainer = document.getElementById('popupContainer');
+
+   if (selectedText != last_selectedText && selectedText != "") {
+                last_selectedText = selectedText;
+      popupContainer.style.display = 'block';
+      popupContainer.style.top = `${event.pageY - 40}px`; // Adjust the value to position the popup above the selected text
+      popupContainer.style.left = `${event.pageX}px`;
+
+      const readButton = document.getElementById('readButton');
+      readButton.addEventListener('click', () => {
+            responsiveVoice.cancel(); // stop anything currently being spoken
+                responsiveVoice.speak(selectedText, 'Arabic Male'); //speak the text as returned by getSelectionText
+                trackEvent('agentFeature', 'highlightText');
+         popupContainer.style.display = 'none';
+      });
+   }
+});*/
+
 
         //Speak welcome message. Will only play if user didn't came from google.
         var welcomeMessageLaunched = false;

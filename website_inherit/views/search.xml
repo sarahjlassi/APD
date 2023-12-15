@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<t name="Any Search Results" t-name="website.list_hybrid">
+    <t t-call="website.layout">
+        <div id="wrap">
+            <div class="container pt24 pb24" id="list_website_pages" align="center">
+                <t t-call="website.website_search_box_input">
+                    <t t-set="_classes" t-valuef="mt8"/>
+                    <t t-set="search_type" t-valuef="all"/>
+                    <t t-set="action" t-valuef="/website/search"/>
+                </t>
+                <div class="mt24h3"  t-if="request.env.lang == 'ar_001'" style="text-align: right;">Search Results</div>
+
+                <div class="mt24h3"  t-if="request.env.lang == 'en_US'" style="text-align: left;">Search Results</div>
+                <t t-if="not results">
+                    <div class="alert alert-warning mt8" role="alert" t-if="request.env.lang == 'ar_001'" style="text-align: right;">
+                        <t t-if="search">
+                            Your search '<t t-esc="search"/>' did not match anything.
+                        </t>
+                        <t t-else="">
+                            Specify a search term.
+                        </t>
+                    </div>
+
+                     <div class="alert alert-warning mt8" role="alert"  t-if="request.env.lang == 'en_US'" style="text-align: left;">
+                        <t t-if="search">
+                            Your search '<t t-esc="search"/>' did not match anything.
+                        </t>
+                        <t t-else="">
+                            Specify a search term.
+                        </t>
+                    </div>
+
+
+                </t>
+                <t t-elif="fuzzy_search">
+                    <div class="alert alert-warning mt8" role="alert" t-if="request.env.lang == 'en_US'" style="text-align: left;">
+                        Your search '<t t-esc="search"/>' did not match anything.
+                        Results are displayed for '<t t-esc="fuzzy_search"/>'.
+                    </div>
+
+
+                     <div class="alert alert-warning mt8" role="alert" t-if="request.env.lang == 'ar_001'" style="text-align: right;">
+                        Your search '<t t-esc="search"/>' did not match anything.
+                        Results are displayed for '<t t-esc="fuzzy_search"/>'.
+                    </div>
+                </t>
+                <div t-if="results and request.env.lang == 'ar_001'" class="table-responsive" style="text-align: right;" >
+                    <t t-call="website.one_hybrid" t-foreach="results" t-as="result"/>
+                </div>
+
+                <div t-if="results and request.env.lang == 'en_US'" class="table-responsive" style="text-align: left;">
+                    <t t-call="website.one_hybrid" t-foreach="results" t-as="result"/>
+                </div>
+                <div t-if="pager" class="o_portal_pager text-center">
+                    <t t-call="website.pager"/>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
+

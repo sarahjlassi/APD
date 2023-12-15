@@ -106,24 +106,27 @@ $(document).ready(function () {
 });
 
 // On page load set the theme.
-(function() {
+/*(function() {
   let onpageLoad = localStorage.getItem("theme") || "light";
   let element = document.body;
   if(element && onpageLoad){
      element.classList.toggle(onpageLoad);
      document.getElementById("theme").textContent = localStorage.getItem("theme") || "light";
      let mic = document.getElementById('responsiveMic')
+     console.log('the mic',mic)
      if (!mic) {
         mic = document.getElementById('fontLarge')
      }
      mic.addEventListener('click', () => {
+     console.log('button stop clicked');
          if (responsiveVoice.isPlaying()) {
-            responsiveVoice.cancel()
+         console.log("yes it's playing");
+            responsiveVoice.cancel();
         }
      })
   }
 
-})();
+})();*/
 
 function themeToggle() {
   let element = document.body;

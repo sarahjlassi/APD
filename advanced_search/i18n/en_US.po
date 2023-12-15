@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* advanced_search
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-04 08:28+0000\n"
+"PO-Revision-Date: 2023-09-04 08:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.searchbox_inherit
+msgid "search"
+msgstr ""
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "أ-ي"
+msgstr "A-Z"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "الأخبار"
+msgstr "News"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "البحث"
+msgstr "Search"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "الترتيب:"
+msgstr "Order"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "الجميع"
+msgstr "All"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "الفعاليات"
+msgstr "Events"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "بحث ..."
+msgstr "Search ..."
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "بحث متقدم"
+msgstr "Advanced Search"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "تاريخ البدء"
+msgstr "Start Date"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "تاريخ البدء:"
+msgstr "Start Date"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "تاريخ النهاية"
+msgstr "End Date"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "تاريخ النهاية:"
+msgstr "End Date"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "كلمة البحث:"
+msgstr "Search Word"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "نوع الصفحة:"
+msgstr "Page Type"
+
+#. module: advanced_search
+#: model_terms:ir.ui.view,arch_db:advanced_search.search_inherit1
+msgid "ي-أ"
+msgstr "Z-A"
